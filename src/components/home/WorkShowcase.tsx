@@ -82,7 +82,7 @@ export function WorkShowcase() {
                 src={w.src}
                 alt={`${t(`projects.${w.project}.title`)} – ${t(`projects.${w.project}.sector`)}`}
                 sizes={w.big ? "(min-width: 768px) 50vw, 100vw" : "(min-width: 768px) 25vw, 50vw"}
-                className="absolute inset-0 h-full w-full object-contain p-4 transition-transform duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.06] group-focus-within:scale-[1.06] product-shadow sm:p-5"
+                className="absolute inset-0 h-full w-full object-contain p-4 transition-transform duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.06] group-focus-within:scale-[1.06] sm:p-5"
               />
               <span className="absolute inset-x-0 bottom-0 block bg-gradient-to-t from-ink via-ink/75 to-transparent p-3 pt-10 sm:p-4">
                 <span className="block font-display text-[0.55rem] font-bold uppercase tracking-[0.26em] text-red-bright">{t(`projects.${w.project}.sector`)}</span>

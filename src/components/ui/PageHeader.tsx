@@ -28,7 +28,7 @@ export function PageHeader({
     <header className="relative overflow-hidden border-b border-line pb-16 pt-[calc(var(--header-h)+4rem)] lg:pb-20 lg:pt-[calc(var(--header-h)+6rem)] grain">
       {/* ambient glow: flat radial gradient (a blurred disc is re-rasterised while scrolling) */}
       <div aria-hidden className="pointer-events-none absolute -left-56 -top-20 h-[52rem] w-[52rem] rounded-full bg-[radial-gradient(closest-side,rgba(227,16,31,0.13),rgba(227,16,31,0.05)_40%,transparent)]" />
-      <div aria-hidden className="pointer-events-none absolute inset-0 grid-bg opacity-50" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 hidden md:block grid-bg opacity-50" />
       <div className="container-x relative @container">
         {crumbs && crumbs.length > 0 && (
           <Reveal y={10}>

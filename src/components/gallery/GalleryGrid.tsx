@@ -127,7 +127,7 @@ export function GalleryGrid({
                 src={src}
                 alt={`${alt} ${i + 1}`}
                 sizes={tiles[i].sizes}
-                className="absolute inset-0 h-full w-full object-contain p-5 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.06] group-focus-within:scale-[1.06] product-shadow"
+                className="absolute inset-0 h-full w-full object-contain p-5 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.06] group-focus-within:scale-[1.06]"
               />
               <span aria-hidden className="absolute right-3 top-3 rounded-full border border-line-2 bg-ink/70 p-2 text-fg opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100">
                 <Maximize2 className="h-3.5 w-3.5" />

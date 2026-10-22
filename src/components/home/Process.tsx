@@ -7,7 +7,7 @@ export function Process() {
   const steps = [0, 1, 2, 3] as const;
   return (
     <section className="relative border-y border-line bg-ink-2 py-28 lg:py-36">
-      <div aria-hidden className="pointer-events-none absolute inset-0 grid-bg opacity-30" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 hidden md:block grid-bg opacity-30" />
       <div className="container-x relative">
         <SectionHeading eyebrow={t("eyebrow")} title={t("title")} align="center" />
         <RevealGroup as="ol" className="relative mt-16 grid gap-6 md:grid-cols-4" stagger={0.12}>

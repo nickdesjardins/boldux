@@ -31,7 +31,7 @@ export function Customizer() {
   return (
     <section className="relative overflow-hidden border-y border-line bg-ink-2 py-28 lg:py-36">
       <div aria-hidden className="pointer-events-none absolute right-[-16%] top-[-10%] h-[56rem] w-[56rem] rounded-full bg-[radial-gradient(closest-side,rgba(227,16,31,0.11),rgba(227,16,31,0.05)_40%,transparent)]" />
-      <div aria-hidden className="pointer-events-none absolute inset-0 grid-bg opacity-40" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 hidden md:block grid-bg opacity-40" />
       <div className="container-x relative grid items-center gap-14 lg:grid-cols-12">
         <div className="lg:col-span-5">
           <SectionHeading eyebrow={t("eyebrow")} title={t("title")} intro={t("intro")} />
@@ -94,7 +94,7 @@ export function Customizer() {
         <div className="relative lg:col-span-7">
           <Reveal x={30} y={0} className="relative">
             <div className="card relative aspect-[4/3] overflow-hidden rounded-[2rem] bg-[radial-gradient(ellipse_at_50%_55%,rgba(255,255,255,0.1),rgba(16,16,20,0)_60%)]">
-              <div aria-hidden className="absolute inset-0 grid-bg opacity-70" />
+              <div aria-hidden className="absolute inset-0 hidden md:block grid-bg opacity-70" />
               <AnimatePresence mode="popLayout">
                 {src && (
                   <motion.div
@@ -105,7 +105,7 @@ export function Customizer() {
                     exit={{ opacity: 0, scale: 1.02 }}
                     transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
                   >
-                    <Img src={src} alt={`${t(`artworks.${artwork}`)} – ${t(garment)} – ${t(`colours.${colourway}`)}`} sizes="(min-width: 1024px) 58vw, 100vw" className="h-full w-full object-contain product-shadow" priority={false} />
+                    <Img src={src} alt={`${t(`artworks.${artwork}`)} – ${t(garment)} – ${t(`colours.${colourway}`)}`} sizes="(min-width: 1024px) 58vw, 100vw" className="h-full w-full object-contain" priority={false} />
                   </motion.div>
                 )}
               </AnimatePresence>

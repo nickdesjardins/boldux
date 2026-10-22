@@ -61,7 +61,20 @@ To replace an image, drop the new file at the same path under `public/img` (same
 
 ## Performance notes
 
-- Every animation is transform/opacity only (no blur or backdrop-filter animations); ambient glows are flat radial gradients, not blurred discs.
+Judge scrolling on a production build, not on `npm run dev`: the dev server serves unminified code with React's development checks and recompiles on the fly, which is noticeably heavier on phones and on modest GPUs. Use the Vercel deployment, or locally:
+
+```bash
+npm run build
+```
+
+```bash
+npm start
+```
+
+then open http://localhost:3000 (or your PC's network address from a phone).
+
+- Every animation is transform/opacity only (no blur or backdrop-filter animations); ambient glows are flat radial gradients, not blurred discs; product cut-outs carry a baked-in shadow (`scripts/bake-shadows.py`) instead of a CSS filter.
+- The hero and art-teaser parallax are CSS scroll-driven animations (`animation-timeline`), so they run on the compositor thread with no JavaScript per scroll frame; browsers without scroll timelines show a static layout.
 - Scroll reveals use Motion's `whileInView`; the hero parallax layers are composited (`will-change: transform`).
 - Long French display words ("PERSONNALISÉS") size themselves to their container with container-query units (`src/lib/fit.ts`), so headlines never clip.
 - Open Graph images are generated at build time from the logo and the studio photo (`src/app/og/[file]/route.tsx`).

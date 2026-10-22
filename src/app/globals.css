@@ -248,9 +248,8 @@ body {
   mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
 }
 
-@utility product-shadow {
-  filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.55));
-}
+/* Product cut-outs carry a baked-in soft shadow (scripts/bake-shadows.py) instead of a CSS
+   drop-shadow filter: ~50 filter layers made scrolling stutter on integrated GPUs. */
 
 @utility no-scrollbar {
   scrollbar-width: none;
@@ -391,3 +390,42 @@ select.field option { background: #15151c; color: #f4f4f6; }
 
 /* rebuild */
 /* rebuild 3 */
+
+/* ---------------------------------------------------------------------------
+   Scroll-driven parallax (compositor thread, no JS per frame).
+   Browsers without scroll timelines get a static layout.
+--------------------------------------------------------------------------- */
+@keyframes hero-bg-parallax {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(0, 14%, 0) scale(1.08); }
+}
+@keyframes hero-content-parallax {
+  from { transform: translate3d(0, 0, 0); opacity: 1; }
+  70% { opacity: 0; }
+  to { transform: translate3d(0, 110px, 0); opacity: 0; }
+}
+@keyframes parallax-y {
+  from { transform: translate3d(0, var(--parallax, 80px), 0); }
+  to { transform: translate3d(0, calc(-1 * var(--parallax, 80px)), 0); }
+}
+@supports (animation-timeline: scroll()) {
+  .hero-parallax-bg {
+    animation: hero-bg-parallax linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100vh;
+    will-change: transform;
+  }
+  .hero-parallax-content {
+    animation: hero-content-parallax linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100vh;
+    will-change: transform, opacity;
+  }
+  .parallax-y {
+    animation: parallax-y linear both;
+    animation-timeline: view();
+    animation-range: entry 0% exit 100%;
+    will-change: transform;
+  }
+}
+/* rebuild 4 */

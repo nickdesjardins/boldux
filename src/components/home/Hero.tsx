@@ -2,9 +2,8 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion } from "motion/react";
 import { Lightbulb, PenTool, Cog, Shirt, ArrowRight, ChevronDown } from "lucide-react";
-import { useRef } from "react";
 import { Link } from "@/i18n/navigation";
 import { fitFontSize } from "@/lib/fit";
 
@@ -49,12 +48,6 @@ const GLOW_R = "bg-[radial-gradient(closest-side,rgba(227,16,31,0.1),rgba(227,16
 
 export function Hero() {
   const t = useTranslations("hero");
-  const ref = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "14%"]);
-  const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.08]);
-  const contentY = useTransform(scrollYProgress, [0, 1], [0, 110]);
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
   // Long French words ("PERSONNALISÉS") must never be clipped by the reveal mask:
   // size the headline to the column width (container-query units).
   const headlineSize = fitFontSize(`${t("titleA")} ${t("titleB")}`, 7.4, 2);
@@ -66,9 +59,9 @@ export function Hero() {
   ];
 
   return (
-    <section ref={ref} className="relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-ink">
+    <section className="relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-ink">
       {/* Studio background: transform-only parallax layer, no filters inside */}
-      <motion.div style={{ y: bgY, scale: bgScale }} className="absolute inset-0 -z-10 will-change-transform">
+      <div className="hero-parallax-bg absolute inset-0 -z-10">
         <div className="absolute inset-y-0 right-0 w-full lg:w-[64%]">
           <Image
             src="/img/hero/studio.webp"
@@ -83,12 +76,12 @@ export function Hero() {
           <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/10 to-ink/60" />
           <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-ink to-transparent lg:w-56" />
         </div>
-      </motion.div>
+      </div>
 
       {/* Ambient light (static gradients, outside the parallax layer) */}
       <div aria-hidden className={`pointer-events-none absolute -left-[18rem] top-[-24%] -z-10 h-[64rem] w-[64rem] rounded-full ${GLOW_L}`} />
       <div aria-hidden className={`pointer-events-none absolute right-[2%] top-[18%] -z-10 h-[42rem] w-[42rem] rounded-full ${GLOW_R}`} />
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 grid-bg opacity-60" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 hidden md:block grid-bg opacity-60" />
       {/* diagonal red accent */}
       <motion.div
         aria-hidden
@@ -99,14 +92,11 @@ export function Hero() {
       />
 
       {/* Content: composited layer, moved + faded on scroll */}
-      <motion.div
-        style={{ y: contentY, opacity: contentOpacity }}
-        className="container-x relative flex flex-1 flex-col justify-center pb-16 pt-[calc(var(--header-h)+2.5rem)] will-change-transform"
-      >
+      <div className="hero-parallax-content container-x relative flex flex-1 flex-col justify-center pb-16 pt-[calc(var(--header-h)+2.5rem)]">
         <div className="grid items-center gap-10 lg:grid-cols-12">
           <div className="@container min-w-0 lg:col-span-7 xl:col-span-6">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease }}>
-              <Image src="/img/brand/logo.png" alt="Boldux Art" width={300} height={189} priority className="h-auto w-48 drop-shadow-[0_10px_30px_rgba(0,0,0,0.6)] sm:w-60 lg:w-64" />
+              <Image src="/img/brand/logo.png" alt="Boldux Art" width={300} height={189} priority className="h-auto w-48 sm:w-60 lg:w-64" />
             </motion.div>
 
             <motion.p
@@ -164,7 +154,7 @@ export function Hero() {
                 className={`absolute ${f.pos}`}
               >
                 <div className={`glass-lite rounded-2xl p-3 shadow-[0_30px_60px_-20px_rgba(0,0,0,0.9)] ${f.float}`}>
-                  <Image src={f.src} alt="" width={f.w} height={f.w} sizes="160px" className="product-shadow" style={{ width: f.w, height: "auto" }} />
+                  <Image src={f.src} alt="" width={f.w} height={f.w} sizes="160px" className="" style={{ width: f.w, height: "auto" }} />
                 </div>
               </motion.div>
             ))}
@@ -182,7 +172,7 @@ export function Hero() {
             </motion.div>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Scroll hint */}
       <motion.a

@@ -78,7 +78,7 @@ export default async function ModelsPage({ params }: Props) {
                     alt={name}
                     sizes={sizes}
                     priority={i < 2}
-                    className={`absolute inset-0 h-full w-full object-contain p-7 product-shadow ${IMG_TRANSITION} group-hover:scale-105 ${alt ? "group-hover:opacity-0 group-focus-within:opacity-0" : ""}`}
+                    className={`absolute inset-0 h-full w-full object-contain p-7 ${IMG_TRANSITION} group-hover:scale-105 ${alt ? "group-hover:opacity-0 group-focus-within:opacity-0" : ""}`}
                   />
                   {alt && (
                     // Decorative hover swap: same box as the cover, cross-faded so there is no gap between the two.
@@ -87,7 +87,7 @@ export default async function ModelsPage({ params }: Props) {
                       alt=""
                       aria-hidden
                       sizes={sizes}
-                      className={`absolute inset-0 h-full w-full object-contain p-7 opacity-0 product-shadow ${IMG_TRANSITION} group-hover:scale-105 group-hover:opacity-100 group-focus-within:opacity-100`}
+                      className={`absolute inset-0 h-full w-full object-contain p-7 opacity-0 ${IMG_TRANSITION} group-hover:scale-105 group-hover:opacity-100 group-focus-within:opacity-100`}
                     />
                   )}
                   <div className="absolute left-5 top-5 flex items-center gap-2">

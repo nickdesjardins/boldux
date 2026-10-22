@@ -161,7 +161,7 @@ export default async function ArtPage({ params }: Props) {
                           src={COLLECTION_COVER[c.key]}
                           alt={name}
                           sizes="(min-width: 1280px) 40vw, (min-width: 1024px) 50vw, 100vw"
-                          className="absolute inset-0 h-full w-full object-contain p-6 sm:p-8 product-shadow"
+                          className="absolute inset-0 h-full w-full object-contain p-6 sm:p-8"
                         />
                       </div>
                     </Reveal>

@@ -103,7 +103,7 @@ export default async function ContactPage({ params }: Props) {
                   src="/img/collections/skulls/tee-black-red-front.webp"
                   alt=""
                   sizes="(min-width: 640px) 112px, 88px"
-                  className="h-auto w-22 shrink-0 self-center product-shadow transition-transform duration-700 ease-out group-hover:scale-105 sm:w-28"
+                  className="h-auto w-22 shrink-0 self-center transition-transform duration-700 ease-out group-hover:scale-105 sm:w-28"
                 />
               </div>
             </a>

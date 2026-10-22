@@ -30,7 +30,7 @@ export function ArtTeaser() {
             <Parallax speed={70} className="absolute bottom-0 right-[12%] w-[44%]">
               <Reveal delay={0.2}>
                 <div className="card overflow-hidden rounded-2xl p-4">
-                  <Img src="/img/collections/warrior/hoodie-white-red-front.webp" alt={t("alt.warriorHoodie")} sizes="260px" className="h-auto w-full product-shadow" />
+                  <Img src="/img/collections/warrior/hoodie-white-red-front.webp" alt={t("alt.warriorHoodie")} sizes="260px" className="h-auto w-full" />
                 </div>
               </Reveal>
             </Parallax>

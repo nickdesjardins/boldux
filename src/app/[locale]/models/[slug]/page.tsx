@@ -146,7 +146,7 @@ export default async function ModelPage({ params }: Props) {
                   src={MODEL_COVER[s]}
                   alt={t(`items.${s}.name`)}
                   sizes="(min-width: 1024px) 25vw, 50vw"
-                  className="absolute inset-0 h-full w-full object-contain p-5 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-focus-within:scale-105 product-shadow"
+                  className="absolute inset-0 h-full w-full object-contain p-5 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-focus-within:scale-105"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink to-transparent p-4 pt-10">
                   <h3 className="font-display text-sm font-bold uppercase tracking-[0.14em] text-white">{t(`items.${s}.name`)}</h3>
