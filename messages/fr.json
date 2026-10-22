@@ -1,0 +1,455 @@
+{
+  "meta": {
+    "siteName": "Boldux Art",
+    "home": {
+      "title": "Vêtements personnalisés et corporatifs, marque privée | Boldux Art",
+      "description": "Boldux Art conçoit et fabrique vos vêtements personnalisés, corporatifs et de marque privée : hoodies, t-shirts, casquettes, joggers, vestes. Québec, Canada."
+    },
+    "models": {
+      "title": "Nos modèles personnalisés — Hoodies, t-shirts, casquettes, joggers",
+      "description": "Les vêtements que Boldux Art personnalise à votre image : hoodies, t-shirts, casquettes, tuques, joggers, vestes, sweatshirts, shorts, ensembles et plus."
+    },
+    "model": {
+      "title": "{name} personnalisables",
+      "description": "{description} Conception, maquettes et fabrication par Boldux Art, au Québec et partout au Canada."
+    },
+    "art": {
+      "title": "Boldux Art & Vêtements — L'art derrière la marque",
+      "description": "L'art de Stéphane Bolduc (Boldux) : The Skulls, Timeless Harmony, The Warrior et Aerial, déclinés en vêtements en édition limitée et en impressions 26×40."
+    },
+    "contact": {
+      "title": "Contact — Démarrer un projet de vêtements personnalisés",
+      "description": "Parlez-nous de votre projet. Boldux Art répond à chaque demande de vêtements personnalisés, corporatifs ou de marque privée au Québec et partout au Canada."
+    },
+    "notFound": {
+      "title": "Page introuvable | Boldux Art"
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "models": "Modèles",
+    "art": "Art & Vêtements",
+    "contact": "Contact",
+    "shop": "Boutique",
+    "quote": "Démarrer un projet",
+    "allModels": "Voir tous les modèles",
+    "modelsIntro": "Tous les vêtements que nous personnalisons",
+    "menu": "Menu",
+    "close": "Fermer",
+    "openMenu": "Ouvrir le menu",
+    "language": "Langue",
+    "switchTo": "English",
+    "skip": "Aller au contenu",
+    "breadcrumb": "Fil d'Ariane"
+  },
+  "hero": {
+    "tagline": "L'art de se démarquer.",
+    "titleA": "Vêtements",
+    "titleB": "Personnalisés",
+    "pillars": "Designs · Conception · Fabrication",
+    "lead": "Des créations uniques pour entreprises, équipes et marques privées.",
+    "cta1": "Découvrez nos services",
+    "cta2": "Voir les modèles",
+    "scroll": "Défiler",
+    "strip": {
+      "0": {
+        "title": "Designs",
+        "sub": "élaborés et éclatés"
+      },
+      "1": {
+        "title": "Conception",
+        "sub": "personnalisée"
+      },
+      "2": {
+        "title": "Fabrication",
+        "sub": "de qualité"
+      },
+      "3": {
+        "title": "Pour entreprises",
+        "sub": "et marques privées"
+      }
+    },
+    "imageAlt": "Studio de design Boldux Art avec hoodies, casquettes et t-shirts personnalisés",
+    "badge": "Maquettes réelles · devant et dos"
+  },
+  "ticker": {
+    "items": "Hoodies · T-shirts · Casquettes · Tuques · Joggers · Vestes · Sweatshirts · Shorts · Rashguards · Ensembles · Manches longues · Accessoires",
+    "tail": "On personnalise tout"
+  },
+  "work": {
+    "eyebrow": "Nos réalisations",
+    "title": "Ce que nous avons créé jusqu'ici",
+    "intro": "Chaque projet commence par un vêtement vierge et une marque qui a quelque chose à dire. Voici quelques collections que nous avons conçues, maquettées et fabriquées. Les noms des clients restent volontairement confidentiels.",
+    "viewProject": "Voir le projet",
+    "pieces": "Pièces",
+    "sector": "Secteur",
+    "projects": {
+      "industrial": {
+        "title": "Ligne grand froid pour équipe terrain",
+        "sector": "Entreprise de camionnage et de soudure",
+        "pieces": "Hoodie · Manches longues · T-shirt",
+        "story": "Une ligne complète pour une équipe qui travaille dehors : grande illustration au dos, typographie sur les manches et logos de poitrine assortis sur trois vêtements."
+      },
+      "northern": {
+        "title": "Vêtements de travail prêts pour l'Arctique",
+        "sector": "Transport maritime et logistique du Nord",
+        "pieces": "Hoodies · Casquettes · Tuques · Tasse",
+        "story": "Des hoodies en quatre couleurs avec motifs de glace et dégradés, des casquettes et tuques assorties, et une tasse pour le bureau : une seule identité visuelle sur tout l'ensemble."
+      },
+      "residence": {
+        "title": "Esprit d'équipe, en trois versions",
+        "sector": "Résidences pour aînés",
+        "pieces": "Hoodie · T-shirts · Jersey sport",
+        "story": "Un hoodie bourgogne, des t-shirts noirs à message et un chandail sport deux tons pour les équipes du personnel : un message, trois vêtements, faits pour être portés tous les jours."
+      },
+      "farm": {
+        "title": "Hoodie d'équipe pour la ferme",
+        "sector": "Ferme familiale",
+        "pieces": "Hoodie",
+        "story": "Un hoodie gris chiné avec un logo de poitrine et une grande illustration au dos pour toute l'équipe de la ferme."
+      },
+      "team": {
+        "title": "Hoodie de match",
+        "sector": "Équipe sportive",
+        "pieces": "Hoodie",
+        "story": "Un hoodie bleu deux tons avec chevrons sur les manches et un écusson complet au dos, aussi beau dans les gradins que sur la glace."
+      }
+    },
+    "ctaTitle": "Le prochain projet : le vôtre."
+  },
+  "customize": {
+    "eyebrow": "On personnalise tout",
+    "title": "Une œuvre. N'importe quel vêtement. N'importe quelle couleur.",
+    "intro": "Choisissez une œuvre, un vêtement et une combinaison de couleurs. Chaque combinaison ci-dessous est une vraie maquette Boldux, sur le vêtement exact que nous fabriquons.",
+    "artwork": "Œuvre",
+    "garment": "Vêtement",
+    "colourway": "Couleurs",
+    "tee": "T-shirt",
+    "hoodie": "Hoodie zippé",
+    "front": "Devant",
+    "back": "Dos",
+    "both": "Devant et dos",
+    "note": "Votre logo, vos couleurs, vos visuels : le même processus s'applique à votre marque.",
+    "cta": "Personnaliser pour ma marque",
+    "artworks": {
+      "skulls": "The Skulls",
+      "music": "Timeless Harmony",
+      "warrior": "The Warrior"
+    },
+    "colours": {
+      "black-red": "Noir / Rouge",
+      "black-white": "Noir / Blanc",
+      "blue-white": "Bleu / Blanc",
+      "grey-black": "Gris / Noir",
+      "red-white": "Rouge / Blanc",
+      "red-black": "Rouge / Noir",
+      "white-black": "Blanc / Noir",
+      "white-red": "Blanc / Rouge",
+      "orange-black": "Orange / Noir"
+    }
+  },
+  "services": {
+    "eyebrow": "De l'idée à la création",
+    "title": "Oubliez les vêtements promotionnels ordinaires!",
+    "intro": "Notre force réside dans notre capacité à imaginer des designs élaborés, éclatés et originaux, qui repoussent les limites du conventionnel. Que vous recherchiez une collection corporative distinctive, des vêtements à l'image de votre entreprise ou une toute nouvelle marque de vêtements, nous transformons vos idées en créations uniques.",
+    "statement": "Chaque projet bénéficie d'une approche personnalisée, où la créativité, le souci du détail et l'identité de votre marque sont au cœur de notre démarche.",
+    "items": {
+      "design": {
+        "title": "Design créatif",
+        "text": "Des concepts graphiques originaux et percutants, bâtis autour de votre identité."
+      },
+      "conception": {
+        "title": "Conception personnalisée",
+        "text": "Des vêtements pensés pour refléter votre image et votre vision."
+      },
+      "production": {
+        "title": "Fabrication",
+        "text": "La réalisation de vos collections selon vos besoins."
+      },
+      "privateLabel": {
+        "title": "Marque privée",
+        "text": "Le développement de vêtements sous votre propre nom et votre propre identité."
+      }
+    }
+  },
+  "modelsPreview": {
+    "eyebrow": "Les canevas",
+    "title": "Choisissez un vêtement. On en fait le vôtre.",
+    "intro": "Douze familles de vêtements, et chacune peut porter votre marque : impressions localisées, designs intégraux, couleurs sur mesure, étiquettes de marque privée.",
+    "cta": "Voir tous les modèles"
+  },
+  "process": {
+    "eyebrow": "Comment ça marche",
+    "title": "Du premier croquis à la pièce finie",
+    "steps": {
+      "0": {
+        "title": "Brief",
+        "text": "Parlez-nous de votre marque, de votre équipe et des pièces que vous avez en tête."
+      },
+      "1": {
+        "title": "Design",
+        "text": "Nous créons des concepts originaux façonnés autour de votre identité."
+      },
+      "2": {
+        "title": "Maquettes",
+        "text": "Vous approuvez des aperçus réalistes sur les vêtements exacts, devant et dos."
+      },
+      "3": {
+        "title": "Fabrication",
+        "text": "Nous produisons votre collection selon vos besoins et nous la livrons."
+      }
+    }
+  },
+  "artTeaser": {
+    "eyebrow": "Boldux Art",
+    "title": "Né sur la planche à dessin",
+    "text": "Boldux est d'abord l'art de Stéphane Bolduc : des dessins abstraits en noir et blanc devenus vêtements et impressions en édition limitée. Ce même moteur créatif travaille maintenant pour votre marque.",
+    "cta1": "Explorer l'art",
+    "cta2": "Visiter la boutique"
+  },
+  "cta": {
+    "title": "Osez être différent.",
+    "text": "Nous ne voulons pas simplement habiller votre entreprise. Nous voulons lui donner une signature visuelle qui attire les regards et laisse une impression durable. Parce que votre marque mérite mieux que l'ordinaire.",
+    "button": "Démarrer un projet",
+    "secondary": "Nous écrire"
+  },
+  "footer": {
+    "tagline": "Imaginer. Créer. Se démarquer.",
+    "about": "Design, conception et fabrication de vêtements personnalisés pour les entreprises, les organisations et les entrepreneurs qui souhaitent créer leur propre collection ou développer une marque privée.",
+    "navigation": "Navigation",
+    "modelsTitle": "Modèles",
+    "contactTitle": "Contact",
+    "shopTitle": "Boutique Boldux Art",
+    "shopText": "Vêtements et impressions en édition limitée par Boldux.",
+    "rights": "Tous droits réservés.",
+    "madeIn": "Québec, Canada",
+    "social": "Suivre Boldux"
+  },
+  "models": {
+    "eyebrow": "Tous nos modèles",
+    "title": "Tous les vêtements que nous personnalisons",
+    "intro": "Du hoodie zippé au rashguard, chaque pièce ci-dessous est une vraie maquette sur les vêtements que nous fabriquons. Choisissez une famille pour voir la galerie et ce que nous pouvons en faire.",
+    "count": "{count} modèles",
+    "gallery": "Galerie",
+    "options": "Ce que nous pouvons personnaliser",
+    "related": "Autres modèles",
+    "cta": "Personnaliser ce modèle",
+    "back": "Tous les modèles",
+    "images": "{count} images",
+    "items": {
+      "hoodies": {
+        "name": "Hoodies",
+        "short": "Zippés et pullover",
+        "blurb": "Hoodies zippés et pullover, la pièce maîtresse de toute collection personnalisée.",
+        "description": "Hoodies zippés et pullover personnalisés avec designs intégraux en couleurs, grandes impressions au dos, typographie sur les manches et logos de poitrine. Offerts en plusieurs combinaisons de couleurs pour s'agencer à votre marque.",
+        "options": "Impression intégrale · Visuel au dos · Impression sur manches · Logo de poitrine · Couleurs sur mesure · Étiquettes de marque privée"
+      },
+      "tshirts": {
+        "name": "T-shirts",
+        "short": "Col rond",
+        "blurb": "Le canevas essentiel : impression localisée ou visuel intégral.",
+        "description": "T-shirts personnalisés avec visuel intégral, panneaux latéraux, logos de poitrine et impressions au dos. Produits dans vos couleurs pour les équipes, les événements, les lignes de merch et les marques privées.",
+        "options": "Visuel intégral · Panneaux latéraux · Logo de poitrine · Impression au dos · Couleurs sur mesure"
+      },
+      "long-sleeves": {
+        "name": "Manches longues",
+        "short": "Performance et coton",
+        "blurb": "Typographie sur toute la manche et visuels au dos pour les journées plus fraîches.",
+        "description": "Chandails à manches longues personnalisés avec impressions sur toute la manche, visuel au dos et logos de poitrine, parfaits pour les équipes qui travaillent dehors et pour le merch d'automne.",
+        "options": "Impression sur manches · Visuel au dos · Logo de poitrine · Couleurs sur mesure"
+      },
+      "caps": {
+        "name": "Casquettes",
+        "short": "Snapback et visière courbée",
+        "blurb": "Snapbacks et casquettes à visière courbée avec votre logo bien en vue.",
+        "description": "Casquettes snapback et à visière courbée personnalisées avec logo avant, marque latérale et détails de visière, dans toutes les couleurs de votre marque.",
+        "options": "Logo avant · Logo latéral · Couleurs assorties"
+      },
+      "beanies": {
+        "name": "Tuques",
+        "short": "Tricot à revers",
+        "blurb": "Tuques en tricot à revers avec écusson tissé ou imprimé.",
+        "description": "Tuques à revers personnalisées avec écusson avant, offertes en plusieurs couleurs : le complément parfait d'une ligne de hoodies ou d'un ensemble d'équipe pour l'hiver.",
+        "options": "Écusson avant · Couleurs assorties"
+      },
+      "joggers": {
+        "name": "Joggers",
+        "short": "Pantalons jogger",
+        "blurb": "Pantalons jogger avec visuel sur la jambe, du logo discret à l'impression complète.",
+        "description": "Pantalons jogger personnalisés avec impressions sur la jambe, visuel pleine jambe et marque à la taille, le complément naturel d'un hoodie ou d'un ensemble personnalisé.",
+        "options": "Impression sur jambe · Visuel pleine jambe · Logo à la taille · Couleurs sur mesure"
+      },
+      "jackets": {
+        "name": "Vestes",
+        "short": "Coupe-vent et vestes de survêtement",
+        "blurb": "Coupe-vent et vestes de survêtement aux designs audacieux sur tous les panneaux.",
+        "description": "Coupe-vent et vestes track personnalisés avec designs intégraux pleins panneaux, logotype vertical et détails de manches pour les équipes et les marques qui veulent se faire voir.",
+        "options": "Designs pleins panneaux · Logotype vertical · Détails de manches · Couleurs sur mesure"
+      },
+      "sweatshirts": {
+        "name": "Sweatshirts",
+        "short": "Col rond",
+        "blurb": "Sweatshirts à col rond avec grand visuel devant.",
+        "description": "Sweatshirts à col rond personnalisés avec grand visuel devant, logotype et impression au dos, une base intemporelle pour une collection de marque.",
+        "options": "Visuel devant · Logotype · Impression au dos · Couleurs sur mesure"
+      },
+      "shorts": {
+        "name": "Shorts",
+        "short": "Shorts classiques",
+        "blurb": "Shorts classiques avec logo discret, en cinq couleurs et plus.",
+        "description": "Shorts personnalisés avec impressions localisées et marque sur la jambe, produits dans les couleurs de votre marque ou de votre équipe.",
+        "options": "Marque sur la jambe · Couleurs assorties"
+      },
+      "rashguards": {
+        "name": "Rashguards",
+        "short": "Natation et sport",
+        "blurb": "Rashguards et ensembles de bain pour les sports nautiques et la protection solaire.",
+        "description": "Rashguards et ensembles de bain personnalisés avec logo de poitrine et shorts assortis, pour les clubs, les camps et les marques de sports nautiques.",
+        "options": "Logo de poitrine · Shorts assortis · Couleurs assorties"
+      },
+      "tracksuits": {
+        "name": "Ensembles",
+        "short": "Veste et pantalon",
+        "blurb": "Ensembles complets avec visuel de la tête aux pieds.",
+        "description": "Ensembles de survêtement personnalisés avec visuel plein devant, logotype sur la jambe et veste et pantalon assortis, conçus pour les équipes et les marques streetwear.",
+        "options": "Visuel plein devant · Logotype sur la jambe · Ensemble assorti · Couleurs sur mesure"
+      },
+      "accessories": {
+        "name": "Accessoires",
+        "short": "Tasses et plus",
+        "blurb": "Tasses et extras à votre image pour compléter une collection.",
+        "description": "Tasses et accessoires personnalisés qui portent la même identité que votre ligne de vêtements, pour les bureaux, les événements et les ensembles-cadeaux.",
+        "options": "Impression enveloppante · Couleurs assorties"
+      }
+    }
+  },
+  "art": {
+    "eyebrow": "Boldux Art & Vêtements",
+    "title": "L'art derrière la marque",
+    "intro": "Avant d'habiller des entreprises, Boldux était un artiste. Stéphane Bolduc, autodidacte, dessine des univers abstraits en noir et blanc où cercles et lignes coexistent, puis les transforme en vêtements et en impressions en édition limitée.",
+    "storyTitle": "Stéphane Bolduc, alias Boldux",
+    "story": {
+      "0": "Fondée en juillet 2023, Boldux Art réunit l'art graphique, la composition musicale et le design. Stéphane a tracé son parcours par le théâtre, le travail du cuivre, la musique, puis le dessin abstrait, et chaque étape a façonné une identité visuelle distincte.",
+      "1": "Son inspiration naît de la solitude et du vide. Le cercle est sa forme de prédilection; il apparaît sur le papier guidé par l'intuition, et le vide environnant façonne l'œuvre jusqu'à ce que lignes et formes coexistent en harmonie.",
+      "2": "La musique, passion depuis l'enfance, traverse tout. C'est pour cela que la première collection s'appelle Timeless Harmony, et que chaque vêtement est fait pour être ressenti autant que vu."
+    },
+    "quote": "Boldux Art n'est pas qu'une création; c'est une symphonie de lignes et de notes, une exploration de la toile de l'âme.",
+    "quoteBy": "Stéphane Bolduc",
+    "collectionsEyebrow": "Les collections",
+    "collectionsTitle": "Cinq univers, une seule main",
+    "collections": {
+      "skulls": {
+        "name": "The Skulls",
+        "tagline": "Skull-ection",
+        "text": "Les crânes deviennent des canevas pour la créativité : une convergence du macabre et du fascinant, où chaque cercle et chaque ligne défie les conventions. La collection est offerte en t-shirts, hoodies zippés, sweatshirts et impressions 26×40."
+      },
+      "music": {
+        "name": "Timeless Harmony",
+        "tagline": "The Music",
+        "text": "Un crâne couronné d'un cadran d'horloge et d'engrenages imbriqués, le mot MUSIC gravé en dessous. Une méditation sur le temps, la pensée et le rythme universel qui nous relie tous, en cinq combinaisons de couleurs."
+      },
+      "warrior": {
+        "name": "The Warrior",
+        "tagline": "La géométrie en mouvement",
+        "text": "Des formes géométriques tranchantes, un œil qui voit tout et une traînée de cercles : un guerrier dessiné d'un seul souffle, imprimé sur t-shirts et hoodies zippés en cinq combinaisons de couleurs."
+      },
+      "aerial": {
+        "name": "Aerial",
+        "tagline": "Des paysages sur tissu",
+        "text": "Des bandes ondulées et des traits de flammes inspirés de paysages vus du ciel : désert, forêt, îles, océan, neige, volcan. Hoodies, t-shirts, coupe-vent et joggers couverts de ces paysages."
+      },
+      "eye": {
+        "name": "Signature",
+        "tagline": "L'œil Boldux",
+        "text": "L'œil Boldux original et le logotype sur hoodies zippés, casquettes, joggers, vestes et ensembles : la collection maison qui prouve qu'un logo peut vivre n'importe où sur un vêtement."
+      }
+    },
+    "artworkLabel": "Œuvre originale",
+    "garmentsLabel": "Sur les vêtements",
+    "inspirationLabel": "Inspiration",
+    "printsEyebrow": "Impressions",
+    "printsTitle": "Impressions 26 × 40 en édition limitée",
+    "printsText": "Les dessins originaux, numérisés et imprimés en rouge, bleu, noir, blanc et vert. Chaque série est offerte dans la boutique Boldux Art.",
+    "shopCta": "Visiter la boutique",
+    "bridgeTitle": "De l'art au vêtement",
+    "bridgeText": "Chaque collection ci-dessus a commencé par un dessin et s'est terminée par un vêtement que les gens portent. C'est exactement ce que nous faisons pour votre marque : votre identité, notre créativité, une collection qui se démarque.",
+    "bridgeCta": "Démarrer un projet",
+    "jobTitle": "Artiste et designer",
+    "logoLabel": "Le logo original",
+    "printsOnPaper": "Encre noire et couleur sur papier",
+    "printsWhiteInk": "Encre blanche sur noir",
+    "inspiration": {
+      "desert": "Désert vu du ciel",
+      "forest": "Forêt vue du ciel",
+      "islands": "Îles vues du ciel",
+      "ocean": "Océan vu du ciel",
+      "snow": "Neige vue du ciel",
+      "volcano": "Volcan vu du ciel"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Créons quelque chose qui se démarque",
+    "intro": "Parlez-nous de votre marque, de votre équipe et des pièces que vous avez en tête. Nous répondons personnellement à chaque demande, en français ou en anglais.",
+    "form": {
+      "name": "Votre nom",
+      "email": "Courriel",
+      "company": "Entreprise ou marque",
+      "phone": "Téléphone (facultatif)",
+      "projectType": "Type de projet",
+      "projectTypes": {
+        "corporate": "Collection corporative / vêtements d'équipe",
+        "privateLabel": "Marque privée / nouvelle marque de vêtements",
+        "merch": "Merch / vêtements d'événement",
+        "art": "Collection ou impressions Boldux Art",
+        "other": "Autre chose"
+      },
+      "quantity": "Quantité approximative",
+      "quantities": {
+        "1": "1 à 10 pièces",
+        "2": "10 à 50 pièces",
+        "3": "50 à 200 pièces",
+        "4": "200 pièces et plus",
+        "5": "Pas encore décidé"
+      },
+      "message": "Votre projet",
+      "messagePlaceholder": "Vêtements, couleurs, échéance, tout ce qui nous aide à l'imaginer.",
+      "consent": "J'accepte que l'on me contacte au sujet de ma demande.",
+      "submit": "Envoyer ma demande",
+      "sending": "Envoi en cours…",
+      "success": "Merci! Votre demande a été envoyée. Nous vous répondrons sous peu.",
+      "error": "Une erreur est survenue et le message n'a pas pu être envoyé. Réessayez ou écrivez-nous directement.",
+      "required": "Ce champ est obligatoire.",
+      "invalidEmail": "Veuillez entrer une adresse courriel valide.",
+      "tooShort": "Parlez-nous un peu plus de votre projet.",
+      "tooLong": "Veuillez limiter votre message à {max} caractères.",
+      "sendAnother": "Envoyer un autre message"
+    },
+    "aside": {
+      "emailTitle": "Courriel",
+      "locationTitle": "Emplacement",
+      "location": "Québec, Canada",
+      "hoursTitle": "Délai de réponse",
+      "hours": "Habituellement en un jour ouvrable",
+      "shopTitle": "Vous cherchez la boutique?",
+      "shopText": "Les vêtements et impressions Boldux Art sont vendus sur notre boutique en ligne.",
+      "shopCta": "Aller à la boutique"
+    }
+  },
+  "notFound": {
+    "title": "Cette page n'existe pas",
+    "text": "La page que vous cherchez a été déplacée ou n'a jamais existé.",
+    "cta": "Retour à l'accueil"
+  },
+  "common": {
+    "close": "Fermer",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "openImage": "Ouvrir l'image",
+    "imageOf": "Image {current} sur {total}",
+    "front": "Devant",
+    "back": "Dos",
+    "learnMore": "En savoir plus",
+    "new": "Nouveau"
+  }
+}

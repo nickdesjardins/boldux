@@ -1,0 +1,455 @@
+{
+  "meta": {
+    "siteName": "Boldux Art",
+    "home": {
+      "title": "Boldux Art | Custom Clothing, Corporate Apparel & Private Label",
+      "description": "Custom clothing for businesses, teams and private labels: hoodies, t-shirts, caps, joggers, jackets and more. Bold designs, real mockups. Québec, Canada."
+    },
+    "models": {
+      "title": "All Models — Custom Hoodies, T-Shirts, Caps & Joggers",
+      "description": "Browse every garment Boldux Art can customize: hoodies, t-shirts, caps, beanies, joggers, jackets, sweatshirts and more. Every piece can carry your brand."
+    },
+    "model": {
+      "title": "Custom {name}",
+      "description": "{description} Designed, mocked up and produced by Boldux Art in Québec, Canada."
+    },
+    "art": {
+      "title": "Boldux Art & Clothes — The Art Behind the Brand",
+      "description": "Art by Stéphane Bolduc (Boldux): The Skulls, Timeless Harmony, The Warrior and Aerial collections, turned into limited-edition clothing and 26×40 prints."
+    },
+    "contact": {
+      "title": "Contact Boldux Art — Start a Custom Clothing Project",
+      "description": "Tell us about your brand and the garments you need. Boldux Art answers custom clothing, corporate apparel and private label requests from Québec, Canada."
+    },
+    "notFound": {
+      "title": "Page not found | Boldux Art"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "models": "Models",
+    "art": "Art & Clothes",
+    "contact": "Contact",
+    "shop": "Shop",
+    "quote": "Start a project",
+    "allModels": "See all models",
+    "modelsIntro": "Every garment we customize",
+    "menu": "Menu",
+    "close": "Close",
+    "openMenu": "Open menu",
+    "language": "Language",
+    "switchTo": "Français",
+    "skip": "Skip to content",
+    "breadcrumb": "Breadcrumb"
+  },
+  "hero": {
+    "tagline": "The art of standing out.",
+    "titleA": "Custom",
+    "titleB": "Apparel",
+    "pillars": "Design · Conception · Production",
+    "lead": "Unique creations for businesses, teams and private labels.",
+    "cta1": "Discover our services",
+    "cta2": "See the models",
+    "scroll": "Scroll",
+    "strip": {
+      "0": {
+        "title": "Designs",
+        "sub": "elaborate & bold"
+      },
+      "1": {
+        "title": "Conception",
+        "sub": "fully personalized"
+      },
+      "2": {
+        "title": "Production",
+        "sub": "built to last"
+      },
+      "3": {
+        "title": "For businesses",
+        "sub": "& private labels"
+      }
+    },
+    "imageAlt": "Boldux Art design studio with custom hoodies, caps and t-shirts",
+    "badge": "Real mockups · front & back"
+  },
+  "ticker": {
+    "items": "Hoodies · T-shirts · Caps · Beanies · Joggers · Jackets · Sweatshirts · Shorts · Rash guards · Tracksuits · Long sleeves · Accessories",
+    "tail": "We customize anything"
+  },
+  "work": {
+    "eyebrow": "Our work",
+    "title": "What we've made so far",
+    "intro": "Every project starts with a blank garment and a brand with something to say. A few of the collections we designed, mocked up and produced. Client names kept private, on purpose.",
+    "viewProject": "View project",
+    "pieces": "Pieces",
+    "sector": "Sector",
+    "projects": {
+      "industrial": {
+        "title": "Heavy-duty crew line",
+        "sector": "Trucking & welding company",
+        "pieces": "Hoodie · Long sleeve · T-shirt",
+        "story": "A complete cold-weather line for a crew that works outside: a large illustrated back print, typographic sleeve prints and matching chest marks across three garments."
+      },
+      "northern": {
+        "title": "Arctic-ready workwear",
+        "sector": "Northern shipping & logistics",
+        "pieces": "Hoodies · Caps · Beanies · Mug",
+        "story": "Hoodies in four colourways with ice-pattern and gradient fills, matching caps and beanies, and a mug for the office: one visual identity across the whole kit."
+      },
+      "residence": {
+        "title": "Team spirit, three ways",
+        "sector": "Senior living residences",
+        "pieces": "Hoodie · T-shirts · Sport jersey",
+        "story": "A burgundy hoodie, black message tees and a two-tone sport jersey for staff teams: one message, three garments, built to be worn every day."
+      },
+      "farm": {
+        "title": "Farm crew hoodie",
+        "sector": "Family farm",
+        "pieces": "Hoodie",
+        "story": "A heather-grey pullover hoodie with a chest mark and a bold illustrated back print for the whole farm crew."
+      },
+      "team": {
+        "title": "Game-day hoodie",
+        "sector": "Sports team",
+        "pieces": "Hoodie",
+        "story": "A two-tone blue pullover with chevron sleeve accents and a full back crest, made to look as good in the stands as on the ice."
+      }
+    },
+    "ctaTitle": "Your project, next."
+  },
+  "customize": {
+    "eyebrow": "We customize anything",
+    "title": "One artwork. Any garment. Any colour.",
+    "intro": "Pick an artwork, a garment and a colourway. Every combination below is a real Boldux mockup, built on the exact garment we produce.",
+    "artwork": "Artwork",
+    "garment": "Garment",
+    "colourway": "Colourway",
+    "tee": "T-shirt",
+    "hoodie": "Zip hoodie",
+    "front": "Front",
+    "back": "Back",
+    "both": "Front & back",
+    "note": "Your logo, your colours, your artwork: the same process applies to your brand.",
+    "cta": "Customize for my brand",
+    "artworks": {
+      "skulls": "The Skulls",
+      "music": "Timeless Harmony",
+      "warrior": "The Warrior"
+    },
+    "colours": {
+      "black-red": "Black / Red",
+      "black-white": "Black / White",
+      "blue-white": "Blue / White",
+      "grey-black": "Grey / Black",
+      "red-white": "Red / White",
+      "red-black": "Red / Black",
+      "white-black": "White / Black",
+      "white-red": "White / Red",
+      "orange-black": "Orange / Black"
+    }
+  },
+  "services": {
+    "eyebrow": "From idea to creation",
+    "title": "Forget ordinary promotional clothing.",
+    "intro": "Our strength lies in imagining elaborate, bold and original designs that push past the conventional. Whether you want a distinctive corporate collection, clothing that reflects your company or an entirely new clothing brand, we turn your ideas into unique creations.",
+    "statement": "Every project gets a personal approach, where creativity, attention to detail and your brand identity are at the heart of what we do.",
+    "items": {
+      "design": {
+        "title": "Creative design",
+        "text": "Original, striking graphic concepts built around your identity."
+      },
+      "conception": {
+        "title": "Custom conception",
+        "text": "Garments conceived to reflect your image and your vision."
+      },
+      "production": {
+        "title": "Production",
+        "text": "Your collections produced according to your needs."
+      },
+      "privateLabel": {
+        "title": "Private label",
+        "text": "Clothing developed under your own name and your own identity."
+      }
+    }
+  },
+  "modelsPreview": {
+    "eyebrow": "The canvases",
+    "title": "Pick a garment. We'll make it yours.",
+    "intro": "Twelve garment families, and every one of them can carry your brand: placement prints, all-over designs, custom colourways, private-label branding.",
+    "cta": "Browse all models"
+  },
+  "process": {
+    "eyebrow": "How it works",
+    "title": "From the first sketch to the finished piece",
+    "steps": {
+      "0": {
+        "title": "Brief",
+        "text": "Tell us about your brand, your team and the pieces you have in mind."
+      },
+      "1": {
+        "title": "Design",
+        "text": "We create original concepts shaped around your identity."
+      },
+      "2": {
+        "title": "Mockups",
+        "text": "You approve realistic previews on the exact garments, front and back."
+      },
+      "3": {
+        "title": "Production",
+        "text": "We produce your collection to your needs and deliver it."
+      }
+    }
+  },
+  "artTeaser": {
+    "eyebrow": "Boldux Art",
+    "title": "Born from the drawing board",
+    "text": "Boldux started as the art of Stéphane Bolduc: abstract black-and-white drawings turned into limited-edition clothing and prints. That same creative engine now works for your brand.",
+    "cta1": "Explore the art",
+    "cta2": "Visit the shop"
+  },
+  "cta": {
+    "title": "Dare to be different.",
+    "text": "We don't just want to dress your business. We want to give it a visual signature that catches the eye and leaves a lasting impression. Because your brand deserves better than ordinary.",
+    "button": "Start a project",
+    "secondary": "Write to us"
+  },
+  "footer": {
+    "tagline": "Imagine. Create. Stand out.",
+    "about": "Design, conception and production of custom clothing for businesses, organizations and entrepreneurs who want their own collection or private label.",
+    "navigation": "Navigation",
+    "modelsTitle": "Models",
+    "contactTitle": "Contact",
+    "shopTitle": "Boldux Art shop",
+    "shopText": "Limited-edition clothing and prints by Boldux.",
+    "rights": "All rights reserved.",
+    "madeIn": "Québec, Canada",
+    "social": "Follow Boldux"
+  },
+  "models": {
+    "eyebrow": "All our models",
+    "title": "Every garment we customize",
+    "intro": "From zip hoodies to rash guards, every piece below is a real mockup on the garments we produce. Choose a family to see the gallery and what we can do with it.",
+    "count": "{count} models",
+    "gallery": "Gallery",
+    "options": "What we can customize",
+    "related": "Other models",
+    "cta": "Customize this model",
+    "back": "All models",
+    "images": "{count} images",
+    "items": {
+      "hoodies": {
+        "name": "Hoodies",
+        "short": "Zip & pullover",
+        "blurb": "Zip and pullover hoodies, the flagship of any custom collection.",
+        "description": "Custom zip hoodies and pullover hoodies with full-colour all-over designs, large back prints, sleeve typography and chest marks. Available in multiple colourways to match your brand.",
+        "options": "All-over prints · Back art · Sleeve prints · Chest logo · Custom colourways · Private-label tags"
+      },
+      "tshirts": {
+        "name": "T-shirts",
+        "short": "Crew neck",
+        "blurb": "The essential canvas: placement prints or full all-over artwork.",
+        "description": "Custom t-shirts with all-over artwork, side-panel designs, chest logos and back prints. Produced in your colours for teams, events, merch lines and private labels.",
+        "options": "All-over artwork · Side panels · Chest logo · Back print · Custom colourways"
+      },
+      "long-sleeves": {
+        "name": "Long sleeves",
+        "short": "Performance & cotton",
+        "blurb": "Sleeve-length typography and back prints for cooler days.",
+        "description": "Custom long-sleeve shirts with full sleeve prints, back artwork and chest marks, ideal for crews working outside and for autumn merchandise.",
+        "options": "Sleeve prints · Back art · Chest logo · Custom colourways"
+      },
+      "caps": {
+        "name": "Caps",
+        "short": "Snapback & curved",
+        "blurb": "Snapbacks and curved-brim caps with your mark front and centre.",
+        "description": "Custom snapback and curved-brim caps with front logos, side marks and brim details, in any colour your brand needs.",
+        "options": "Front logo · Side mark · Colour matching"
+      },
+      "beanies": {
+        "name": "Beanies",
+        "short": "Cuffed knit",
+        "blurb": "Cuffed knit beanies with a woven or printed badge.",
+        "description": "Custom cuffed beanies with a front badge, available in several colours, the perfect match for a hoodie line or a winter team kit.",
+        "options": "Front badge · Colour matching"
+      },
+      "joggers": {
+        "name": "Joggers",
+        "short": "Jogger pants",
+        "blurb": "Jogger pants with leg artwork, from a discreet mark to a full print.",
+        "description": "Custom jogger pants with leg prints, full-leg artwork and waist marks, the natural match for a custom hoodie or tracksuit.",
+        "options": "Leg prints · Full-leg artwork · Waist mark · Custom colourways"
+      },
+      "jackets": {
+        "name": "Jackets",
+        "short": "Windbreakers & track",
+        "blurb": "Windbreakers and track jackets with bold full-panel designs.",
+        "description": "Custom windbreakers and track jackets with full-panel all-over designs, vertical wordmarks and sleeve details for teams and brands that want to be seen.",
+        "options": "Full-panel designs · Vertical wordmark · Sleeve details · Custom colourways"
+      },
+      "sweatshirts": {
+        "name": "Sweatshirts",
+        "short": "Crewneck",
+        "blurb": "Crewneck sweatshirts with large front artwork.",
+        "description": "Custom crewneck sweatshirts with large front artwork, wordmarks and back prints, a timeless base for a brand collection.",
+        "options": "Front artwork · Wordmark · Back print · Custom colourways"
+      },
+      "shorts": {
+        "name": "Shorts",
+        "short": "Regular shorts",
+        "blurb": "Regular shorts with a discreet mark, in five colours and more.",
+        "description": "Custom shorts with placement prints and leg marks, produced in the colours of your brand or team.",
+        "options": "Leg mark · Colour matching"
+      },
+      "rashguards": {
+        "name": "Rash guards",
+        "short": "Swim & sport",
+        "blurb": "Rash guards and swim sets for water sports and sun protection.",
+        "description": "Custom rash guards and swim sets with chest marks and colour-matched shorts, for clubs, camps and water-sport brands.",
+        "options": "Chest mark · Matching shorts · Colour matching"
+      },
+      "tracksuits": {
+        "name": "Tracksuits",
+        "short": "Jacket & pants",
+        "blurb": "Full tracksuits with head-to-toe artwork.",
+        "description": "Custom tracksuits with full-front artwork, leg wordmarks and matching jacket and pants, built for teams and streetwear brands.",
+        "options": "Full-front artwork · Leg wordmark · Matching set · Custom colourways"
+      },
+      "accessories": {
+        "name": "Accessories",
+        "short": "Mugs & more",
+        "blurb": "Mugs and branded extras to complete a kit.",
+        "description": "Custom mugs and accessories that carry the same identity as your clothing line, for offices, events and gift kits.",
+        "options": "Full-wrap print · Colour matching"
+      }
+    }
+  },
+  "art": {
+    "eyebrow": "Boldux Art & Clothes",
+    "title": "The art behind the brand",
+    "intro": "Before Boldux dressed companies, Boldux was an artist. Stéphane Bolduc, self-taught, draws abstract black-and-white worlds where circles and lines coexist, and turns them into limited-edition clothing and prints.",
+    "storyTitle": "Stéphane Bolduc, known as Boldux",
+    "story": {
+      "0": "Established in July 2023, Boldux Art brings together graphic art, musical composition and design. Stéphane charted his path through theatre, copper work, music, then abstract drawing, and each step shaped a distinct visual identity.",
+      "1": "His inspiration springs from solitude and emptiness. Circles are his favoured form; they appear on paper guided by intuition, and the surrounding emptiness shapes the work until lines and forms coexist in harmony.",
+      "2": "Music, a passion since childhood, runs through everything. It is why the first collection is called Timeless Harmony, and why every garment is meant to be felt as much as seen."
+    },
+    "quote": "Boldux Art is not just a creation; it's a symphony of lines and notes, an exploration of the soul's canvas.",
+    "quoteBy": "Stéphane Bolduc",
+    "collectionsEyebrow": "The collections",
+    "collectionsTitle": "Five worlds, one hand",
+    "collections": {
+      "skulls": {
+        "name": "The Skulls",
+        "tagline": "Skull-ection",
+        "text": "Skulls become canvases for creativity: a curated convergence of the macabre and the mesmerizing, where every circle and line challenges convention. Available as t-shirts, zip hoodies, crewnecks and 26×40 prints."
+      },
+      "music": {
+        "name": "Timeless Harmony",
+        "tagline": "The Music",
+        "text": "A skull crowned with a clock face and interlocking gears, the word MUSIC carved beneath. A meditation on time, thought and the universal rhythm that connects us all, in five colourways."
+      },
+      "warrior": {
+        "name": "The Warrior",
+        "tagline": "Geometry in motion",
+        "text": "Sharp geometric forms, an all-seeing eye and a trailing path of circles: a warrior drawn in a single breath, printed on tees and zip hoodies in five colourways."
+      },
+      "aerial": {
+        "name": "Aerial",
+        "tagline": "Landscapes on fabric",
+        "text": "Wave bands and flame-like strokes inspired by landscapes seen from above: desert, forest, islands, ocean, snow, volcano. Hoodies, tees, windbreakers and joggers filled with terrain."
+      },
+      "eye": {
+        "name": "Signature",
+        "tagline": "The Boldux eye",
+        "text": "The original Boldux eye and wordmark on zip hoodies, caps, joggers, jackets and tracksuits: the house collection that proves a logo can live anywhere on a garment."
+      }
+    },
+    "artworkLabel": "Original artwork",
+    "garmentsLabel": "On garments",
+    "inspirationLabel": "Inspiration",
+    "printsEyebrow": "Prints",
+    "printsTitle": "26 × 40 limited prints",
+    "printsText": "The original drawings, scanned and printed in red, blue, black, white and green. Each series is available in the Boldux Art shop.",
+    "shopCta": "Visit the shop",
+    "bridgeTitle": "From art to apparel",
+    "bridgeText": "Every collection above started as a drawing and ended as a garment people wear. That is exactly what we do for your brand: your identity, our creativity, a collection that stands out.",
+    "bridgeCta": "Start a project",
+    "jobTitle": "Artist and designer",
+    "logoLabel": "The original logo",
+    "printsOnPaper": "Black & colour ink on paper",
+    "printsWhiteInk": "White ink on black",
+    "inspiration": {
+      "desert": "Desert seen from above",
+      "forest": "Forest seen from above",
+      "islands": "Islands seen from above",
+      "ocean": "Ocean seen from above",
+      "snow": "Snow seen from above",
+      "volcano": "Volcano seen from above"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's create something that stands out",
+    "intro": "Tell us about your brand, your team and the pieces you have in mind. We answer every request personally, in English or in French.",
+    "form": {
+      "name": "Your name",
+      "email": "Email",
+      "company": "Company or brand",
+      "phone": "Phone (optional)",
+      "projectType": "Project type",
+      "projectTypes": {
+        "corporate": "Corporate collection / team apparel",
+        "privateLabel": "Private label / new clothing brand",
+        "merch": "Merch / event clothing",
+        "art": "Boldux Art collection or prints",
+        "other": "Something else"
+      },
+      "quantity": "Approximate quantity",
+      "quantities": {
+        "1": "1 to 10 pieces",
+        "2": "10 to 50 pieces",
+        "3": "50 to 200 pieces",
+        "4": "200+ pieces",
+        "5": "Not sure yet"
+      },
+      "message": "Your project",
+      "messagePlaceholder": "Garments, colours, deadline, anything that helps us picture it.",
+      "consent": "I agree to be contacted about my request.",
+      "submit": "Send my request",
+      "sending": "Sending…",
+      "success": "Thank you! Your request has been sent. We'll get back to you shortly.",
+      "error": "Something went wrong and the message could not be sent. Please try again or write to us directly.",
+      "required": "This field is required.",
+      "invalidEmail": "Please enter a valid email address.",
+      "tooShort": "Tell us a little more about your project.",
+      "tooLong": "Please keep your message under {max} characters.",
+      "sendAnother": "Send another message"
+    },
+    "aside": {
+      "emailTitle": "Email",
+      "locationTitle": "Based in",
+      "location": "Québec, Canada",
+      "hoursTitle": "Response time",
+      "hours": "Usually within one business day",
+      "shopTitle": "Looking for the shop?",
+      "shopText": "Boldux Art clothing and prints are sold on our online shop.",
+      "shopCta": "Go to the shop"
+    }
+  },
+  "notFound": {
+    "title": "This page doesn't exist",
+    "text": "The page you're looking for has moved or never existed.",
+    "cta": "Back to home"
+  },
+  "common": {
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "openImage": "Open image",
+    "imageOf": "Image {current} of {total}",
+    "front": "Front",
+    "back": "Back",
+    "learnMore": "Learn more",
+    "new": "New"
+  }
+}

@@ -1,0 +1,1248 @@
+{
+ "models": {
+  "hoodies": [
+   "/img/models/hoodies/zip-signature-1.webp",
+   "/img/models/hoodies/zip-signature-2.webp",
+   "/img/models/hoodies/zip-signature-3.webp",
+   "/img/models/hoodies/zip-signature-4.webp",
+   "/img/models/hoodies/zip-signature-5.webp",
+   "/img/models/hoodies/zip-eye-back-white.webp",
+   "/img/models/hoodies/zip-eye-back-red.webp",
+   "/img/models/hoodies/zip-aerial-white.webp",
+   "/img/models/hoodies/zip-aerial-yellow.webp",
+   "/img/models/hoodies/zip-art-1.webp",
+   "/img/models/hoodies/zip-art-2.webp",
+   "/img/models/hoodies/zip-art-3.webp",
+   "/img/models/hoodies/zip-art-4.webp",
+   "/img/models/hoodies/zip-art-5.webp",
+   "/img/models/hoodies/zip-art-6.webp",
+   "/img/models/hoodies/zip-art-7.webp",
+   "/img/models/hoodies/zip-art-8.webp",
+   "/img/models/hoodies/zip-art-9.webp"
+  ],
+  "tshirts": [
+   "/img/models/tshirts/tee-signature-1.webp",
+   "/img/models/tshirts/tee-signature-2.webp",
+   "/img/models/tshirts/tee-signature-3.webp",
+   "/img/models/tshirts/tee-signature-4.webp",
+   "/img/models/tshirts/tee-signature-5.webp",
+   "/img/models/tshirts/tee-signature-6.webp",
+   "/img/models/tshirts/tee-signature-7.webp",
+   "/img/models/tshirts/tee-aerial-1.webp",
+   "/img/models/tshirts/tee-aerial-2.webp",
+   "/img/models/tshirts/tee-aerial-3.webp",
+   "/img/models/tshirts/tee-art-1.webp",
+   "/img/models/tshirts/tee-art-2.webp",
+   "/img/models/tshirts/tee-art-3.webp",
+   "/img/models/tshirts/tee-art-4.webp",
+   "/img/models/tshirts/tee-art-5.webp",
+   "/img/models/tshirts/tee-art-6.webp"
+  ],
+  "long-sleeves": [
+   "/img/models/long-sleeves/long-sleeve-white.webp",
+   "/img/models/long-sleeves/long-sleeve-grey.webp",
+   "/img/models/long-sleeves/long-sleeve-grey-front.webp",
+   "/img/models/long-sleeves/long-sleeve-grey-back.webp"
+  ],
+  "caps": [
+   "/img/models/caps/snapback-1.webp",
+   "/img/models/caps/snapback-2.webp",
+   "/img/models/caps/snapback-3.webp",
+   "/img/models/caps/curved-1.webp",
+   "/img/models/caps/curved-2.webp"
+  ],
+  "beanies": [
+   "/img/models/beanies/beanie-beige.webp",
+   "/img/models/beanies/beanie-black.webp",
+   "/img/models/beanies/beanie-red.webp",
+   "/img/models/beanies/beanies-duo.webp"
+  ],
+  "joggers": [
+   "/img/models/joggers/jogger-signature-1-front.webp",
+   "/img/models/joggers/jogger-signature-1-back.webp",
+   "/img/models/joggers/jogger-signature-2-front.webp",
+   "/img/models/joggers/jogger-signature-2-back.webp",
+   "/img/models/joggers/jogger-signature-3-front.webp",
+   "/img/models/joggers/jogger-signature-3-back.webp",
+   "/img/models/joggers/jogger-aerial-1.webp",
+   "/img/models/joggers/jogger-aerial-2.webp",
+   "/img/models/joggers/jogger-aerial-3.webp"
+  ],
+  "jackets": [
+   "/img/models/jackets/jacket-signature-1.webp",
+   "/img/models/jackets/jacket-signature-2.webp",
+   "/img/models/jackets/jacket-signature-3.webp",
+   "/img/models/jackets/jacket-signature-4.webp",
+   "/img/models/jackets/jacket-signature-5.webp",
+   "/img/models/jackets/windbreaker-1.webp",
+   "/img/models/jackets/windbreaker-2.webp",
+   "/img/models/jackets/windbreaker-3.webp",
+   "/img/models/jackets/windbreaker-4.webp"
+  ],
+  "sweatshirts": [
+   "/img/models/sweatshirts/crew-skull-grey.webp",
+   "/img/models/sweatshirts/crew-skull-red.webp",
+   "/img/models/sweatshirts/crew-wordmark.webp"
+  ],
+  "shorts": [
+   "/img/models/shorts/short-1.webp",
+   "/img/models/shorts/short-2.webp",
+   "/img/models/shorts/short-3.webp",
+   "/img/models/shorts/short-4.webp",
+   "/img/models/shorts/short-5.webp"
+  ],
+  "rashguards": [
+   "/img/models/rashguards/rashguard-1.webp",
+   "/img/models/rashguards/rashguard-2.webp",
+   "/img/models/rashguards/rashguard-3.webp"
+  ],
+  "tracksuits": [
+   "/img/models/tracksuits/tracksuit-1.webp",
+   "/img/models/tracksuits/tracksuit-2.webp",
+   "/img/models/tracksuits/tracksuit-3.webp",
+   "/img/models/tracksuits/tracksuit-4.webp"
+  ],
+  "accessories": [
+   "/img/models/accessories/mug.webp",
+   "/img/models/accessories/mug-photo.webp"
+  ]
+ },
+ "collections": {
+  "music": {
+   "tee": {
+    "black-red": {
+     "duo": "/img/collections/music/tee-black-red-duo.webp",
+     "front": "/img/collections/music/tee-black-red-front.webp",
+     "back": "/img/collections/music/tee-black-red-back.webp"
+    },
+    "black-white": {
+     "duo": "/img/collections/music/tee-black-white-duo.webp",
+     "front": "/img/collections/music/tee-black-white-front.webp",
+     "back": "/img/collections/music/tee-black-white-back.webp"
+    },
+    "blue-white": {
+     "duo": "/img/collections/music/tee-blue-white-duo.webp",
+     "front": "/img/collections/music/tee-blue-white-front.webp",
+     "back": "/img/collections/music/tee-blue-white-back.webp"
+    },
+    "grey-black": {
+     "duo": "/img/collections/music/tee-grey-black-duo.webp",
+     "front": "/img/collections/music/tee-grey-black-front.webp",
+     "back": "/img/collections/music/tee-grey-black-back.webp"
+    },
+    "red-white": {
+     "duo": "/img/collections/music/tee-red-white-duo.webp",
+     "front": "/img/collections/music/tee-red-white-front.webp",
+     "back": "/img/collections/music/tee-red-white-back.webp"
+    }
+   },
+   "hoodie": {
+    "black-red": {
+     "duo": "/img/collections/music/hoodie-black-red-duo.webp",
+     "front": "/img/collections/music/hoodie-black-red-front.webp",
+     "back": "/img/collections/music/hoodie-black-red-back.webp"
+    },
+    "black-white": {
+     "duo": "/img/collections/music/hoodie-black-white-duo.webp",
+     "front": "/img/collections/music/hoodie-black-white-front.webp",
+     "back": "/img/collections/music/hoodie-black-white-back.webp"
+    },
+    "red-white": {
+     "duo": "/img/collections/music/hoodie-red-white-duo.webp",
+     "front": "/img/collections/music/hoodie-red-white-front.webp",
+     "back": "/img/collections/music/hoodie-red-white-back.webp"
+    }
+   },
+   "art": [
+    "/img/collections/music/art-music.webp"
+   ]
+  },
+  "skulls": {
+   "tee": {
+    "black-red": {
+     "duo": "/img/collections/skulls/tee-black-red-duo.webp",
+     "front": "/img/collections/skulls/tee-black-red-front.webp",
+     "back": "/img/collections/skulls/tee-black-red-back.webp"
+    },
+    "black-white": {
+     "duo": "/img/collections/skulls/tee-black-white-duo.webp",
+     "front": "/img/collections/skulls/tee-black-white-front.webp",
+     "back": "/img/collections/skulls/tee-black-white-back.webp"
+    },
+    "grey-black": {
+     "duo": "/img/collections/skulls/tee-grey-black-duo.webp",
+     "front": "/img/collections/skulls/tee-grey-black-front.webp",
+     "back": "/img/collections/skulls/tee-grey-black-back.webp"
+    },
+    "red-black": {
+     "duo": "/img/collections/skulls/tee-red-black-duo.webp",
+     "front": "/img/collections/skulls/tee-red-black-front.webp",
+     "back": "/img/collections/skulls/tee-red-black-back.webp"
+    }
+   },
+   "hoodie": {
+    "black-red": {
+     "duo": "/img/collections/skulls/hoodie-black-red-duo.webp",
+     "front": "/img/collections/skulls/hoodie-black-red-front.webp",
+     "back": "/img/collections/skulls/hoodie-black-red-back.webp"
+    },
+    "white-black": {
+     "duo": "/img/collections/skulls/hoodie-white-black-duo.webp",
+     "front": "/img/collections/skulls/hoodie-white-black-front.webp",
+     "back": "/img/collections/skulls/hoodie-white-black-back.webp"
+    },
+    "white-red": {
+     "duo": "/img/collections/skulls/hoodie-white-red-duo.webp",
+     "front": "/img/collections/skulls/hoodie-white-red-front.webp",
+     "back": "/img/collections/skulls/hoodie-white-red-back.webp"
+    }
+   },
+   "art": [
+    "/img/collections/skulls/art-skull-1-red.webp",
+    "/img/collections/skulls/art-skull-1-blue.webp",
+    "/img/collections/skulls/art-skull-1-black.webp",
+    "/img/collections/skulls/art-skull-2-red.webp",
+    "/img/collections/skulls/art-skull-2-blue.webp",
+    "/img/collections/skulls/art-skull-2-black.webp"
+   ]
+  },
+  "warrior": {
+   "tee": {
+    "black-red": {
+     "duo": "/img/collections/warrior/tee-black-red-duo.webp",
+     "front": "/img/collections/warrior/tee-black-red-front.webp",
+     "back": "/img/collections/warrior/tee-black-red-back.webp"
+    },
+    "black-white": {
+     "duo": "/img/collections/warrior/tee-black-white-duo.webp",
+     "front": "/img/collections/warrior/tee-black-white-front.webp",
+     "back": "/img/collections/warrior/tee-black-white-back.webp"
+    },
+    "orange-black": {
+     "duo": "/img/collections/warrior/tee-orange-black-duo.webp",
+     "front": "/img/collections/warrior/tee-orange-black-front.webp",
+     "back": "/img/collections/warrior/tee-orange-black-back.webp"
+    },
+    "red-white": {
+     "duo": "/img/collections/warrior/tee-red-white-duo.webp",
+     "front": "/img/collections/warrior/tee-red-white-front.webp",
+     "back": "/img/collections/warrior/tee-red-white-back.webp"
+    },
+    "white-red": {
+     "duo": "/img/collections/warrior/tee-white-red-duo.webp",
+     "front": "/img/collections/warrior/tee-white-red-front.webp",
+     "back": "/img/collections/warrior/tee-white-red-back.webp"
+    }
+   },
+   "hoodie": {
+    "black-red": {
+     "duo": "/img/collections/warrior/hoodie-black-red-duo.webp",
+     "front": "/img/collections/warrior/hoodie-black-red-front.webp",
+     "back": "/img/collections/warrior/hoodie-black-red-back.webp"
+    },
+    "white-black": {
+     "duo": "/img/collections/warrior/hoodie-white-black-duo.webp",
+     "front": "/img/collections/warrior/hoodie-white-black-front.webp",
+     "back": "/img/collections/warrior/hoodie-white-black-back.webp"
+    },
+    "white-red": {
+     "duo": "/img/collections/warrior/hoodie-white-red-duo.webp",
+     "front": "/img/collections/warrior/hoodie-white-red-front.webp",
+     "back": "/img/collections/warrior/hoodie-white-red-back.webp"
+    }
+   },
+   "art": [
+    "/img/collections/warrior/art-warrior-red.webp",
+    "/img/collections/warrior/art-warrior-blue.webp",
+    "/img/collections/warrior/art-warrior-black.webp"
+   ]
+  }
+ },
+ "aerial": {
+  "garments": [
+   "/img/models/hoodies/zip-aerial-white.webp",
+   "/img/models/hoodies/zip-aerial-yellow.webp",
+   "/img/models/tshirts/tee-aerial-1.webp",
+   "/img/models/tshirts/tee-aerial-2.webp",
+   "/img/models/tshirts/tee-aerial-3.webp",
+   "/img/models/jackets/windbreaker-1.webp",
+   "/img/models/jackets/windbreaker-3.webp",
+   "/img/models/joggers/jogger-aerial-1.webp",
+   "/img/models/joggers/jogger-aerial-2.webp"
+  ],
+  "inspiration": [
+   "/img/collections/aerial/desert.webp",
+   "/img/collections/aerial/forest.webp",
+   "/img/collections/aerial/islands.webp",
+   "/img/collections/aerial/ocean.webp",
+   "/img/collections/aerial/snow.webp",
+   "/img/collections/aerial/volcano.webp"
+  ]
+ },
+ "eye": [
+  "/img/models/hoodies/zip-signature-1.webp",
+  "/img/models/hoodies/zip-signature-3.webp",
+  "/img/models/hoodies/zip-eye-back-red.webp",
+  "/img/models/tshirts/tee-signature-1.webp",
+  "/img/models/tshirts/tee-signature-2.webp",
+  "/img/models/caps/snapback-1.webp",
+  "/img/models/joggers/jogger-signature-1-front.webp",
+  "/img/models/jackets/jacket-signature-4.webp",
+  "/img/models/sweatshirts/crew-skull-red.webp",
+  "/img/models/tracksuits/tracksuit-2.webp"
+ ],
+ "prints": [
+  "/img/prints/scan-1-red.webp",
+  "/img/prints/scan-1-blue.webp",
+  "/img/prints/scan-1-black.webp",
+  "/img/prints/scan-2-red.webp",
+  "/img/prints/scan-2-blue.webp",
+  "/img/prints/scan-2-black.webp",
+  "/img/prints/scan-4-red.webp",
+  "/img/prints/scan-4-blue.webp",
+  "/img/prints/scan-4-black.webp",
+  "/img/prints/series-1-red.webp",
+  "/img/prints/series-1-blue.webp",
+  "/img/prints/series-1-black.webp",
+  "/img/prints/series-1-white.webp",
+  "/img/prints/series-3-red.webp",
+  "/img/prints/series-3-blue.webp",
+  "/img/prints/series-3-black.webp",
+  "/img/prints/series-3-green.webp",
+  "/img/prints/series-3-white.webp",
+  "/img/prints/series-2-white-yellow.webp"
+ ],
+ "portfolio": {
+  "industrial": [
+   "/img/portfolio/industrial/hero.webp",
+   "/img/portfolio/industrial/hoodie-duo.webp",
+   "/img/portfolio/industrial/hoodie-front.webp",
+   "/img/portfolio/industrial/hoodie-back.webp",
+   "/img/portfolio/industrial/long-sleeve-duo.webp",
+   "/img/portfolio/industrial/tee-duo.webp",
+   "/img/portfolio/industrial/tee-back.webp"
+  ],
+  "northern": [
+   "/img/portfolio/northern/mix.webp",
+   "/img/portfolio/northern/hoodie-ice-duo.webp",
+   "/img/portfolio/northern/hoodie-ice-front.webp",
+   "/img/portfolio/northern/hoodie-ice-back.webp",
+   "/img/portfolio/northern/hoodie-red-duo.webp",
+   "/img/portfolio/northern/hoodie-red-front.webp",
+   "/img/portfolio/northern/hoodie-fade-duo.webp",
+   "/img/portfolio/northern/hoodie-red-stripes.webp",
+   "/img/portfolio/northern/hoodie-camo.webp",
+   "/img/portfolio/northern/hoodie-fade.webp",
+   "/img/portfolio/northern/cap-navy.webp",
+   "/img/portfolio/northern/cap-red.webp",
+   "/img/portfolio/northern/cap-blue.webp",
+   "/img/models/beanies/beanies-duo.webp",
+   "/img/models/accessories/mug.webp"
+  ],
+  "residence": [
+   "/img/portfolio/residence/hoodie-burgundy.webp",
+   "/img/portfolio/residence/tee-black.webp",
+   "/img/portfolio/residence/tee-sport.webp"
+  ],
+  "farm": [
+   "/img/portfolio/farm/hoodie-grey.webp"
+  ],
+  "team": [
+   "/img/portfolio/team/hoodie-blue.webp"
+  ]
+ },
+ "sizes": {
+  "/img/brand/logo.png": {
+   "w": 1378,
+   "h": 866
+  },
+  "/img/brand/logo-emblem.png": {
+   "w": 738,
+   "h": 536
+  },
+  "/img/brand/logo-wordmark.png": {
+   "w": 1378,
+   "h": 326
+  },
+  "/img/brand/logo-legacy-white.png": {
+   "w": 1200,
+   "h": 280
+  },
+  "/img/brand/logo-legacy-red.png": {
+   "w": 1200,
+   "h": 280
+  },
+  "/img/brand/eye-red.png": {
+   "w": 600,
+   "h": 392
+  },
+  "/img/brand/eye-white.png": {
+   "w": 600,
+   "h": 392
+  },
+  "/img/hero/studio.webp": {
+   "w": 996,
+   "h": 838
+  },
+  "/img/hero/concept-full.webp": {
+   "w": 1536,
+   "h": 1024
+  },
+  "/img/hero/studio-wide.webp": {
+   "w": 1236,
+   "h": 838
+  },
+  "/img/art/artist.webp": {
+   "w": 900,
+   "h": 1200
+  },
+  "/img/collections/music/tee-black-red-duo.webp": {
+   "w": 1600,
+   "h": 951
+  },
+  "/img/collections/music/tee-black-red-front.webp": {
+   "w": 1176,
+   "h": 1400
+  },
+  "/img/collections/music/tee-black-red-back.webp": {
+   "w": 1170,
+   "h": 1400
+  },
+  "/img/collections/music/tee-black-white-duo.webp": {
+   "w": 1600,
+   "h": 951
+  },
+  "/img/collections/music/tee-black-white-front.webp": {
+   "w": 1183,
+   "h": 1400
+  },
+  "/img/collections/music/tee-black-white-back.webp": {
+   "w": 1172,
+   "h": 1400
+  },
+  "/img/collections/music/tee-blue-white-duo.webp": {
+   "w": 1600,
+   "h": 956
+  },
+  "/img/collections/music/tee-blue-white-front.webp": {
+   "w": 1163,
+   "h": 1400
+  },
+  "/img/collections/music/tee-blue-white-back.webp": {
+   "w": 1169,
+   "h": 1400
+  },
+  "/img/collections/music/tee-grey-black-duo.webp": {
+   "w": 1600,
+   "h": 956
+  },
+  "/img/collections/music/tee-grey-black-front.webp": {
+   "w": 1153,
+   "h": 1400
+  },
+  "/img/collections/music/tee-grey-black-back.webp": {
+   "w": 1157,
+   "h": 1400
+  },
+  "/img/collections/music/tee-red-white-duo.webp": {
+   "w": 1600,
+   "h": 951
+  },
+  "/img/collections/music/tee-red-white-front.webp": {
+   "w": 1181,
+   "h": 1400
+  },
+  "/img/collections/music/tee-red-white-back.webp": {
+   "w": 1172,
+   "h": 1400
+  },
+  "/img/collections/music/hoodie-black-red-duo.webp": {
+   "w": 1600,
+   "h": 1143
+  },
+  "/img/collections/music/hoodie-black-red-front.webp": {
+   "w": 979,
+   "h": 1400
+  },
+  "/img/collections/music/hoodie-black-red-back.webp": {
+   "w": 976,
+   "h": 1400
+  },
+  "/img/collections/music/hoodie-black-white-duo.webp": {
+   "w": 1600,
+   "h": 1143
+  },
+  "/img/collections/music/hoodie-black-white-front.webp": {
+   "w": 981,
+   "h": 1400
+  },
+  "/img/collections/music/hoodie-black-white-back.webp": {
+   "w": 981,
+   "h": 1400
+  },
+  "/img/collections/music/hoodie-red-white-duo.webp": {
+   "w": 1600,
+   "h": 1143
+  },
+  "/img/collections/music/hoodie-red-white-front.webp": {
+   "w": 979,
+   "h": 1400
+  },
+  "/img/collections/music/hoodie-red-white-back.webp": {
+   "w": 981,
+   "h": 1400
+  },
+  "/img/collections/skulls/tee-black-red-duo.webp": {
+   "w": 1600,
+   "h": 956
+  },
+  "/img/collections/skulls/tee-black-red-front.webp": {
+   "w": 1164,
+   "h": 1400
+  },
+  "/img/collections/skulls/tee-black-red-back.webp": {
+   "w": 1160,
+   "h": 1400
+  },
+  "/img/collections/skulls/tee-black-white-duo.webp": {
+   "w": 1600,
+   "h": 956
+  },
+  "/img/collections/skulls/tee-black-white-front.webp": {
+   "w": 1159,
+   "h": 1400
+  },
+  "/img/collections/skulls/tee-black-white-back.webp": {
+   "w": 1163,
+   "h": 1400
+  },
+  "/img/collections/skulls/tee-grey-black-duo.webp": {
+   "w": 1600,
+   "h": 956
+  },
+  "/img/collections/skulls/tee-grey-black-front.webp": {
+   "w": 1170,
+   "h": 1400
+  },
+  "/img/collections/skulls/tee-grey-black-back.webp": {
+   "w": 1147,
+   "h": 1400
+  },
+  "/img/collections/skulls/tee-red-black-duo.webp": {
+   "w": 1600,
+   "h": 956
+  },
+  "/img/collections/skulls/tee-red-black-front.webp": {
+   "w": 1168,
+   "h": 1400
+  },
+  "/img/collections/skulls/tee-red-black-back.webp": {
+   "w": 1153,
+   "h": 1400
+  },
+  "/img/collections/skulls/hoodie-black-red-duo.webp": {
+   "w": 1600,
+   "h": 1119
+  },
+  "/img/collections/skulls/hoodie-black-red-front.webp": {
+   "w": 988,
+   "h": 1400
+  },
+  "/img/collections/skulls/hoodie-black-red-back.webp": {
+   "w": 977,
+   "h": 1400
+  },
+  "/img/collections/skulls/hoodie-white-black-duo.webp": {
+   "w": 1600,
+   "h": 1119
+  },
+  "/img/collections/skulls/hoodie-white-black-front.webp": {
+   "w": 993,
+   "h": 1400
+  },
+  "/img/collections/skulls/hoodie-white-black-back.webp": {
+   "w": 982,
+   "h": 1400
+  },
+  "/img/collections/skulls/hoodie-white-red-duo.webp": {
+   "w": 1600,
+   "h": 1119
+  },
+  "/img/collections/skulls/hoodie-white-red-front.webp": {
+   "w": 1001,
+   "h": 1400
+  },
+  "/img/collections/skulls/hoodie-white-red-back.webp": {
+   "w": 982,
+   "h": 1400
+  },
+  "/img/collections/warrior/tee-black-red-duo.webp": {
+   "w": 1600,
+   "h": 956
+  },
+  "/img/collections/warrior/tee-black-red-front.webp": {
+   "w": 1165,
+   "h": 1400
+  },
+  "/img/collections/warrior/tee-black-red-back.webp": {
+   "w": 1149,
+   "h": 1400
+  },
+  "/img/collections/warrior/tee-black-white-duo.webp": {
+   "w": 1600,
+   "h": 956
+  },
+  "/img/collections/warrior/tee-black-white-front.webp": {
+   "w": 1173,
+   "h": 1400
+  },
+  "/img/collections/warrior/tee-black-white-back.webp": {
+   "w": 1159,
+   "h": 1400
+  },
+  "/img/collections/warrior/tee-orange-black-duo.webp": {
+   "w": 1600,
+   "h": 956
+  },
+  "/img/collections/warrior/tee-orange-black-front.webp": {
+   "w": 1156,
+   "h": 1400
+  },
+  "/img/collections/warrior/tee-orange-black-back.webp": {
+   "w": 1150,
+   "h": 1400
+  },
+  "/img/collections/warrior/tee-red-white-duo.webp": {
+   "w": 1600,
+   "h": 956
+  },
+  "/img/collections/warrior/tee-red-white-front.webp": {
+   "w": 1170,
+   "h": 1400
+  },
+  "/img/collections/warrior/tee-red-white-back.webp": {
+   "w": 1148,
+   "h": 1400
+  },
+  "/img/collections/warrior/tee-white-red-duo.webp": {
+   "w": 1600,
+   "h": 956
+  },
+  "/img/collections/warrior/tee-white-red-front.webp": {
+   "w": 1160,
+   "h": 1400
+  },
+  "/img/collections/warrior/tee-white-red-back.webp": {
+   "w": 1164,
+   "h": 1400
+  },
+  "/img/collections/warrior/hoodie-black-red-duo.webp": {
+   "w": 1600,
+   "h": 1119
+  },
+  "/img/collections/warrior/hoodie-black-red-front.webp": {
+   "w": 990,
+   "h": 1400
+  },
+  "/img/collections/warrior/hoodie-black-red-back.webp": {
+   "w": 984,
+   "h": 1400
+  },
+  "/img/collections/warrior/hoodie-white-black-duo.webp": {
+   "w": 1600,
+   "h": 1119
+  },
+  "/img/collections/warrior/hoodie-white-black-front.webp": {
+   "w": 994,
+   "h": 1400
+  },
+  "/img/collections/warrior/hoodie-white-black-back.webp": {
+   "w": 972,
+   "h": 1400
+  },
+  "/img/collections/warrior/hoodie-white-red-duo.webp": {
+   "w": 1600,
+   "h": 1119
+  },
+  "/img/collections/warrior/hoodie-white-red-front.webp": {
+   "w": 990,
+   "h": 1400
+  },
+  "/img/collections/warrior/hoodie-white-red-back.webp": {
+   "w": 983,
+   "h": 1400
+  },
+  "/img/collections/music/art-music.webp": {
+   "w": 961,
+   "h": 1400
+  },
+  "/img/collections/skulls/art-skull-1-red.webp": {
+   "w": 910,
+   "h": 1400
+  },
+  "/img/collections/skulls/art-skull-1-blue.webp": {
+   "w": 910,
+   "h": 1400
+  },
+  "/img/collections/skulls/art-skull-1-black.webp": {
+   "w": 910,
+   "h": 1400
+  },
+  "/img/collections/skulls/art-skull-2-red.webp": {
+   "w": 910,
+   "h": 1400
+  },
+  "/img/collections/skulls/art-skull-2-blue.webp": {
+   "w": 910,
+   "h": 1400
+  },
+  "/img/collections/skulls/art-skull-2-black.webp": {
+   "w": 910,
+   "h": 1400
+  },
+  "/img/collections/warrior/art-warrior-red.webp": {
+   "w": 880,
+   "h": 1400
+  },
+  "/img/collections/warrior/art-warrior-blue.webp": {
+   "w": 904,
+   "h": 1400
+  },
+  "/img/collections/warrior/art-warrior-black.webp": {
+   "w": 859,
+   "h": 1400
+  },
+  "/img/models/hoodies/zip-signature-1.webp": {
+   "w": 1600,
+   "h": 1117
+  },
+  "/img/models/hoodies/zip-signature-2.webp": {
+   "w": 1600,
+   "h": 1117
+  },
+  "/img/models/hoodies/zip-signature-3.webp": {
+   "w": 1600,
+   "h": 1117
+  },
+  "/img/models/hoodies/zip-signature-4.webp": {
+   "w": 1600,
+   "h": 1117
+  },
+  "/img/models/hoodies/zip-signature-5.webp": {
+   "w": 1600,
+   "h": 1117
+  },
+  "/img/models/hoodies/zip-eye-back-white.webp": {
+   "w": 974,
+   "h": 1400
+  },
+  "/img/models/hoodies/zip-eye-back-red.webp": {
+   "w": 974,
+   "h": 1400
+  },
+  "/img/models/hoodies/zip-aerial-white.webp": {
+   "w": 1600,
+   "h": 1100
+  },
+  "/img/models/hoodies/zip-aerial-yellow.webp": {
+   "w": 1600,
+   "h": 1116
+  },
+  "/img/models/hoodies/zip-art-1.webp": {
+   "w": 1495,
+   "h": 893
+  },
+  "/img/models/hoodies/zip-art-2.webp": {
+   "w": 1495,
+   "h": 893
+  },
+  "/img/models/hoodies/zip-art-3.webp": {
+   "w": 1495,
+   "h": 893
+  },
+  "/img/models/hoodies/zip-art-4.webp": {
+   "w": 1213,
+   "h": 849
+  },
+  "/img/models/hoodies/zip-art-5.webp": {
+   "w": 1213,
+   "h": 849
+  },
+  "/img/models/hoodies/zip-art-6.webp": {
+   "w": 1213,
+   "h": 849
+  },
+  "/img/models/hoodies/zip-art-7.webp": {
+   "w": 1213,
+   "h": 849
+  },
+  "/img/models/hoodies/zip-art-8.webp": {
+   "w": 1213,
+   "h": 849
+  },
+  "/img/models/hoodies/zip-art-9.webp": {
+   "w": 1213,
+   "h": 849
+  },
+  "/img/models/tshirts/tee-signature-1.webp": {
+   "w": 1600,
+   "h": 916
+  },
+  "/img/models/tshirts/tee-signature-2.webp": {
+   "w": 1600,
+   "h": 920
+  },
+  "/img/models/tshirts/tee-signature-3.webp": {
+   "w": 1600,
+   "h": 920
+  },
+  "/img/models/tshirts/tee-signature-4.webp": {
+   "w": 1600,
+   "h": 921
+  },
+  "/img/models/tshirts/tee-signature-5.webp": {
+   "w": 1600,
+   "h": 921
+  },
+  "/img/models/tshirts/tee-signature-6.webp": {
+   "w": 1600,
+   "h": 921
+  },
+  "/img/models/tshirts/tee-signature-7.webp": {
+   "w": 1600,
+   "h": 921
+  },
+  "/img/models/tshirts/tee-aerial-1.webp": {
+   "w": 1600,
+   "h": 995
+  },
+  "/img/models/tshirts/tee-aerial-2.webp": {
+   "w": 1600,
+   "h": 959
+  },
+  "/img/models/tshirts/tee-aerial-3.webp": {
+   "w": 1600,
+   "h": 953
+  },
+  "/img/models/tshirts/tee-art-1.webp": {
+   "w": 1373,
+   "h": 820
+  },
+  "/img/models/tshirts/tee-art-2.webp": {
+   "w": 1373,
+   "h": 820
+  },
+  "/img/models/tshirts/tee-art-3.webp": {
+   "w": 1400,
+   "h": 838
+  },
+  "/img/models/tshirts/tee-art-4.webp": {
+   "w": 1400,
+   "h": 838
+  },
+  "/img/models/tshirts/tee-art-5.webp": {
+   "w": 1405,
+   "h": 840
+  },
+  "/img/models/tshirts/tee-art-6.webp": {
+   "w": 1405,
+   "h": 840
+  },
+  "/img/models/caps/snapback-1.webp": {
+   "w": 1200,
+   "h": 720
+  },
+  "/img/models/caps/snapback-2.webp": {
+   "w": 1200,
+   "h": 720
+  },
+  "/img/models/caps/snapback-3.webp": {
+   "w": 1200,
+   "h": 720
+  },
+  "/img/models/caps/curved-1.webp": {
+   "w": 1051,
+   "h": 777
+  },
+  "/img/models/caps/curved-2.webp": {
+   "w": 1051,
+   "h": 777
+  },
+  "/img/models/joggers/jogger-signature-1-front.webp": {
+   "w": 566,
+   "h": 1400
+  },
+  "/img/models/joggers/jogger-signature-1-back.webp": {
+   "w": 577,
+   "h": 1400
+  },
+  "/img/models/joggers/jogger-signature-2-front.webp": {
+   "w": 625,
+   "h": 1400
+  },
+  "/img/models/joggers/jogger-signature-2-back.webp": {
+   "w": 611,
+   "h": 1400
+  },
+  "/img/models/joggers/jogger-signature-3-front.webp": {
+   "w": 563,
+   "h": 1365
+  },
+  "/img/models/joggers/jogger-signature-3-back.webp": {
+   "w": 563,
+   "h": 1392
+  },
+  "/img/models/joggers/jogger-aerial-1.webp": {
+   "w": 619,
+   "h": 1400
+  },
+  "/img/models/joggers/jogger-aerial-2.webp": {
+   "w": 621,
+   "h": 1400
+  },
+  "/img/models/joggers/jogger-aerial-3.webp": {
+   "w": 613,
+   "h": 1400
+  },
+  "/img/models/jackets/jacket-signature-1.webp": {
+   "w": 1400,
+   "h": 1309
+  },
+  "/img/models/jackets/jacket-signature-2.webp": {
+   "w": 1400,
+   "h": 1309
+  },
+  "/img/models/jackets/jacket-signature-3.webp": {
+   "w": 1400,
+   "h": 1309
+  },
+  "/img/models/jackets/jacket-signature-4.webp": {
+   "w": 1400,
+   "h": 1304
+  },
+  "/img/models/jackets/jacket-signature-5.webp": {
+   "w": 1400,
+   "h": 1304
+  },
+  "/img/models/jackets/windbreaker-1.webp": {
+   "w": 1287,
+   "h": 1203
+  },
+  "/img/models/jackets/windbreaker-2.webp": {
+   "w": 1303,
+   "h": 1200
+  },
+  "/img/models/jackets/windbreaker-3.webp": {
+   "w": 1305,
+   "h": 1221
+  },
+  "/img/models/jackets/windbreaker-4.webp": {
+   "w": 1321,
+   "h": 1218
+  },
+  "/img/models/sweatshirts/crew-skull-grey.webp": {
+   "w": 1600,
+   "h": 926
+  },
+  "/img/models/sweatshirts/crew-skull-red.webp": {
+   "w": 1600,
+   "h": 919
+  },
+  "/img/models/sweatshirts/crew-wordmark.webp": {
+   "w": 1600,
+   "h": 928
+  },
+  "/img/models/shorts/short-1.webp": {
+   "w": 785,
+   "h": 616
+  },
+  "/img/models/shorts/short-2.webp": {
+   "w": 783,
+   "h": 614
+  },
+  "/img/models/shorts/short-3.webp": {
+   "w": 784,
+   "h": 614
+  },
+  "/img/models/shorts/short-4.webp": {
+   "w": 785,
+   "h": 614
+  },
+  "/img/models/shorts/short-5.webp": {
+   "w": 783,
+   "h": 614
+  },
+  "/img/models/rashguards/rashguard-1.webp": {
+   "w": 729,
+   "h": 1400
+  },
+  "/img/models/rashguards/rashguard-2.webp": {
+   "w": 730,
+   "h": 1400
+  },
+  "/img/models/rashguards/rashguard-3.webp": {
+   "w": 729,
+   "h": 1400
+  },
+  "/img/models/tracksuits/tracksuit-1.webp": {
+   "w": 509,
+   "h": 1231
+  },
+  "/img/models/tracksuits/tracksuit-2.webp": {
+   "w": 509,
+   "h": 1231
+  },
+  "/img/models/tracksuits/tracksuit-3.webp": {
+   "w": 509,
+   "h": 1232
+  },
+  "/img/models/tracksuits/tracksuit-4.webp": {
+   "w": 509,
+   "h": 1232
+  },
+  "/img/models/long-sleeves/long-sleeve-white.webp": {
+   "w": 907,
+   "h": 571
+  },
+  "/img/models/long-sleeves/long-sleeve-grey.webp": {
+   "w": 597,
+   "h": 363
+  },
+  "/img/models/long-sleeves/long-sleeve-grey-front.webp": {
+   "w": 389,
+   "h": 487
+  },
+  "/img/models/long-sleeves/long-sleeve-grey-back.webp": {
+   "w": 402,
+   "h": 484
+  },
+  "/img/models/beanies/beanie-beige.webp": {
+   "w": 311,
+   "h": 291
+  },
+  "/img/models/beanies/beanie-black.webp": {
+   "w": 295,
+   "h": 272
+  },
+  "/img/models/beanies/beanie-red.webp": {
+   "w": 291,
+   "h": 270
+  },
+  "/img/models/beanies/beanies-duo.webp": {
+   "w": 469,
+   "h": 401
+  },
+  "/img/models/accessories/mug.webp": {
+   "w": 901,
+   "h": 1115
+  },
+  "/img/models/accessories/mug-photo.webp": {
+   "w": 936,
+   "h": 1200
+  },
+  "/img/portfolio/industrial/hero.webp": {
+   "w": 879,
+   "h": 945
+  },
+  "/img/portfolio/industrial/hoodie-duo.webp": {
+   "w": 873,
+   "h": 560
+  },
+  "/img/portfolio/industrial/hoodie-front.webp": {
+   "w": 392,
+   "h": 523
+  },
+  "/img/portfolio/industrial/hoodie-back.webp": {
+   "w": 416,
+   "h": 555
+  },
+  "/img/portfolio/industrial/long-sleeve-duo.webp": {
+   "w": 811,
+   "h": 488
+  },
+  "/img/portfolio/industrial/tee-duo.webp": {
+   "w": 1032,
+   "h": 613
+  },
+  "/img/portfolio/industrial/tee-back.webp": {
+   "w": 505,
+   "h": 611
+  },
+  "/img/portfolio/northern/mix.webp": {
+   "w": 465,
+   "h": 658
+  },
+  "/img/portfolio/northern/hoodie-ice-duo.webp": {
+   "w": 668,
+   "h": 444
+  },
+  "/img/portfolio/northern/hoodie-ice-front.webp": {
+   "w": 306,
+   "h": 415
+  },
+  "/img/portfolio/northern/hoodie-ice-back.webp": {
+   "w": 326,
+   "h": 445
+  },
+  "/img/portfolio/northern/hoodie-red-duo.webp": {
+   "w": 668,
+   "h": 444
+  },
+  "/img/portfolio/northern/hoodie-red-front.webp": {
+   "w": 308,
+   "h": 413
+  },
+  "/img/portfolio/northern/hoodie-fade-duo.webp": {
+   "w": 668,
+   "h": 444
+  },
+  "/img/portfolio/northern/hoodie-red-stripes.webp": {
+   "w": 663,
+   "h": 455
+  },
+  "/img/portfolio/northern/hoodie-camo.webp": {
+   "w": 686,
+   "h": 459
+  },
+  "/img/portfolio/northern/hoodie-fade.webp": {
+   "w": 688,
+   "h": 453
+  },
+  "/img/portfolio/northern/cap-navy.webp": {
+   "w": 408,
+   "h": 317
+  },
+  "/img/portfolio/northern/cap-red.webp": {
+   "w": 408,
+   "h": 317
+  },
+  "/img/portfolio/northern/cap-blue.webp": {
+   "w": 407,
+   "h": 309
+  },
+  "/img/portfolio/residence/hoodie-burgundy.webp": {
+   "w": 687,
+   "h": 457
+  },
+  "/img/portfolio/residence/tee-black.webp": {
+   "w": 942,
+   "h": 586
+  },
+  "/img/portfolio/residence/tee-sport.webp": {
+   "w": 947,
+   "h": 592
+  },
+  "/img/portfolio/farm/hoodie-grey.webp": {
+   "w": 766,
+   "h": 510
+  },
+  "/img/portfolio/team/hoodie-blue.webp": {
+   "w": 734,
+   "h": 478
+  },
+  "/img/collections/aerial/desert.webp": {
+   "w": 800,
+   "h": 1200
+  },
+  "/img/collections/aerial/forest.webp": {
+   "w": 800,
+   "h": 1200
+  },
+  "/img/collections/aerial/islands.webp": {
+   "w": 800,
+   "h": 1200
+  },
+  "/img/collections/aerial/ocean.webp": {
+   "w": 800,
+   "h": 1200
+  },
+  "/img/collections/aerial/snow.webp": {
+   "w": 800,
+   "h": 1200
+  },
+  "/img/collections/aerial/volcano.webp": {
+   "w": 800,
+   "h": 1200
+  },
+  "/img/prints/scan-1-red.webp": {
+   "w": 907,
+   "h": 1400
+  },
+  "/img/prints/scan-1-blue.webp": {
+   "w": 942,
+   "h": 1400
+  },
+  "/img/prints/scan-1-black.webp": {
+   "w": 907,
+   "h": 1400
+  },
+  "/img/prints/scan-2-red.webp": {
+   "w": 836,
+   "h": 1400
+  },
+  "/img/prints/scan-2-blue.webp": {
+   "w": 836,
+   "h": 1400
+  },
+  "/img/prints/scan-2-black.webp": {
+   "w": 880,
+   "h": 1400
+  },
+  "/img/prints/scan-4-red.webp": {
+   "w": 897,
+   "h": 1400
+  },
+  "/img/prints/scan-4-blue.webp": {
+   "w": 897,
+   "h": 1400
+  },
+  "/img/prints/scan-4-black.webp": {
+   "w": 897,
+   "h": 1400
+  },
+  "/img/prints/series-1-red.webp": {
+   "w": 910,
+   "h": 1400
+  },
+  "/img/prints/series-1-blue.webp": {
+   "w": 910,
+   "h": 1400
+  },
+  "/img/prints/series-1-black.webp": {
+   "w": 910,
+   "h": 1400
+  },
+  "/img/prints/series-1-white.webp": {
+   "w": 832,
+   "h": 1400
+  },
+  "/img/prints/series-3-red.webp": {
+   "w": 910,
+   "h": 1400
+  },
+  "/img/prints/series-3-blue.webp": {
+   "w": 910,
+   "h": 1400
+  },
+  "/img/prints/series-3-black.webp": {
+   "w": 910,
+   "h": 1400
+  },
+  "/img/prints/series-3-green.webp": {
+   "w": 910,
+   "h": 1400
+  },
+  "/img/prints/series-3-white.webp": {
+   "w": 910,
+   "h": 1400
+  },
+  "/img/prints/series-2-white-yellow.webp": {
+   "w": 829,
+   "h": 1400
+  },
+  "/img/art/skull-pun.png": {
+   "w": 1600,
+   "h": 348
+  }
+ }
+}
