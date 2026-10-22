@@ -42,11 +42,14 @@ export function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // close menus on navigation
-  useEffect(() => {
+  // close menus on navigation (state reset derived from a prop change, done during render
+  // as React recommends instead of a setState inside an effect)
+  const [prevPathname, setPrevPathname] = useState(pathname);
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname);
     setOpen(false);
     setMega(false);
-  }, [pathname]);
+  }
 
   useEffect(() => {
     document.body.dataset.lock = open ? "true" : "false";

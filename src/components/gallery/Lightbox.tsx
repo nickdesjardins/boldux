@@ -1,11 +1,15 @@
 "use client";
 
 import Image, { getImageProps } from "next/image";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "motion/react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useTranslations } from "next-intl";
+
+const subscribeNever = () => () => {};
+const getClientTrue = () => true;
+const getServerFalse = () => false;
 
 export type LightboxImage = { src: string; alt: string; caption?: React.ReactNode };
 
@@ -42,21 +46,20 @@ export function Lightbox({
   onIndex: (i: number) => void;
 }) {
   const t = useTranslations("common");
-  const [mounted, setMounted] = useState(false);
+  // false during SSR, true on the client (portal target exists) without a setState-in-effect
+  const mounted = useSyncExternalStore(subscribeNever, getClientTrue, getServerFalse);
   const dialogRef = useRef<HTMLDivElement>(null);
-  const dir = useRef(1);
+  const [dir, setDir] = useState(1);
   const swipe = useRef<{ x: number; y: number } | null>(null);
   const swiped = useRef(false);
   const open = index !== null;
   const total = images.length;
   const i = index ?? 0;
 
-  useEffect(() => setMounted(true), []);
-
   const go = useCallback(
     (step: number) => {
       if (total < 2) return;
-      dir.current = step > 0 ? 1 : -1;
+      setDir(step > 0 ? 1 : -1);
       onIndex((i + step + total) % total);
     },
     [i, onIndex, total],
@@ -115,13 +118,13 @@ export function Lightbox({
           break;
         case "Home":
           if (total > 1) {
-            dir.current = -1;
+            setDir(-1);
             onIndex(0);
           }
           break;
         case "End":
           if (total > 1) {
-            dir.current = 1;
+            setDir(1);
             onIndex(total - 1);
           }
           break;
@@ -233,10 +236,10 @@ export function Lightbox({
             </>
           )}
           <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 h-[56rem] w-[56rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(227,16,31,0.12),rgba(227,16,31,0.04)_45%,transparent)]" />
-          <AnimatePresence mode="wait" custom={dir.current}>
+          <AnimatePresence mode="wait" custom={dir}>
             <motion.figure
               key={i}
-              custom={dir.current}
+              custom={dir}
               variants={slide}
               initial="enter"
               animate="center"
