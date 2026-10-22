@@ -39,9 +39,9 @@ function Word({ text, delay, className }: { text: string; delay: number; classNa
 }
 
 const FLOATERS = [
-  { src: "/img/collections/music/hoodie-black-red-front.webp", w: 150, pos: "right-[6%] top-[14%]", float: "animate-float", delay: 0.9 },
-  { src: "/img/models/caps/snapback-1.webp", w: 120, pos: "right-[30%] top-[48%]", float: "animate-float-slow", delay: 1.15 },
-  { src: "/img/collections/warrior/tee-white-red-front.webp", w: 140, pos: "right-[2%] bottom-[8%]", float: "animate-float", delay: 1.35 },
+  { src: "/img/portfolio/industrial/hoodie-front.webp", w: 150, pos: "right-[6%] top-[14%]", float: "animate-float", delay: 0.9 },
+  { src: "/img/portfolio/northern/cap-red.webp", w: 130, pos: "right-[30%] top-[48%]", float: "animate-float-slow", delay: 1.15 },
+  { src: "/img/portfolio/northern/hoodie-ice-front.webp", w: 140, pos: "right-[2%] bottom-[8%]", float: "animate-float", delay: 1.35 },
 ];
 
 const GLOW_L = "bg-[radial-gradient(closest-side,rgba(227,16,31,0.15),rgba(227,16,31,0.07)_38%,rgba(227,16,31,0.02)_68%,transparent)]";

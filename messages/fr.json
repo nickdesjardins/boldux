@@ -79,9 +79,9 @@
     "tail": "On personnalise tout"
   },
   "work": {
-    "eyebrow": "Nos réalisations",
-    "title": "Ce que nous avons créé jusqu'ici",
-    "intro": "Chaque projet commence par un vêtement vierge et une marque qui a quelque chose à dire. Voici quelques collections que nous avons conçues, maquettées et fabriquées. Les noms des clients restent volontairement confidentiels.",
+    "eyebrow": "Réalisé pour d'autres marques",
+    "title": "Ce que nous avons créé pour d'autres entreprises",
+    "intro": "Chaque pièce ci-dessous a été conçue, maquettée et fabriquée par Boldux pour une autre entreprise : équipes de camionnage, logistique du Nord, résidences pour aînés, ferme familiale, équipe de services maritimes. Les noms des clients restent volontairement confidentiels. Touchez une pièce pour la voir de près.",
     "viewProject": "Voir le projet",
     "pieces": "Pièces",
     "sector": "Secteur",
@@ -111,18 +111,20 @@
         "story": "Un hoodie gris chiné avec un logo de poitrine et une grande illustration au dos pour toute l'équipe de la ferme."
       },
       "team": {
-        "title": "Hoodie de match",
-        "sector": "Équipe sportive",
+        "title": "Hoodie d'équipage portuaire",
+        "sector": "Services maritimes et portuaires",
         "pieces": "Hoodie",
-        "story": "Un hoodie bleu deux tons avec chevrons sur les manches et un écusson complet au dos, aussi beau dans les gradins que sur la glace."
+        "story": "Un hoodie bleu deux tons avec chevrons sur les manches et un écusson complet au dos pour une équipe de services maritimes, conçu pour les longues journées sur les quais."
       }
     },
-    "ctaTitle": "Le prochain projet : le vôtre."
+    "ctaTitle": "Le prochain projet : le vôtre.",
+    "filterAll": "Tous les projets",
+    "pieces_count": "{count} pièces"
   },
   "customize": {
-    "eyebrow": "On personnalise tout",
-    "title": "Une œuvre. N'importe quel vêtement. N'importe quelle couleur.",
-    "intro": "Choisissez une œuvre, un vêtement et une combinaison de couleurs. Chaque combinaison ci-dessous est une vraie maquette Boldux, sur le vêtement exact que nous fabriquons.",
+    "eyebrow": "Tirées de nos propres collections",
+    "title": "Une œuvre. Tout vêtement. Toute couleur.",
+    "intro": "Choisissez une œuvre, un vêtement et une combinaison de couleurs. Chaque combinaison ci-dessous est une vraie maquette Boldux, sur le vêtement exact que nous fabriquons. Le même processus s'applique à votre marque, votre logo et vos couleurs.",
     "artwork": "Œuvre",
     "garment": "Vêtement",
     "colourway": "Couleurs",

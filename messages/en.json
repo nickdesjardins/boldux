@@ -79,9 +79,9 @@
     "tail": "We customize anything"
   },
   "work": {
-    "eyebrow": "Our work",
-    "title": "What we've made so far",
-    "intro": "Every project starts with a blank garment and a brand with something to say. A few of the collections we designed, mocked up and produced. Client names kept private, on purpose.",
+    "eyebrow": "Made for other brands",
+    "title": "What we've made for other companies",
+    "intro": "Every piece below was designed, mocked up and produced by Boldux for another business: trucking crews, northern logistics, senior residences, a family farm, a marine services crew. Client names kept private, on purpose. Tap a piece to see it up close.",
     "viewProject": "View project",
     "pieces": "Pieces",
     "sector": "Sector",
@@ -111,18 +111,20 @@
         "story": "A heather-grey pullover hoodie with a chest mark and a bold illustrated back print for the whole farm crew."
       },
       "team": {
-        "title": "Game-day hoodie",
-        "sector": "Sports team",
+        "title": "Harbour crew hoodie",
+        "sector": "Marine & port services",
         "pieces": "Hoodie",
-        "story": "A two-tone blue pullover with chevron sleeve accents and a full back crest, made to look as good in the stands as on the ice."
+        "story": "A two-tone blue pullover with chevron sleeve accents and a full back crest for a marine services crew, built for long days on the docks."
       }
     },
-    "ctaTitle": "Your project, next."
+    "ctaTitle": "Your project, next.",
+    "filterAll": "All projects",
+    "pieces_count": "{count} pieces"
   },
   "customize": {
-    "eyebrow": "We customize anything",
+    "eyebrow": "From our own collections",
     "title": "One artwork. Any garment. Any colour.",
-    "intro": "Pick an artwork, a garment and a colourway. Every combination below is a real Boldux mockup, built on the exact garment we produce.",
+    "intro": "Pick an artwork, a garment and a colourway. Every combination below is a real Boldux mockup, built on the exact garment we produce. The same process applies to your brand, your logo and your colours.",
     "artwork": "Artwork",
     "garment": "Garment",
     "colourway": "Colourway",
