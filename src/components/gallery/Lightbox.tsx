@@ -232,7 +232,7 @@ export function Lightbox({
               </button>
             </>
           )}
-          <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 h-[40rem] w-[40rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-red/10 blur-[140px]" />
+          <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 h-[56rem] w-[56rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(227,16,31,0.12),rgba(227,16,31,0.04)_45%,transparent)]" />
           <AnimatePresence mode="wait" custom={dir.current}>
             <motion.figure
               key={i}

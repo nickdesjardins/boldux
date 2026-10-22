@@ -120,7 +120,7 @@ export function Hero() {
             <motion.div initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 1, delay: 0.4, ease }} className="red-line mt-3 w-40 origin-left" />
 
             <h1 className="display-xl mt-7" style={{ fontSize: headlineSize }}>
-              <Word text={t("titleA")} delay={0.35} className="text-white" />
+              <Word text={t("titleA")} delay={0.35} className="text-white" />{" "}
               <Word text={t("titleB")} delay={0.47} className="text-red-glow" />
             </h1>
 
@@ -164,7 +164,7 @@ export function Hero() {
                 className={`absolute ${f.pos}`}
               >
                 <div className={`glass-lite rounded-2xl p-3 shadow-[0_30px_60px_-20px_rgba(0,0,0,0.9)] ${f.float}`}>
-                  <Image src={f.src} alt="" width={f.w} height={f.w} sizes="160px" priority className="product-shadow" style={{ width: f.w, height: "auto" }} />
+                  <Image src={f.src} alt="" width={f.w} height={f.w} sizes="160px" className="product-shadow" style={{ width: f.w, height: "auto" }} />
                 </div>
               </motion.div>
             ))}

@@ -5,7 +5,7 @@ import type { Locale } from "@/i18n/routing";
 import { absoluteUrl, breadcrumbJsonLd, buildMetadata, localizedUrl } from "@/lib/seo";
 import { site } from "@/config/site";
 import { AERIAL, ARTWORKS, COLLECTIONS, COLLECTION_COVER, EYE_COLLECTION, PRINTS, type Artwork } from "@/data/collections";
-import { Img } from "@/components/ui/Img";
+import { Img, imgSize } from "@/components/ui/Img";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
@@ -43,7 +43,7 @@ type Row = { key: CollectionKey; garments: string[]; art: string[]; inspiration:
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  return buildMetadata({ locale: locale as Locale, href: "/art", title: t("art.title"), description: t("art.description"), image: absoluteUrl(OG_IMAGE) });
+  return buildMetadata({ locale: locale as Locale, href: "/art", title: t("art.title"), description: t("art.description"), image: absoluteUrl(OG_IMAGE), imageSize: imgSize(OG_IMAGE) });
 }
 
 function garmentImages(artwork: Artwork) {

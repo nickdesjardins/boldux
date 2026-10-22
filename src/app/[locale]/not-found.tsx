@@ -1,5 +1,18 @@
+import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/Button";
+
+/**
+ * Read by Next when a notFound() surfaces to this boundary, so the server-rendered 404
+ * gets its own localized <title>. The key already ends in "| Boldux Art", hence `absolute`.
+ * Next injects <meta name="robots" content="noindex"> on every 404 itself.
+ */
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta" });
+  return { title: { absolute: t("notFound.title") } };
+}
 
 export default function NotFound() {
   const t = useTranslations("notFound");

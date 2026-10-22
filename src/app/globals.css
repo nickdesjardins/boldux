@@ -14,7 +14,7 @@
   --color-line-2: rgba(255, 255, 255, 0.14);
   --color-fg: #f4f4f6;
   --color-muted: #a2a2ad;
-  --color-dim: #6d6d78;
+  --color-dim: #85858f;
   --color-red: #e3101f;
   --color-red-bright: #ff2f3f;
   --color-red-deep: #8f0a13;
@@ -75,6 +75,7 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   overflow-x: clip;
+  scrollbar-gutter: stable;
 }
 
 html.lenis, html.lenis body { height: auto; }
@@ -100,7 +101,6 @@ body {
 :focus-visible {
   outline: 2px solid var(--color-red-bright);
   outline-offset: 3px;
-  border-radius: 4px;
 }
 
 img, video { max-width: 100%; height: auto; }
@@ -290,7 +290,7 @@ img, video { max-width: 100%; height: auto; }
   background: var(--color-red);
   border-color: var(--color-red);
   box-shadow: 0 10px 30px -10px rgba(227, 16, 31, 0.7);
-  &:hover { background: var(--color-red-bright); transform: translateY(-2px); box-shadow: 0 16px 40px -10px rgba(255, 47, 63, 0.8); }
+  &:hover { background: var(--color-red-deep); border-color: var(--color-red-bright); transform: translateY(-2px); box-shadow: 0 16px 40px -10px rgba(255, 47, 63, 0.8); }
 }
 @utility btn-ghost {
   color: var(--color-fg);
@@ -302,7 +302,7 @@ img, video { max-width: 100%; height: auto; }
   color: #0b0b0f;
   background: #fff;
   border-color: #fff;
-  &:hover { background: var(--color-chrome); transform: translateY(-2px); }
+  &:hover { background: var(--color-steel); border-color: var(--color-steel); transform: translateY(-2px); }
 }
 
 /* Chips ----------------------------------------------------------------- */
@@ -317,7 +317,7 @@ img, video { max-width: 100%; height: auto; }
   border: 1px solid var(--color-line-2);
   color: var(--color-muted);
   background: rgba(255, 255, 255, 0.02);
-  transition: all 0.3s;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
   cursor: pointer;
   &:hover { color: var(--color-fg); border-color: rgba(255, 255, 255, 0.4); }
 }
@@ -332,14 +332,14 @@ img, video { max-width: 100%; height: auto; }
 @utility field {
   width: 100%;
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--color-line-2);
+  border: 1px solid rgba(255, 255, 255, 0.36); /* ~3.1:1 against the fill (WCAG 1.4.11) */
   border-radius: 0.65rem;
   padding: 0.95rem 1.05rem;
   color: var(--color-fg);
   font-size: 1rem;
   transition: border-color 0.25s, box-shadow 0.25s, background-color 0.25s;
   &::placeholder { color: var(--color-dim); }
-  &:hover { border-color: rgba(255, 255, 255, 0.28); }
+  &:hover { border-color: rgba(255, 255, 255, 0.5); }
   &:focus { outline: none; border-color: var(--color-red); box-shadow: 0 0 0 3px rgba(227, 16, 31, 0.2); background: rgba(255, 255, 255, 0.045); }
   &[aria-invalid="true"] { border-color: var(--color-red-bright); }
 }

@@ -3,7 +3,6 @@
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "motion/react";
-import { Link } from "@/i18n/navigation";
 import { ARTWORKS, COLLECTIONS, SWATCH, collectionImage, colourways, type Artwork, type Garment, type View } from "@/data/collections";
 import { Img } from "@/components/ui/Img";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -136,9 +135,6 @@ export function Customizer() {
             </div>
             <div aria-hidden className="pointer-events-none absolute inset-x-6 -bottom-10 h-20 bg-[radial-gradient(closest-side,rgba(227,16,31,0.3),transparent)]" />
           </Reveal>
-          <p className="sr-only">
-            <Link href="/art">{t("artwork")}</Link>
-          </p>
         </div>
       </div>
     </section>

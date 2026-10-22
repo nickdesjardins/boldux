@@ -48,22 +48,27 @@ export function WorkShowcase() {
             <TiltCard className="group relative h-full rounded-[1.25rem]" max={5}>
               <button
                 type="button"
-                onClick={() => setActive({ project: p, index: 0 })}
+                onClick={(e) => {
+                  // Safari does not focus a clicked button; make sure the lightbox can hand focus back here.
+                  e.currentTarget.focus({ preventScroll: true });
+                  setActive({ project: p, index: 0 });
+                }}
                 className="card card-hover relative block h-full w-full overflow-hidden text-left"
                 aria-label={`${t("viewProject")}: ${t(`projects.${p.id}.title`)}`}
               >
-                <div aria-hidden className="absolute inset-0 bg-[radial-gradient(ellipse_at_60%_40%,rgba(255,255,255,0.09),transparent_60%)]" />
+                {/* only phrasing content inside a <button>: spans, no div/h3 */}
+                <span aria-hidden className="absolute inset-0 block bg-[radial-gradient(ellipse_at_60%_40%,rgba(255,255,255,0.09),transparent_60%)]" />
                 <Img
                   src={p.cover}
                   alt={t(`projects.${p.id}.title`)}
                   sizes={p.size === "xl" ? "(min-width: 768px) 50vw, 100vw" : "(min-width: 768px) 25vw, 100vw"}
                   className="absolute inset-0 h-full w-full object-contain p-6 transition-transform duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.07] product-shadow"
                 />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink via-ink/80 to-transparent p-5 pt-16">
-                  <p className="font-display text-[0.6rem] font-bold uppercase tracking-[0.28em] text-red-bright">{t(`projects.${p.id}.sector`)}</p>
-                  <h3 className="display-sm mt-1.5 text-white">{t(`projects.${p.id}.title`)}</h3>
-                  <p className="mt-1 text-xs text-muted">{t(`projects.${p.id}.pieces`)}</p>
-                </div>
+                <span className="absolute inset-x-0 bottom-0 block bg-gradient-to-t from-ink via-ink/80 to-transparent p-5 pt-16">
+                  <span className="block font-display text-[0.6rem] font-bold uppercase tracking-[0.28em] text-red-bright">{t(`projects.${p.id}.sector`)}</span>
+                  <span className="display-sm mt-1.5 block text-white">{t(`projects.${p.id}.title`)}</span>
+                  <span className="mt-1 block text-xs text-muted">{t(`projects.${p.id}.pieces`)}</span>
+                </span>
                 <span className="absolute right-4 top-4 inline-flex items-center gap-1.5 rounded-full border border-line-2 bg-ink/70 px-3 py-1.5 font-display text-[0.6rem] font-bold uppercase tracking-[0.2em] text-fg opacity-0 transition duration-500 group-hover:opacity-100">
                   <Images className="h-3.5 w-3.5" /> {p.images.length}
                 </span>

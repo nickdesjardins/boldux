@@ -17,14 +17,13 @@ function Facebook({ className }: { className?: string }) {
     </svg>
   );
 }
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/config/site";
 import { MODEL_SLUGS } from "@/data/models";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 
 export async function Footer() {
-  const locale = await getLocale();
   const t = await getTranslations("footer");
   const nav = await getTranslations("nav");
   const models = await getTranslations("models.items");
@@ -33,7 +32,7 @@ export async function Footer() {
   return (
     <footer className="relative mt-32 overflow-hidden border-t border-line bg-ink-2">
       <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-red/60 to-transparent" />
-      <div aria-hidden className="pointer-events-none absolute -top-40 left-1/2 h-80 w-[60rem] -translate-x-1/2 rounded-full bg-red/10 blur-[120px]" />
+      <div aria-hidden className="pointer-events-none absolute -top-48 left-1/2 h-[24rem] w-[72rem] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(227,16,31,0.11),rgba(227,16,31,0.04)_45%,transparent)]" />
       <div className="container-x relative grid gap-14 py-20 md:grid-cols-12">
         <div className="md:col-span-5">
           <Link href="/" className="inline-block" aria-label={site.name}>
@@ -102,7 +101,7 @@ export async function Footer() {
           <p>
             © {year} {site.legalName}. {t("rights")}
           </p>
-          <p className="font-display uppercase tracking-[0.25em]">{locale === "fr" ? "Imaginer · Créer · Se démarquer" : "Imagine · Create · Stand out"}</p>
+          <p className="font-display uppercase tracking-[0.25em]">{t("motto")}</p>
         </div>
       </div>
     </footer>

@@ -33,6 +33,7 @@ export function LocaleSwitcher({ variant = "header" }: { variant?: "header" | "f
         href={href}
         locale={other}
         hrefLang={other}
+        lang={other}
         className="inline-flex items-center gap-2 rounded-md border border-line-2 px-3 py-2 text-xs font-bold uppercase tracking-[0.2em] text-muted transition hover:border-red hover:text-white"
       >
         <Globe className="h-3.5 w-3.5" /> {label}
@@ -45,6 +46,7 @@ export function LocaleSwitcher({ variant = "header" }: { variant?: "header" | "f
       href={href}
       locale={other}
       hrefLang={other}
+        lang={other}
       aria-label={label}
       className="font-display inline-flex items-center gap-1.5 rounded-md border border-line-2 px-2.5 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-muted transition hover:border-red hover:text-white"
     >

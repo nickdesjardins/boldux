@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Mail, MapPin, Clock, ArrowUpRight } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
-import { breadcrumbJsonLd, buildMetadata, localizedUrl } from "@/lib/seo";
+import { absoluteUrl, breadcrumbJsonLd, buildMetadata, localizedUrl } from "@/lib/seo";
 import { site } from "@/config/site";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { ContactForm } from "@/components/contact/ContactForm";
@@ -32,7 +32,7 @@ export default async function ContactPage({ params }: Props) {
     "@type": "ContactPage",
     name: t("title"),
     url: localizedUrl(l, "/contact"),
-    mainEntity: { "@id": localizedUrl(l, "/") + "#organization" },
+    mainEntity: { "@id": absoluteUrl("/#organization") },
   };
 
   return (

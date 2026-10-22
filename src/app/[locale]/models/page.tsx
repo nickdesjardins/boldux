@@ -54,7 +54,7 @@ export default async function ModelsPage({ params }: Props) {
 
   return (
     <>
-      <JsonLd data={[breadcrumbJsonLd([{ name: nav("home"), url: localizedUrl(l, "/") }, { name: t("title"), url: localizedUrl(l, "/models") }]), itemList]} />
+      <JsonLd data={[breadcrumbJsonLd([{ name: nav("home"), url: localizedUrl(l, "/") }, { name: nav("models"), url: localizedUrl(l, "/models") }]), itemList]} />
       <PageHeader eyebrow={t("eyebrow")} title={t("title")} intro={t("intro")} crumbs={[{ label: nav("home"), href: "/" }, { label: nav("models") }]}>
         <p className="mt-6 font-display text-[0.62rem] uppercase tracking-[0.3em] text-dim">{t("count", { count: MODEL_SLUGS.length })}</p>
       </PageHeader>

@@ -13,13 +13,13 @@ type Layout = { grid: string; tiles: Tile[] };
 
 /* Fixed layouts (every tile shares the `aspect` the caller passes, e.g. prints on the art page). */
 const FIXED_GRID: Record<Cols, string> = {
-  2: "sm:grid-cols-2",
-  3: "sm:grid-cols-2 lg:grid-cols-3",
+  2: "grid-cols-2",
+  3: "grid-cols-2 lg:grid-cols-3",
   4: "grid-cols-2 lg:grid-cols-4",
 };
 const FIXED_SIZES: Record<Cols, string> = {
-  2: "(min-width: 640px) 50vw, 100vw",
-  3: "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw",
+  2: "50vw",
+  3: "(min-width: 1024px) 33vw, 50vw",
   4: "(min-width: 1024px) 25vw, 50vw",
 };
 
@@ -119,7 +119,7 @@ export function GalleryGrid({
                 e.currentTarget.focus({ preventScroll: true });
                 setIndex(i);
               }}
-              aria-label={`${t("openImage")} ${i + 1}`}
+              aria-label={`${t("openImage")} – ${alt} ${i + 1}`}
               className={`card card-hover absolute inset-0 block h-full w-full overflow-hidden text-left focus-visible:border-red-bright ${light ? "bg-[#ecebe7]" : ""}`}
             >
               <div aria-hidden className={`absolute inset-0 ${light ? "bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.04),transparent_70%)]" : "bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.08),transparent_65%)]"}`} />

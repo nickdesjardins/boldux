@@ -22,8 +22,9 @@ export function SectionHeading({
   // Long French words (e.g. "PROMOTIONNELS") must never overflow the gradient-clipped heading:
   // size the display type to the container's inline width.
   const fontSize = typeof title === "string" ? fitFontSize(title, size === "lg" ? 4.6 : 2.9, size === "lg" ? 1.9 : 1.5) : undefined;
+  // w-full + min-w-0: a container-type element has no intrinsic width, so inside a flex row it would collapse.
   return (
-    <div className={`@container ${center ? "mx-auto text-center" : ""} max-w-3xl ${className}`}>
+    <div className={`@container w-full min-w-0 ${center ? "mx-auto text-center" : ""} max-w-3xl ${className}`}>
       {eyebrow && (
         <Reveal y={14} blur={false}>
           <p className={`eyebrow ${center ? "" : "eyebrow-line"} mb-5`}>{eyebrow}</p>

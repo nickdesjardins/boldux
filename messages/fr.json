@@ -40,7 +40,9 @@
     "language": "Langue",
     "switchTo": "English",
     "skip": "Aller au contenu",
-    "breadcrumb": "Fil d'Ariane"
+    "breadcrumb": "Fil d'Ariane",
+    "mainNav": "Principale",
+    "mobileNav": "Mobile"
   },
   "hero": {
     "tagline": "L'art de se démarquer.",
@@ -205,7 +207,12 @@
     "title": "Né sur la planche à dessin",
     "text": "Boldux est d'abord l'art de Stéphane Bolduc : des dessins abstraits en noir et blanc devenus vêtements et impressions en édition limitée. Ce même moteur créatif travaille maintenant pour votre marque.",
     "cta1": "Explorer l'art",
-    "cta2": "Visiter la boutique"
+    "cta2": "Visiter la boutique",
+    "alt": {
+      "skulls": "The Skulls – œuvre originale",
+      "music": "Timeless Harmony – œuvre originale",
+      "warriorHoodie": "The Warrior – hoodie zippé"
+    }
   },
   "cta": {
     "title": "Osez être différent.",
@@ -223,7 +230,8 @@
     "shopText": "Vêtements et impressions en édition limitée par Boldux.",
     "rights": "Tous droits réservés.",
     "madeIn": "Québec, Canada",
-    "social": "Suivre Boldux"
+    "social": "Suivre Boldux",
+    "motto": "Imaginer · Créer · Se démarquer"
   },
   "models": {
     "eyebrow": "Tous nos modèles",

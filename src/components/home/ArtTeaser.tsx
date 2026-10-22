@@ -16,21 +16,21 @@ export function ArtTeaser() {
             <Parallax speed={40} className="absolute left-0 top-6 w-[52%]">
               <Reveal x={-30} y={0}>
                 <div className="card overflow-hidden rounded-2xl bg-[#ecebe7] p-4">
-                  <Img src="/img/collections/skulls/art-skull-1-red.webp" alt="The Skulls – original artwork" sizes="300px" className="h-auto w-full" />
+                  <Img src="/img/collections/skulls/art-skull-1-red.webp" alt={t("alt.skulls")} sizes="300px" className="h-auto w-full" />
                 </div>
               </Reveal>
             </Parallax>
             <Parallax speed={-50} className="absolute right-0 top-0 w-[46%]">
               <Reveal delay={0.1} x={30} y={0}>
                 <div className="card overflow-hidden rounded-2xl bg-[#ecebe7] p-4">
-                  <Img src="/img/collections/music/art-music.webp" alt="Timeless Harmony – original artwork" sizes="280px" className="h-auto w-full" />
+                  <Img src="/img/collections/music/art-music.webp" alt={t("alt.music")} sizes="280px" className="h-auto w-full" />
                 </div>
               </Reveal>
             </Parallax>
             <Parallax speed={70} className="absolute bottom-0 right-[12%] w-[44%]">
               <Reveal delay={0.2}>
                 <div className="card overflow-hidden rounded-2xl p-4">
-                  <Img src="/img/collections/warrior/hoodie-white-red-front.webp" alt="The Warrior – zip hoodie" sizes="260px" className="h-auto w-full product-shadow" />
+                  <Img src="/img/collections/warrior/hoodie-white-red-front.webp" alt={t("alt.warriorHoodie")} sizes="260px" className="h-auto w-full product-shadow" />
                 </div>
               </Reveal>
             </Parallax>

@@ -28,6 +28,7 @@ Copy `.env.example` to `.env.local` and fill in:
 | `SMTP2GO_API_KEY` | API key from SMTP2GO (Settings → API Keys). Needs the *Email send* permission. |
 | `SMTP2GO_SENDER` | From address, e.g. `Boldux Art <no-reply@boldux.ca>`. The domain must be verified in SMTP2GO. |
 | `CONTACT_TO` | Where contact-form messages land (`boldux.ca@gmail.com`). |
+| `NEXT_PUBLIC_SMOOTH_SCROLL` | Set to `1` to enable inertial (Lenis) scrolling. Off by default: native scrolling stays smoother on most Windows laptops. |
 
 Public links (shop URL, public email, social accounts) live in `src/config/site.ts`.
 
@@ -57,6 +58,13 @@ python -X utf8 scripts/prepare-assets.py --force  # regenerate everything
 ```
 
 To replace an image, drop the new file at the same path under `public/img` (same name) — no code change needed.
+
+## Performance notes
+
+- Every animation is transform/opacity only (no blur or backdrop-filter animations); ambient glows are flat radial gradients, not blurred discs.
+- Scroll reveals use Motion's `whileInView`; the hero parallax layers are composited (`will-change: transform`).
+- Long French display words ("PERSONNALISÉS") size themselves to their container with container-query units (`src/lib/fit.ts`), so headlines never clip.
+- Open Graph images are generated at build time from the logo and the studio photo (`src/app/og/[file]/route.tsx`).
 
 ## SEO
 

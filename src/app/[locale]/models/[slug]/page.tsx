@@ -7,7 +7,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { absoluteUrl, breadcrumbJsonLd, buildMetadata, localizedUrl } from "@/lib/seo";
 import { site } from "@/config/site";
 import { MODEL_SLUGS, MODEL_COVER, MODEL_ICON, isModelSlug, modelGallery } from "@/data/models";
-import { Img } from "@/components/ui/Img";
+import { Img, imgSize } from "@/components/ui/Img";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Button } from "@/components/ui/Button";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
@@ -23,8 +23,9 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
-  if (!isModelSlug(slug)) return {};
   const t = await getTranslations({ locale, namespace: "meta" });
+  // Unknown slug: the page throws notFound(); give the client-rendered 404 the same title.
+  if (!isModelSlug(slug)) return { title: { absolute: t("notFound.title") } };
   const tm = await getTranslations({ locale, namespace: "models.items" });
   return buildMetadata({
     locale: locale as Locale,
@@ -32,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t("model.title", { name: tm(`${slug}.name`) }),
     description: t("model.description", { description: tm(`${slug}.description`) }),
     image: absoluteUrl(MODEL_COVER[slug]),
+    imageSize: imgSize(MODEL_COVER[slug]),
   });
 }
 
@@ -52,17 +54,27 @@ export default async function ModelPage({ params }: Props) {
   const url = localizedUrl(l, { pathname: "/models/[slug]", params: { slug } });
 
   // Catalogue entry, not a listing: no price or offers on purpose (every piece is quoted per project).
+  // Catalogue entry, not a listing: every piece is quoted per project, so there is no public price.
+  // Google requires offers/review/aggregateRating on Product, so this is modelled as a Service
+  // (matching the Organization's makesOffer) with the customization options as an offer catalogue.
+  const pageUrl = localizedUrl(l, { pathname: "/models/[slug]", params: { slug } });
   const product = {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "Service",
+    "@id": `${pageUrl}#service`,
     name: `${name} – ${site.name}`,
+    serviceType: locale === "fr" ? "Vêtements personnalisés" : "Custom apparel",
     description: t(`items.${slug}.description`),
-    url,
+    url: pageUrl,
     image: gallery.slice(0, 6).map((g) => absoluteUrl(g)),
+    provider: { "@id": absoluteUrl("/#organization") },
     brand: { "@type": "Brand", name: site.name },
-    manufacturer: { "@id": absoluteUrl("/#organization") },
-    category: locale === "fr" ? "Vêtements personnalisés" : "Custom apparel",
-    additionalProperty: options.map((o) => ({ "@type": "PropertyValue", name: locale === "fr" ? "Personnalisation" : "Customization", value: o })),
+    areaServed: "CA",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: t("options"),
+      itemListElement: options.map((o) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: o } })),
+    },
   };
 
   return (
@@ -71,7 +83,7 @@ export default async function ModelPage({ params }: Props) {
         data={[
           breadcrumbJsonLd([
             { name: nav("home"), url: localizedUrl(l, "/") },
-            { name: t("title"), url: localizedUrl(l, "/models") },
+            { name: nav("models"), url: localizedUrl(l, "/models") },
             { name, url },
           ]),
           product,

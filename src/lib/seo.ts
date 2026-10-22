@@ -21,6 +21,8 @@ export function buildMetadata(opts: {
   title: string;
   description: string;
   image?: string;
+  /** Intrinsic size of `image` (imgSize() from @/components/ui/Img). Omitted for a custom image => no og:image:width/height. */
+  imageSize?: { w: number; h: number };
   type?: "website" | "article";
   noIndex?: boolean;
 }): Metadata {
@@ -32,6 +34,7 @@ export function buildMetadata(opts: {
   }
   languages["x-default"] = localizedUrl(routing.defaultLocale, href);
   const ogImage = image ?? absoluteUrl(`/og/${locale}.png`);
+  const ogSize = image ? opts.imageSize : { w: 1200, h: 630 };
 
   return {
     title,
@@ -45,7 +48,7 @@ export function buildMetadata(opts: {
       locale: locale === "fr" ? "fr_CA" : "en_CA",
       alternateLocale: locale === "fr" ? ["en_CA"] : ["fr_CA"],
       type: opts.type ?? "website",
-      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+      images: [{ url: ogImage, ...(ogSize ? { width: ogSize.w, height: ogSize.h } : {}), alt: title }],
     },
     twitter: {
       card: "summary_large_image",
@@ -60,7 +63,7 @@ export function buildMetadata(opts: {
 export function organizationJsonLd(locale: Locale) {
   return {
     "@context": "https://schema.org",
-    "@type": ["Organization", "LocalBusiness"],
+    "@type": "Organization",
     "@id": absoluteUrl("/#organization"),
     name: site.name,
     legalName: site.legalName,
@@ -74,7 +77,6 @@ export function organizationJsonLd(locale: Locale) {
     areaServed: ["CA"],
     sameAs: Object.values(site.social),
     knowsLanguage: ["en", "fr"],
-    inLanguage: locale === "fr" ? "fr-CA" : "en-CA",
     description:
       locale === "fr"
         ? "Design, conception et fabrication de vêtements personnalisés pour entreprises, équipes et marques privées."

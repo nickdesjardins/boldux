@@ -335,7 +335,8 @@ models["hoodies"].append(deck(V3, 4, 1, "models/hoodies/zip-eye-back-red.webp", 
 models["hoodies"].append(deck(V3, 27, 0, "models/hoodies/zip-aerial-white.webp"))
 models["hoodies"].append(deck(V3, 28, 0, "models/hoodies/zip-aerial-yellow.webp"))
 # art hoodies from the June 2024 deck (page -> image index; page 12 stores the hoodie first)
-for i, (pg, idx) in enumerate([(8, 1), (9, 1), (10, 1), (11, 1), (12, 0), (13, 1), (14, 1), (15, 1), (16, 1)]):
+# pages 8-10 repeat the previous tee images first; the hoodie is the last (smaller) image on those pages
+for i, (pg, idx) in enumerate([(8, 3), (9, 3), (10, 2), (11, 1), (12, 0), (13, 1), (14, 1), (15, 1), (16, 1)]):
     models["hoodies"].append(deck(JUN5, pg, idx, f"models/hoodies/zip-art-{i + 1}.webp"))
 # t-shirts
 for i, pg in enumerate([11, 12, 13, 14, 15, 16, 17]):

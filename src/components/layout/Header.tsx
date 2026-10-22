@@ -18,6 +18,22 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const [mega, setMega] = useState(false);
   const closeTimer = useRef<number | null>(null);
+  const megaWrapRef = useRef<HTMLDivElement>(null);
+  const megaTriggerRef = useRef<HTMLAnchorElement>(null);
+
+  // Escape dismisses the mega menu (also when opened by hover, WCAG 1.4.13) and the mobile drawer.
+  useEffect(() => {
+    if (!open && !mega) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== "Escape") return;
+      // keep keyboard focus on the trigger instead of dropping it to <body> when the panel unmounts
+      if (megaWrapRef.current?.contains(document.activeElement)) megaTriggerRef.current?.focus();
+      setOpen(false);
+      setMega(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open, mega]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -53,7 +69,7 @@ export function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled || open ? "glass shadow-[0_10px_40px_-20px_rgba(0,0,0,0.9)]" : "bg-transparent"}`}
+      className={`fixed inset-x-0 top-0 z-50 border-b transition-[background-color,box-shadow,border-color] duration-500 ${scrolled || open ? "border-line bg-ink/90 shadow-[0_10px_40px_-20px_rgba(0,0,0,0.9)]" : "border-transparent bg-transparent"}`}
       style={{ height: "var(--header-h)" }}
     >
       <div className="container-x flex h-full items-center justify-between gap-6">
@@ -63,15 +79,25 @@ export function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-9 lg:flex" aria-label="Main">
+        <nav className="hidden items-center gap-9 lg:flex" aria-label={t("mainNav")}>
           <Link href="/" className={linkCls("/")}>{t("home")}</Link>
 
-          <div className="relative" onMouseEnter={openMega} onMouseLeave={closeMega}>
+          <div
+            ref={megaWrapRef}
+            className="relative"
+            onMouseEnter={openMega}
+            onMouseLeave={closeMega}
+            onBlur={(e) => {
+              // focus left the trigger + panel (tabbing out, or clicking elsewhere)
+              if (!e.currentTarget.contains(e.relatedTarget)) setMega(false);
+            }}
+          >
             <Link
+              ref={megaTriggerRef}
               href="/models"
               className={`${linkCls("/models")} inline-flex items-center gap-1.5`}
-              aria-haspopup="true"
               aria-expanded={mega}
+              aria-controls="mega-models"
               onFocus={openMega}
             >
               {t("models")} <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-300 ${mega ? "rotate-180" : ""}`} />
@@ -79,6 +105,7 @@ export function Header() {
             <AnimatePresence>
               {mega && (
                 <motion.div
+                  id="mega-models"
                   initial={{ opacity: 0, y: 12, scale: 0.98 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 8, scale: 0.98 }}
@@ -151,11 +178,11 @@ export function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-x-0 bottom-0 top-[var(--header-h)] z-40 overflow-y-auto bg-ink/95 backdrop-blur-xl lg:hidden"
+            className="fixed inset-x-0 bottom-0 top-[var(--header-h)] z-40 overflow-y-auto bg-ink/[0.97] lg:hidden"
             data-lenis-prevent
           >
             <motion.nav
-              aria-label="Mobile"
+              aria-label={t("mobileNav")}
               className="container-x flex flex-col gap-2 py-8"
               initial="hidden"
               animate="show"
