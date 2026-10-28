@@ -124,4 +124,4 @@ Everything below works as-is. This is the list of images that were produced auto
 - `public/img/hero/studio.webp` is the right-hand part of `images/hero.png`; the headline text is now real HTML text (searchable, translatable). If you generate a new studio image without baked-in text, a 2400px-wide version would look even sharper on large screens.
 - The Open Graph preview images (`/og/en.png`, `/og/fr.png`) are generated at build time from the logo and the studio image.
 - Client decks: the photos in `public/img/portfolio/residence`, `portfolio/industrial` and `portfolio/farm` show the client names printed on the garments. The site text never names any client; swap these shots if you prefer not to show the names at all.
-- Social links and the public email address live in `src/config/site.ts` (currently Instagram/Facebook `bolduxart` and `info@boldux.ca`); update them if they differ.
+- Social links and the public email address live in `src/config/site.ts` (currently Instagram/Facebook `bolduxart` and `info@bolduxart.com`); update them if they differ.

@@ -4,7 +4,7 @@ import { contactSchema, flattenErrors } from "@/lib/contact";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const SMTP2GO_ENDPOINT = process.env.SMTP2GO_ENDPOINT ?? "https://api.smtp2go.com/v3/email/send";
+const RESEND_ENDPOINT = "https://api.resend.com/emails";
 const MAX_BODY_BYTES = 32 * 1024;
 const SEND_TIMEOUT_MS = 15_000;
 
@@ -77,7 +77,7 @@ const LABELS: Record<"en" | "fr", Record<string, string>> = {
     q3: "50 to 200 pieces",
     q4: "200+ pieces",
     q5: "Not sure yet",
-    sentFrom: "Sent from the boldux.ca contact form",
+    sentFrom: "Sent from the bolduxart.com contact form",
   },
   fr: {
     subject: "Nouvelle demande de projet",
@@ -98,7 +98,7 @@ const LABELS: Record<"en" | "fr", Record<string, string>> = {
     q3: "50 à 200 pièces",
     q4: "200 pièces et plus",
     q5: "Pas encore décidé",
-    sentFrom: "Envoyé depuis le formulaire de contact de boldux.ca",
+    sentFrom: "Envoyé depuis le formulaire de contact de bolduxart.com",
   },
 };
 
@@ -107,14 +107,13 @@ const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&
 
 /* Header-safe: no CR/LF/NUL/tab (header injection) and no angle brackets (mailbox spoofing). */
 const headerSafe = (s: string) => s.replace(/[\r\n\0\t<>]/g, " ").replace(/\s+/g, " ").trim();
-/* Display-name for a mailbox: header-safe plus no quotes/backslashes, so it can be wrapped in "…". */
-const displayName = (s: string) => headerSafe(s).replace(/["\\]/g, "").slice(0, 100);
 /* Address part: a validated email never contains these, strip anyway. */
 const addressSafe = (s: string) => s.replace(/[\s<>"',;\\()]/g, "");
 
-type Smtp2goResponse = {
-  request_id?: string;
-  data?: { succeeded?: number; failed?: number; failures?: unknown[]; error?: string; error_code?: string };
+type ResendResponse = {
+  id?: string;
+  name?: string;
+  message?: string;
 };
 
 export async function POST(req: NextRequest) {
@@ -146,11 +145,11 @@ export async function POST(req: NextRequest) {
   if (!parsed.success) return json({ ok: false, error: "validation", fields: flattenErrors(parsed.error) }, 422);
   const data = parsed.data;
 
-  const apiKey = process.env.SMTP2GO_API_KEY;
-  const sender = process.env.SMTP2GO_SENDER;
+  const apiKey = process.env.RESEND_API_KEY;
+  const sender = process.env.RESEND_SENDER;
   const to = process.env.CONTACT_TO ?? "boldux.ca@gmail.com";
   if (!apiKey || !sender) {
-    console.error("[contact] SMTP2GO_API_KEY or SMTP2GO_SENDER is not configured");
+    console.error("[contact] RESEND_API_KEY or RESEND_SENDER is not configured");
     return json({ ok: false, error: "not_configured" }, 500);
   }
 
@@ -183,35 +182,32 @@ export async function POST(req: NextRequest) {
     <p style="margin:32px 0 0;font-size:11px;color:#6d6d78">${esc(L.sentFrom)} · ${esc(data.locale)} · ${esc(ip)}</p>
   </div></body></html>`;
 
-  /* SMTP2GO v3: POST /email/send, key in X-Smtp2go-Api-Key, JSON {sender,to[],subject,text_body,html_body,custom_headers[]} */
   const payload = {
-    sender,
+    from: sender,
     to: [to],
     subject,
-    text_body: text,
-    html_body: html,
-    custom_headers: [{ header: "Reply-To", value: `"${displayName(name)}" <${email}>` }],
+    text,
+    html,
+    reply_to: email,
   };
 
   try {
-    const res = await fetch(SMTP2GO_ENDPOINT, {
+    const res = await fetch(RESEND_ENDPOINT, {
       method: "POST",
-      headers: { "Content-Type": "application/json", Accept: "application/json", "X-Smtp2go-Api-Key": apiKey },
+      headers: { "Content-Type": "application/json", Accept: "application/json", Authorization: `Bearer ${apiKey}` },
       body: JSON.stringify(payload),
       cache: "no-store",
       signal: AbortSignal.timeout(SEND_TIMEOUT_MS),
     });
-    const result = (await res.json().catch(() => ({}))) as Smtp2goResponse;
-    const failed = Number(result.data?.failed ?? 0);
-    const succeeded = Number(result.data?.succeeded ?? 0);
-    // A 200 with data.failed > 0 (or nothing succeeded) is still a failure.
-    if (!res.ok || failed > 0 || succeeded < 1) {
-      console.error("[contact] SMTP2GO error", res.status, JSON.stringify(result).slice(0, 2000));
+    const result = (await res.json().catch(() => ({}))) as ResendResponse | null;
+    // Resend returns an email ID when the message is accepted for delivery.
+    if (!res.ok || typeof result?.id !== "string" || !result.id.trim()) {
+      console.error("[contact] Resend error", res.status, JSON.stringify(result).slice(0, 2000));
       return json({ ok: false, error: "send_failed" }, 502);
     }
     return json({ ok: true });
   } catch (err) {
-    console.error("[contact] SMTP2GO request failed", err instanceof Error ? err.message : err);
+    console.error("[contact] Resend request failed", err instanceof Error ? err.message : err);
     return json({ ok: false, error: "send_failed" }, 502);
   }
 }

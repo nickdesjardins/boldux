@@ -24,13 +24,15 @@ Copy `.env.example` to `.env.local` and fill in:
 
 | Variable | Purpose |
 | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | Public URL used for canonical links, hreflang, sitemap and Open Graph (default `https://boldux.ca`). |
-| `SMTP2GO_API_KEY` | API key from SMTP2GO (Settings → API Keys). Needs the *Email send* permission. |
-| `SMTP2GO_SENDER` | From address, e.g. `Boldux Art <no-reply@boldux.ca>`. The domain must be verified in SMTP2GO. |
+| `NEXT_PUBLIC_SITE_URL` | Public URL used for canonical links, hreflang, sitemap and Open Graph (default `https://bolduxart.com`). |
+| `RESEND_API_KEY` | API key from [Resend](https://resend.com/api-keys) with permission to send email from the sender domain. |
+| `RESEND_SENDER` | From address, e.g. `Boldux Art <no-reply@bolduxart.com>`. The domain must be verified in Resend. |
 | `CONTACT_TO` | Where contact-form messages land (`boldux.ca@gmail.com`). |
 | `NEXT_PUBLIC_SMOOTH_SCROLL` | Set to `1` to enable inertial (Lenis) scrolling. Off by default: native scrolling stays smoother on most Windows laptops. |
 
 Public links (shop URL, public email, social accounts) live in `src/config/site.ts`.
+
+Set these environment variables in the hosting provider as well, then rebuild/redeploy; `.env.local` only configures local runs. Contact-form messages use Resend, with the visitor's email as the reply-to address.
 
 ## Structure
 
@@ -39,7 +41,7 @@ messages/           en.json / fr.json — every word on the site
 public/img/         generated images (see scripts/prepare-assets.py)
 scripts/            asset pipeline
 src/app/[locale]/   pages: home, models, models/[slug], art, contact
-src/app/api/contact route handler → SMTP2GO
+src/app/api/contact route handler → Resend
 src/app/og/[file]   generated Open Graph images (/og/en.png, /og/fr.png)
 src/components/     home sections, gallery + lightbox, layout, motion helpers
 src/data/           models, portfolio, collections (reads assets.json)

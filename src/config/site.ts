@@ -1,9 +1,9 @@
 export const site = {
   name: "Boldux Art",
   legalName: "Boldux Art",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://boldux.ca",
-  shopUrl: "https://shop.boldux.ca",
-  email: "info@boldux.ca",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://bolduxart.com",
+  shopUrl: "https://shop.bolduxart.com",
+  email: "info@bolduxart.com",
   region: "Québec, Canada",
   founder: "Stéphane Bolduc",
   foundingDate: "2023-07",
