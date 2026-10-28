@@ -87,7 +87,7 @@ export function Header() {
 
           <div
             ref={megaWrapRef}
-            className="relative"
+            className="relative flex items-center"
             onMouseEnter={openMega}
             onMouseLeave={closeMega}
             onBlur={(e) => {
