@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: { default: t("home.title"), template: `%s | ${site.name}` },
     description: t("home.description"),
     applicationName: site.name,
-    authors: [{ name: site.founder }],
+    authors: [{ name: site.name }],
     creator: site.name,
     formatDetection: { email: false, address: false, telephone: false },
     icons: { icon: "/icon.png", apple: "/apple-icon.png" },

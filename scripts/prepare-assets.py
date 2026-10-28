@@ -384,6 +384,11 @@ for c in ["beige", "black", "red"]:
     models["beanies"].append(product(P("Arctic Sealift", f"tuque-{c}.png"), f"models/beanies/beanie-{c}.webp", 900))
 models["beanies"].append(product(P("Arctic Sealift", "beenes.png"), "models/beanies/beanies-duo.webp", 1000))
 # accessories
+# Preserve the product images extracted from the supplied Chartwell PDF.
+for name in ["chartwell-travel-mug", "chartwell-mug"]:
+    rel = f"models/accessories/{name}.webp"
+    if os.path.exists(os.path.join(OUT, rel)):
+        models["accessories"].append(record(rel))
 models["accessories"].append(product(P("Arctic Sealift", "mug-nobg.png"), "models/accessories/mug.webp", 1200))
 rel = "models/accessories/mug-photo.webp"
 if exists(rel):

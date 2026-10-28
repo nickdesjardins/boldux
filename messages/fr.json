@@ -15,7 +15,7 @@
     },
     "art": {
       "title": "Boldux Art & Vêtements — L'art derrière la marque",
-      "description": "L'art de Stéphane Bolduc (Boldux) : The Skulls, Timeless Harmony, The Warrior et Aerial, déclinés en vêtements en édition limitée et en impressions 26×40."
+      "description": "BOLDUX ART est née d'une passion pour le dessin et les vêtements, devenue une vision créative au service des entreprises, des équipes et des marques privées."
     },
     "contact": {
       "title": "Contact — Démarrer un projet de vêtements personnalisés",
@@ -207,7 +207,7 @@
   "artTeaser": {
     "eyebrow": "Boldux Art",
     "title": "Né sur la planche à dessin",
-    "text": "Boldux est d'abord l'art de Stéphane Bolduc : des dessins abstraits en noir et blanc devenus vêtements et impressions en édition limitée. Ce même moteur créatif travaille maintenant pour votre marque.",
+    "text": "BOLDUX ART est née d'une passion pour le dessin et les vêtements. Cette créativité est aujourd'hui au service des entreprises, des équipes et des marques privées qui souhaitent se démarquer.",
     "cta1": "Explorer l'art",
     "cta2": "Visiter la boutique",
     "alt": {
@@ -263,9 +263,9 @@
       },
       "long-sleeves": {
         "name": "Manches longues",
-        "short": "Performance et coton",
+        "short": "Performance et confort",
         "blurb": "Typographie sur toute la manche et visuels au dos pour les journées plus fraîches.",
-        "description": "Chandails à manches longues personnalisés avec impressions sur toute la manche, visuel au dos et logos de poitrine, parfaits pour les équipes qui travaillent dehors et pour le merch d'automne.",
+        "description": "Chandails à manches longues personnalisés avec impressions sur toute la manche, visuel au dos et logos de poitrine, parfaits pour les équipes qui travaillent dehors.",
         "options": "Impression sur manches · Visuel au dos · Logo de poitrine · Couleurs sur mesure"
       },
       "caps": {
@@ -334,73 +334,29 @@
     }
   },
   "art": {
-    "eyebrow": "Boldux Art & Vêtements",
-    "title": "L'art derrière la marque",
-    "intro": "Avant d'habiller des entreprises, Boldux était un artiste. Stéphane Bolduc, autodidacte, dessine des univers abstraits en noir et blanc où cercles et lignes coexistent, puis les transforme en vêtements et en impressions en édition limitée.",
-    "storyTitle": "Stéphane Bolduc, alias Boldux",
-    "story": {
-      "0": "Fondée en juillet 2023, Boldux Art réunit l'art graphique, la composition musicale et le design. Stéphane a tracé son parcours par le théâtre, le travail du cuivre, la musique, puis le dessin abstrait, et chaque étape a façonné une identité visuelle distincte.",
-      "1": "Son inspiration naît de la solitude et du vide. Le cercle est sa forme de prédilection; il apparaît sur le papier guidé par l'intuition, et le vide environnant façonne l'œuvre jusqu'à ce que lignes et formes coexistent en harmonie.",
-      "2": "La musique, passion depuis l'enfance, traverse tout. C'est pour cela que la première collection s'appelle Timeless Harmony, et que chaque vêtement est fait pour être ressenti autant que vu."
-    },
-    "quote": "Boldux Art n'est pas qu'une création; c'est une symphonie de lignes et de notes, une exploration de la toile de l'âme.",
-    "quoteBy": "Stéphane Bolduc",
-    "collectionsEyebrow": "Les collections",
-    "collectionsTitle": "Cinq univers, une seule main",
-    "collections": {
-      "skulls": {
-        "name": "The Skulls",
-        "tagline": "Skull-ection",
-        "text": "Les crânes deviennent des canevas pour la créativité : une convergence du macabre et du fascinant, où chaque cercle et chaque ligne défie les conventions. La collection est offerte en t-shirts, hoodies zippés, sweatshirts et impressions 26×40."
+    "eyebrow": "BOLDUX ART",
+    "intro": "BOLDUX ART est née de ma passion pour le dessin et les vêtements. J’ai combiné les deux pour créer mes propres vêtements design.",
+    "vision": "Cette passion s’est transformée en une véritable vision : mettre ma créativité au service des entreprises, des équipes et des marques privées qui souhaitent se démarquer.",
+    "examplesLabel": "Exemples de dessins et de vêtements",
+    "examples": {
+      "drawing": {
+        "caption": "The Skulls — Dessin original",
+        "alt": "Dessin original The Skulls : crâne rouge composé de formes géométriques"
       },
-      "music": {
-        "name": "Timeless Harmony",
-        "tagline": "The Music",
-        "text": "Un crâne couronné d'un cadran d'horloge et d'engrenages imbriqués, le mot MUSIC gravé en dessous. Une méditation sur le temps, la pensée et le rythme universel qui nous relie tous, en cinq combinaisons de couleurs."
+      "tshirt": {
+        "caption": "The Skulls — T-shirt",
+        "alt": "T-shirt noir avec le dessin The Skulls imprimé en rouge"
       },
-      "warrior": {
-        "name": "The Warrior",
-        "tagline": "La géométrie en mouvement",
-        "text": "Des formes géométriques tranchantes, un œil qui voit tout et une traînée de cercles : un guerrier dessiné d'un seul souffle, imprimé sur t-shirts et hoodies zippés en cinq combinaisons de couleurs."
-      },
-      "aerial": {
-        "name": "Aerial",
-        "tagline": "Des paysages sur tissu",
-        "text": "Des bandes ondulées et des traits de flammes inspirés de paysages vus du ciel : désert, forêt, îles, océan, neige, volcan. Hoodies, t-shirts, coupe-vent et joggers couverts de ces paysages."
-      },
-      "eye": {
-        "name": "Signature",
-        "tagline": "L'œil Boldux",
-        "text": "L'œil Boldux original et le logotype sur hoodies zippés, casquettes, joggers, vestes et ensembles : la collection maison qui prouve qu'un logo peut vivre n'importe où sur un vêtement."
+      "hoodie": {
+        "caption": "The Skulls — Chandail à capuchon",
+        "alt": "Chandail à capuchon noir à fermeture éclair avec le dessin The Skulls en rouge"
       }
-    },
-    "artworkLabel": "Œuvre originale",
-    "garmentsLabel": "Sur les vêtements",
-    "inspirationLabel": "Inspiration",
-    "printsEyebrow": "Impressions",
-    "printsTitle": "Impressions 26 × 40 en édition limitée",
-    "printsText": "Les dessins originaux, numérisés et imprimés en rouge, bleu, noir, blanc et vert. Chaque série est offerte dans la boutique Boldux Art.",
-    "shopCta": "Visiter la boutique",
-    "bridgeTitle": "De l'art au vêtement",
-    "bridgeText": "Chaque collection ci-dessus a commencé par un dessin et s'est terminée par un vêtement que les gens portent. C'est exactement ce que nous faisons pour votre marque : votre identité, notre créativité, une collection qui se démarque.",
-    "bridgeCta": "Démarrer un projet",
-    "jobTitle": "Artiste et designer",
-    "logoLabel": "Le logo original",
-    "printsOnPaper": "Encre noire et couleur sur papier",
-    "printsWhiteInk": "Encre blanche sur noir",
-    "inspiration": {
-      "desert": "Désert vu du ciel",
-      "forest": "Forêt vue du ciel",
-      "islands": "Îles vues du ciel",
-      "ocean": "Océan vu du ciel",
-      "snow": "Neige vue du ciel",
-      "volcano": "Volcan vu du ciel"
     }
   },
   "contact": {
     "eyebrow": "Contact",
     "title": "Créons quelque chose qui se démarque",
-    "intro": "Parlez-nous de votre marque, de votre équipe et des pièces que vous avez en tête. Nous répondons personnellement à chaque demande, en français ou en anglais.",
+    "intro": "Parlez-nous de votre marque, de votre équipe et des idées que vous avez en tête. Laissez-nous vous créer un design audacieux et distinctif. Nous vous proposerons des choix de tissus et des couleurs qui se démarquent.",
     "form": {
       "name": "Votre nom",
       "email": "Courriel",
@@ -443,7 +399,8 @@
       "hours": "Habituellement en un jour ouvrable",
       "shopTitle": "Vous cherchez la boutique?",
       "shopText": "Les vêtements et impressions Boldux Art sont vendus sur notre boutique en ligne.",
-      "shopCta": "Aller à la boutique"
+      "shopCta": "Aller à la boutique",
+      "phoneTitle": "Téléphone"
     }
   },
   "notFound": {

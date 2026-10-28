@@ -85,5 +85,5 @@ then open http://localhost:3000 (or your PC's network address from a phone).
 
 - Localized metadata, canonical + `hreflang` (en-CA, fr-CA, x-default) on every page
 - `sitemap.xml` with language alternates, `robots.txt`, `manifest.webmanifest`
-- JSON-LD: Organization/LocalBusiness, WebSite, BreadcrumbList, ItemList (models), Product (each model), Person (artist), ContactPage
+- JSON-LD: Organization/LocalBusiness, WebSite, BreadcrumbList, ItemList (models), Product (each model), ContactPage
 - Generated Open Graph images per language

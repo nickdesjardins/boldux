@@ -4,8 +4,9 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://bolduxart.com",
   shopUrl: "https://shop.bolduxart.com",
   email: "info@bolduxart.com",
+  phone: "+13673805441",
+  phoneDisplay: "367-380-5441",
   region: "Québec, Canada",
-  founder: "Stéphane Bolduc",
   foundingDate: "2023-07",
   social: {
     instagram: "https://www.instagram.com/bolduxart/",

@@ -103,6 +103,8 @@
    "/img/models/tracksuits/tracksuit-4.webp"
   ],
   "accessories": [
+   "/img/models/accessories/chartwell-travel-mug.webp",
+   "/img/models/accessories/chartwell-mug.webp",
    "/img/models/accessories/mug.webp",
    "/img/models/accessories/mug-photo.webp"
   ]
@@ -1243,6 +1245,14 @@
   "/img/art/skull-pun.png": {
    "w": 1600,
    "h": 348
+  },
+  "/img/models/accessories/chartwell-travel-mug.webp": {
+   "w": 800,
+   "h": 800
+  },
+  "/img/models/accessories/chartwell-mug.webp": {
+   "w": 1080,
+   "h": 1080
   }
  }
 }

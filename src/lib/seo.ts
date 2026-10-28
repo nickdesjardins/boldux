@@ -71,7 +71,7 @@ export function organizationJsonLd(locale: Locale) {
     logo: absoluteUrl("/img/brand/logo.png"),
     image: absoluteUrl("/img/hero/concept-full.webp"),
     email: site.email,
-    founder: { "@type": "Person", "@id": absoluteUrl("/art#person"), name: site.founder },
+    telephone: site.phone,
     foundingDate: site.foundingDate,
     address: { "@type": "PostalAddress", addressRegion: "QC", addressCountry: "CA" },
     areaServed: ["CA"],

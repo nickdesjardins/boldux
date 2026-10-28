@@ -15,7 +15,7 @@
     },
     "art": {
       "title": "Boldux Art & Clothes — The Art Behind the Brand",
-      "description": "Art by Stéphane Bolduc (Boldux): The Skulls, Timeless Harmony, The Warrior and Aerial collections, turned into limited-edition clothing and 26×40 prints."
+      "description": "BOLDUX ART grew from a passion for drawing and clothing into a creative vision for businesses, teams and private labels that want to stand out."
     },
     "contact": {
       "title": "Contact Boldux Art — Start a Custom Clothing Project",
@@ -207,7 +207,7 @@
   "artTeaser": {
     "eyebrow": "Boldux Art",
     "title": "Born from the drawing board",
-    "text": "Boldux started as the art of Stéphane Bolduc: abstract black-and-white drawings turned into limited-edition clothing and prints. That same creative engine now works for your brand.",
+    "text": "BOLDUX ART grew from a passion for drawing and clothing. That creativity now serves businesses, teams and private labels that want to stand out.",
     "cta1": "Explore the art",
     "cta2": "Visit the shop",
     "alt": {
@@ -263,9 +263,9 @@
       },
       "long-sleeves": {
         "name": "Long sleeves",
-        "short": "Performance & cotton",
+        "short": "Performance & comfort",
         "blurb": "Sleeve-length typography and back prints for cooler days.",
-        "description": "Custom long-sleeve shirts with full sleeve prints, back artwork and chest marks, ideal for crews working outside and for autumn merchandise.",
+        "description": "Custom long-sleeve shirts with full sleeve prints, back artwork and chest logos, ideal for teams working outdoors.",
         "options": "Sleeve prints · Back art · Chest logo · Custom colourways"
       },
       "caps": {
@@ -334,73 +334,29 @@
     }
   },
   "art": {
-    "eyebrow": "Boldux Art & Clothes",
-    "title": "The art behind the brand",
-    "intro": "Before Boldux dressed companies, Boldux was an artist. Stéphane Bolduc, self-taught, draws abstract black-and-white worlds where circles and lines coexist, and turns them into limited-edition clothing and prints.",
-    "storyTitle": "Stéphane Bolduc, known as Boldux",
-    "story": {
-      "0": "Established in July 2023, Boldux Art brings together graphic art, musical composition and design. Stéphane charted his path through theatre, copper work, music, then abstract drawing, and each step shaped a distinct visual identity.",
-      "1": "His inspiration springs from solitude and emptiness. Circles are his favoured form; they appear on paper guided by intuition, and the surrounding emptiness shapes the work until lines and forms coexist in harmony.",
-      "2": "Music, a passion since childhood, runs through everything. It is why the first collection is called Timeless Harmony, and why every garment is meant to be felt as much as seen."
-    },
-    "quote": "Boldux Art is not just a creation; it's a symphony of lines and notes, an exploration of the soul's canvas.",
-    "quoteBy": "Stéphane Bolduc",
-    "collectionsEyebrow": "The collections",
-    "collectionsTitle": "Five worlds, one hand",
-    "collections": {
-      "skulls": {
-        "name": "The Skulls",
-        "tagline": "Skull-ection",
-        "text": "Skulls become canvases for creativity: a curated convergence of the macabre and the mesmerizing, where every circle and line challenges convention. Available as t-shirts, zip hoodies, crewnecks and 26×40 prints."
+    "eyebrow": "BOLDUX ART",
+    "intro": "BOLDUX ART grew out of my passion for drawing and clothing. I combined the two to create my own clothing designs.",
+    "vision": "That passion evolved into a clear vision: putting my creativity to work for businesses, teams and private labels that want to stand out.",
+    "examplesLabel": "Examples of artwork and clothing",
+    "examples": {
+      "drawing": {
+        "caption": "The Skulls — Original artwork",
+        "alt": "Original The Skulls drawing: a red skull made of geometric shapes"
       },
-      "music": {
-        "name": "Timeless Harmony",
-        "tagline": "The Music",
-        "text": "A skull crowned with a clock face and interlocking gears, the word MUSIC carved beneath. A meditation on time, thought and the universal rhythm that connects us all, in five colourways."
+      "tshirt": {
+        "caption": "The Skulls — T-shirt",
+        "alt": "Black T-shirt featuring The Skulls artwork printed in red"
       },
-      "warrior": {
-        "name": "The Warrior",
-        "tagline": "Geometry in motion",
-        "text": "Sharp geometric forms, an all-seeing eye and a trailing path of circles: a warrior drawn in a single breath, printed on tees and zip hoodies in five colourways."
-      },
-      "aerial": {
-        "name": "Aerial",
-        "tagline": "Landscapes on fabric",
-        "text": "Wave bands and flame-like strokes inspired by landscapes seen from above: desert, forest, islands, ocean, snow, volcano. Hoodies, tees, windbreakers and joggers filled with terrain."
-      },
-      "eye": {
-        "name": "Signature",
-        "tagline": "The Boldux eye",
-        "text": "The original Boldux eye and wordmark on zip hoodies, caps, joggers, jackets and tracksuits: the house collection that proves a logo can live anywhere on a garment."
+      "hoodie": {
+        "caption": "The Skulls — Zip hoodie",
+        "alt": "Black zip hoodie featuring The Skulls artwork in red"
       }
-    },
-    "artworkLabel": "Original artwork",
-    "garmentsLabel": "On garments",
-    "inspirationLabel": "Inspiration",
-    "printsEyebrow": "Prints",
-    "printsTitle": "26 × 40 limited prints",
-    "printsText": "The original drawings, scanned and printed in red, blue, black, white and green. Each series is available in the Boldux Art shop.",
-    "shopCta": "Visit the shop",
-    "bridgeTitle": "From art to apparel",
-    "bridgeText": "Every collection above started as a drawing and ended as a garment people wear. That is exactly what we do for your brand: your identity, our creativity, a collection that stands out.",
-    "bridgeCta": "Start a project",
-    "jobTitle": "Artist and designer",
-    "logoLabel": "The original logo",
-    "printsOnPaper": "Black & colour ink on paper",
-    "printsWhiteInk": "White ink on black",
-    "inspiration": {
-      "desert": "Desert seen from above",
-      "forest": "Forest seen from above",
-      "islands": "Islands seen from above",
-      "ocean": "Ocean seen from above",
-      "snow": "Snow seen from above",
-      "volcano": "Volcano seen from above"
     }
   },
   "contact": {
     "eyebrow": "Contact",
     "title": "Let's create something that stands out",
-    "intro": "Tell us about your brand, your team and the pieces you have in mind. We answer every request personally, in English or in French.",
+    "intro": "Tell us about your brand, your team and the ideas you have in mind. Let us create a bold, distinctive design for you. We’ll suggest fabric options and colours that stand out.",
     "form": {
       "name": "Your name",
       "email": "Email",
@@ -443,7 +399,8 @@
       "hours": "Usually within one business day",
       "shopTitle": "Looking for the shop?",
       "shopText": "Boldux Art clothing and prints are sold on our online shop.",
-      "shopCta": "Go to the shop"
+      "shopCta": "Go to the shop",
+      "phoneTitle": "Phone"
     }
   },
   "notFound": {
