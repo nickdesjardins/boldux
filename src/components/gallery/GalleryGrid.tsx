@@ -22,6 +22,12 @@ const FIXED_SIZES: Record<Cols, string> = {
   3: "(min-width: 1024px) 33vw, 50vw",
   4: "(min-width: 1024px) 25vw, 50vw",
 };
+/* Same column widths as FIXED_GRID (gap-4 = 1rem) for the flex-wrap variant that centres an incomplete last row. */
+const CENTERED_TILE: Record<Cols, string> = {
+  2: "w-[calc((100%_-_1rem)/2)]",
+  3: "w-[calc((100%_-_1rem)/2)] lg:w-[calc((100%_-_2rem)/3)]",
+  4: "w-[calc((100%_-_1rem)/2)] lg:w-[calc((100%_-_3rem)/4)]",
+};
 
 /* Auto layouts: the gallery usually sits in a two-thirds column, hence the conservative lg widths. */
 const AUTO_GRID: Record<Cols, string> = {
@@ -40,8 +46,11 @@ const SPAN_SIZES: Record<Cols, string> = {
   4: "(min-width: 1024px) 30vw, 100vw",
 };
 
-function fixedLayout(images: string[], cols: Cols, aspect: string): Layout {
-  return { grid: FIXED_GRID[cols], tiles: images.map(() => ({ cls: aspect, sizes: FIXED_SIZES[cols] })) };
+function fixedLayout(images: string[], cols: Cols, aspect: string, centerLastRow: boolean): Layout {
+  if (centerLastRow) {
+    return { grid: "flex flex-wrap justify-center", tiles: images.map(() => ({ cls: `${aspect} ${CENTERED_TILE[cols]}`, sizes: FIXED_SIZES[cols] })) };
+  }
+  return { grid: `grid ${FIXED_GRID[cols]}`, tiles: images.map(() => ({ cls: `${aspect} self-stretch`, sizes: FIXED_SIZES[cols] })) };
 }
 
 /**
@@ -63,7 +72,7 @@ function autoLayout(images: string[], colsOverride?: Cols): Layout {
   // Duo images need width: landscape galleries stay at two columns. Smaller families keep two
   // columns too so the tiles stay generous; six or more (or a clean multiple of three) go to three.
   const cols: Cols = colsOverride ?? (base === "wide" ? 2 : n >= 6 || n % 3 === 0 ? 3 : 2);
-  const grid = base === "wide" && cols === 2 ? "grid-cols-1 sm:grid-cols-2" : AUTO_GRID[cols];
+  const grid = `grid ${base === "wide" && cols === 2 ? "grid-cols-1 sm:grid-cols-2" : AUTO_GRID[cols]}`;
 
   const tiles = ratios.map<Tile>((r) => {
     switch (base) {
@@ -80,7 +89,7 @@ function autoLayout(images: string[], colsOverride?: Cols): Layout {
         return r >= 1.25 ? { cls: "aspect-[4/3] col-span-2", sizes: SPAN_SIZES[cols] } : { cls: "aspect-[2/3]", sizes: TILE_SIZES[cols] };
     }
   });
-  return { grid, tiles };
+  return { grid, tiles: tiles.map((tile) => ({ ...tile, cls: `${tile.cls} self-stretch` })) };
 }
 
 export function GalleryGrid({
@@ -90,6 +99,7 @@ export function GalleryGrid({
   aspect,
   className = "",
   light = false,
+  centerLastRow = false,
 }: {
   images: string[];
   /** Base alt text; the index is appended for uniqueness */
@@ -101,17 +111,19 @@ export function GalleryGrid({
   className?: string;
   /** Light "paper" tiles for dark artwork */
   light?: boolean;
+  /** With `aspect` only: centre an incomplete last row instead of leaving it left-aligned. */
+  centerLastRow?: boolean;
 }) {
   const t = useTranslations("common");
   const [index, setIndex] = useState<number | null>(null);
   const items: LightboxImage[] = images.map((src, i) => ({ src, alt: `${alt} ${i + 1}` }));
-  const { grid, tiles } = aspect ? fixedLayout(images, cols ?? 3, aspect) : autoLayout(images, cols);
+  const { grid, tiles } = aspect ? fixedLayout(images, cols ?? 3, aspect, centerLastRow) : autoLayout(images, cols);
 
   return (
     <>
-      <RevealGroup as="ul" className={`grid gap-4 ${grid} ${className}`} stagger={0.05}>
+      <RevealGroup as="ul" className={`gap-4 ${grid} ${className}`} stagger={0.05}>
         {images.map((src, i) => (
-          <RevealItem as="li" key={`${src}-${i}`} className={`group relative self-stretch ${tiles[i].cls}`}>
+          <RevealItem as="li" key={`${src}-${i}`} className={`group relative ${tiles[i].cls}`}>
             <button
               type="button"
               onClick={(e) => {

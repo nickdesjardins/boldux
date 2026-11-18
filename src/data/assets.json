@@ -260,27 +260,6 @@
    ]
   }
  },
- "aerial": {
-  "garments": [
-   "/img/models/hoodies/zip-aerial-white.webp",
-   "/img/models/hoodies/zip-aerial-yellow.webp",
-   "/img/models/tshirts/tee-aerial-1.webp",
-   "/img/models/tshirts/tee-aerial-2.webp",
-   "/img/models/tshirts/tee-aerial-3.webp",
-   "/img/models/jackets/windbreaker-1.webp",
-   "/img/models/jackets/windbreaker-3.webp",
-   "/img/models/joggers/jogger-aerial-1.webp",
-   "/img/models/joggers/jogger-aerial-2.webp"
-  ],
-  "inspiration": [
-   "/img/collections/aerial/desert.webp",
-   "/img/collections/aerial/forest.webp",
-   "/img/collections/aerial/islands.webp",
-   "/img/collections/aerial/ocean.webp",
-   "/img/collections/aerial/snow.webp",
-   "/img/collections/aerial/volcano.webp"
-  ]
- },
  "eye": [
   "/img/models/hoodies/zip-signature-1.webp",
   "/img/models/hoodies/zip-signature-3.webp",
@@ -300,9 +279,6 @@
   "/img/prints/scan-2-red.webp",
   "/img/prints/scan-2-blue.webp",
   "/img/prints/scan-2-black.webp",
-  "/img/prints/scan-4-red.webp",
-  "/img/prints/scan-4-blue.webp",
-  "/img/prints/scan-4-black.webp",
   "/img/prints/series-1-red.webp",
   "/img/prints/series-1-blue.webp",
   "/img/prints/series-1-black.webp",
@@ -1145,30 +1121,6 @@
    "w": 806,
    "h": 550
   },
-  "/img/collections/aerial/desert.webp": {
-   "w": 800,
-   "h": 1200
-  },
-  "/img/collections/aerial/forest.webp": {
-   "w": 800,
-   "h": 1200
-  },
-  "/img/collections/aerial/islands.webp": {
-   "w": 800,
-   "h": 1200
-  },
-  "/img/collections/aerial/ocean.webp": {
-   "w": 800,
-   "h": 1200
-  },
-  "/img/collections/aerial/snow.webp": {
-   "w": 800,
-   "h": 1200
-  },
-  "/img/collections/aerial/volcano.webp": {
-   "w": 800,
-   "h": 1200
-  },
   "/img/prints/scan-1-red.webp": {
    "w": 907,
    "h": 1400
@@ -1191,18 +1143,6 @@
   },
   "/img/prints/scan-2-black.webp": {
    "w": 880,
-   "h": 1400
-  },
-  "/img/prints/scan-4-red.webp": {
-   "w": 897,
-   "h": 1400
-  },
-  "/img/prints/scan-4-blue.webp": {
-   "w": 897,
-   "h": 1400
-  },
-  "/img/prints/scan-4-black.webp": {
-   "w": 897,
    "h": 1400
   },
   "/img/prints/series-1-red.webp": {

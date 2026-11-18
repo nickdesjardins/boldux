@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { absoluteUrl, breadcrumbJsonLd, buildMetadata, localizedUrl } from "@/lib/seo";
 import { site } from "@/config/site";
-import { AERIAL, ARTWORKS, COLLECTIONS, COLLECTION_COVER, EYE_COLLECTION, PRINTS, type Artwork } from "@/data/collections";
+import { ARTWORKS, COLLECTIONS, COLLECTION_COVER, EYE_COLLECTION, PRINTS, type Artwork } from "@/data/collections";
 import { Img, imgSize } from "@/components/ui/Img";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -30,11 +30,8 @@ const isWhiteInk = (src: string) => /-white(-[a-z]+)?\.[a-z0-9]+$/i.test(src);
 const PRINTS_ON_PAPER = PRINTS.filter((p) => !isWhiteInk(p));
 const PRINTS_ON_BLACK = PRINTS.filter(isWhiteInk);
 
-/** "/img/collections/aerial/desert.webp" -> "desert" */
-const stem = (src: string) => src.slice(src.lastIndexOf("/") + 1).replace(/\.[a-z0-9]+$/i, "");
-
-type CollectionKey = Artwork | "aerial" | "eye";
-type Row = { key: CollectionKey; garments: string[]; art: string[]; inspiration: string[] };
+type CollectionKey = Artwork | "eye";
+type Row = { key: CollectionKey; garments: string[]; art: string[] };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
@@ -58,9 +55,8 @@ export default async function ArtPage({ params }: Props) {
   const l = locale as Locale;
 
   const collections: Row[] = [
-    ...ARTWORKS.map((a) => ({ key: a, garments: garmentImages(a), art: COLLECTIONS[a].art, inspiration: [] })),
-    { key: "aerial", garments: AERIAL.garments, art: [], inspiration: AERIAL.inspiration },
-    { key: "eye", garments: EYE_COLLECTION, art: [LEGACY_LOGO], inspiration: [] },
+    ...ARTWORKS.map((a) => ({ key: a, garments: garmentImages(a), art: COLLECTIONS[a].art })),
+    { key: "eye", garments: EYE_COLLECTION, art: [LEGACY_LOGO] },
   ];
 
   return (
@@ -123,25 +119,6 @@ export default async function ArtPage({ params }: Props) {
                         </RevealGroup>
                       </div>
                     )}
-
-                    {c.inspiration.length > 0 && (
-                      <div className="mt-8">
-                        <p className="label">{t("inspirationLabel")}</p>
-                        {/* 3 x 2 on phones, one 6-tile strip from sm up */}
-                        <RevealGroup as="ul" className="grid grid-cols-3 gap-2 sm:grid-cols-6" stagger={0.05}>
-                          {c.inspiration.map((a) => {
-                            const key = `inspiration.${stem(a)}`;
-                            return (
-                              <RevealItem as="li" key={a}>
-                                <div className="card aspect-[3/4] overflow-hidden rounded-lg">
-                                  <Img src={a} alt={t.has(key) ? t(key) : ""} sizes="(min-width: 1280px) 7vw, (min-width: 640px) 12vw, 30vw" className="h-full w-full object-cover" />
-                                </div>
-                              </RevealItem>
-                            );
-                          })}
-                        </RevealGroup>
-                      </div>
-                    )}
                   </div>
 
                   <div className={`min-w-0 lg:col-span-6 xl:col-span-7 ${flip ? "lg:order-1" : ""}`}>
@@ -165,12 +142,12 @@ export default async function ArtPage({ params }: Props) {
         </div>
         <div className="mt-12">
           {t.has("printsOnPaper") && <p className="label">{t("printsOnPaper")}</p>}
-          <GalleryGrid images={PRINTS_ON_PAPER} alt={t("printsTitle")} cols={4} aspect="aspect-[26/40]" light />
+          <GalleryGrid images={PRINTS_ON_PAPER} alt={t("printsTitle")} cols={4} aspect="aspect-[26/40]" light centerLastRow />
         </div>
         {PRINTS_ON_BLACK.length > 0 && (
           <div className="mt-10">
             {t.has("printsWhiteInk") && <p className="label">{t("printsWhiteInk")}</p>}
-            <GalleryGrid images={PRINTS_ON_BLACK} alt={t("printsTitle")} cols={4} aspect="aspect-[26/40]" />
+            <GalleryGrid images={PRINTS_ON_BLACK} alt={t("printsTitle")} cols={4} aspect="aspect-[26/40]" centerLastRow />
           </div>
         )}
       </section>

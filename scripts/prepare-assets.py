@@ -447,31 +447,10 @@ REPLACE_LIST.append({"file": "/img/portfolio/farm/*", "note": "Client name appea
 REPLACE_LIST.append({"file": "/img/portfolio/machinery/*", "note": "Client name appears on the sleeve; the website text never names the client."})
 REPLACE_LIST.append({"file": "/img/models/long-sleeves/long-sleeve-white.webp", "note": "Client name appears on the sleeve; the website text never names the client."})
 
-# ---------- 6. Aerial collection (wave designs + inspiration photos) ----------
-print("== aerial")
-aerial = {
-    "garments": [
-        "/img/models/hoodies/zip-aerial-white.webp",
-        "/img/models/hoodies/zip-aerial-yellow.webp",
-        "/img/models/tshirts/tee-aerial-1.webp",
-        "/img/models/tshirts/tee-aerial-2.webp",
-        "/img/models/tshirts/tee-aerial-3.webp",
-        "/img/models/jackets/windbreaker-1.webp",
-        "/img/models/jackets/windbreaker-3.webp",
-        "/img/models/joggers/jogger-aerial-1.webp",
-        "/img/models/joggers/jogger-aerial-2.webp",
-    ],
-    "inspiration": [],
-}
-for n in ["desert", "forest", "islands", "ocean", "snow", "volcano"]:
-    rel = f"collections/aerial/{n}.webp"
-    if exists(rel):
-        aerial["inspiration"].append(record(rel))
-        continue
-    im = Image.open(P("Aerial fill", f"{n}.jpg")).convert("RGB")
-    aerial["inspiration"].append(save(im, rel, max_side=1200, quality=84))
+# ---------- 6. Aerial collection: removed from the art page (owner's decision). The aerial
+# garments stay in the model galleries; the inspiration photos are no longer generated. ----------
 
-# ---------- 7. Prints (art scans) ----------
+# ---------- 7. Prints (art scans; Scan-4 removed at the owner's request) ----------
 print("== prints")
 prints = []
 SCANS = [
@@ -481,9 +460,6 @@ SCANS = [
     ("Scans PNG/BOLDUX_Scan-2_Rouge.png", "scan-2-red"),
     ("Scans PNG/BOLDUX_Scan-2_Bleu.png", "scan-2-blue"),
     ("Scans PNG/BOLDUX_Scan-2_Noir.png", "scan-2-black"),
-    ("Scans PNG/BOLDUX_Scan-4_Rouge.png", "scan-4-red"),
-    ("Scans PNG/BOLDUX_Scan-4_Bleu.png", "scan-4-blue"),
-    ("Scans PNG/BOLDUX_Scan-4_Noir.png", "scan-4-black"),
     ("Scans PNG/S-Bolduc-1-26x40_ROUGE.png", "series-1-red"),
     ("Scans PNG/S-Bolduc-1-26x40_BLEU.png", "series-1-blue"),
     ("Scans PNG/S-Bolduc-1-26x40_NOIR.png", "series-1-black"),
@@ -527,7 +503,6 @@ sizes = {m["file"]: {"w": m["w"], "h": m["h"]} for m in MANIFEST}
 data = {
     "models": models,
     "collections": coll_manifest,
-    "aerial": aerial,
     "eye": eye,
     "prints": prints,
     "portfolio": portfolio,

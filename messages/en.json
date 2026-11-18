@@ -344,7 +344,7 @@
     "intro": "BOLDUX ART grew out of my passion for drawing and clothing. I combined the two to create my own clothing designs.",
     "vision": "That passion evolved into a clear vision: putting my creativity to work for businesses, teams and private labels that want to stand out.",
     "collectionsEyebrow": "The collections",
-    "collectionsTitle": "Five worlds, one hand",
+    "collectionsTitle": "Four worlds, one hand",
     "collections": {
       "skulls": {
         "name": "The Skulls",
@@ -361,11 +361,6 @@
         "tagline": "Geometry in motion",
         "text": "Sharp geometric forms, an all-seeing eye and a trailing path of circles: a warrior drawn in a single breath, printed on tees and zip hoodies in five colourways."
       },
-      "aerial": {
-        "name": "Aerial",
-        "tagline": "Landscapes on fabric",
-        "text": "Wave bands and flame-like strokes inspired by landscapes seen from above: desert, forest, islands, ocean, snow, volcano. Hoodies, tees, windbreakers and joggers filled with terrain."
-      },
       "eye": {
         "name": "Signature",
         "tagline": "The Boldux eye",
@@ -374,7 +369,6 @@
     },
     "artworkLabel": "Original artwork",
     "garmentsLabel": "On garments",
-    "inspirationLabel": "Inspiration",
     "printsEyebrow": "Prints",
     "printsTitle": "26 × 40 limited prints",
     "printsText": "The original drawings, scanned and printed in red, blue, black, white and green. Each series is available in the Boldux Art shop.",
@@ -384,15 +378,7 @@
     "bridgeCta": "Start a project",
     "logoLabel": "The original logo",
     "printsOnPaper": "Black & colour ink on paper",
-    "printsWhiteInk": "White ink on black",
-    "inspiration": {
-      "desert": "Desert seen from above",
-      "forest": "Forest seen from above",
-      "islands": "Islands seen from above",
-      "ocean": "Ocean seen from above",
-      "snow": "Snow seen from above",
-      "volcano": "Volcano seen from above"
-    }
+    "printsWhiteInk": "White ink on black"
   },
   "contact": {
     "eyebrow": "Contact",

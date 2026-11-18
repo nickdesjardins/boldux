@@ -38,15 +38,13 @@ export const SWATCH: Record<string, [string, string]> = {
   "orange-black": ["#f04a12", "#111114"],
 };
 
-export const AERIAL = assets.aerial as { garments: string[]; inspiration: string[] };
 export const EYE_COLLECTION = assets.eye as string[];
 export const PRINTS = assets.prints as string[];
 
 /** Hero image for each collection card on the art page. */
-export const COLLECTION_COVER: Record<Artwork | "aerial" | "eye", string> = {
+export const COLLECTION_COVER: Record<Artwork | "eye", string> = {
   skulls: "/img/collections/skulls/hoodie-black-red-duo.webp",
   music: "/img/collections/music/tee-black-red-duo.webp",
   warrior: "/img/collections/warrior/tee-white-red-duo.webp",
-  aerial: "/img/models/hoodies/zip-aerial-yellow.webp",
   eye: "/img/models/hoodies/zip-eye-back-red.webp",
 };

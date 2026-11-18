@@ -344,7 +344,7 @@
     "intro": "BOLDUX ART est née de ma passion pour le dessin et les vêtements. J’ai combiné les deux pour créer mes propres vêtements design.",
     "vision": "Cette passion s’est transformée en une véritable vision : mettre ma créativité au service des entreprises, des équipes et des marques privées qui souhaitent se démarquer.",
     "collectionsEyebrow": "Les collections",
-    "collectionsTitle": "Cinq univers, une seule main",
+    "collectionsTitle": "Quatre univers, une seule main",
     "collections": {
       "skulls": {
         "name": "The Skulls",
@@ -361,11 +361,6 @@
         "tagline": "La géométrie en mouvement",
         "text": "Des formes géométriques tranchantes, un œil qui voit tout et une traînée de cercles : un guerrier dessiné d'un seul souffle, imprimé sur t-shirts et hoodies zippés en cinq combinaisons de couleurs."
       },
-      "aerial": {
-        "name": "Aerial",
-        "tagline": "Des paysages sur tissu",
-        "text": "Des bandes ondulées et des traits de flammes inspirés de paysages vus du ciel : désert, forêt, îles, océan, neige, volcan. Hoodies, t-shirts, coupe-vent et joggers couverts de ces paysages."
-      },
       "eye": {
         "name": "Signature",
         "tagline": "L'œil Boldux",
@@ -374,7 +369,6 @@
     },
     "artworkLabel": "Œuvre originale",
     "garmentsLabel": "Sur les vêtements",
-    "inspirationLabel": "Inspiration",
     "printsEyebrow": "Impressions",
     "printsTitle": "Impressions 26 × 40 en édition limitée",
     "printsText": "Les dessins originaux, numérisés et imprimés en rouge, bleu, noir, blanc et vert. Chaque série est offerte dans la boutique Boldux Art.",
@@ -384,15 +378,7 @@
     "bridgeCta": "Démarrer un projet",
     "logoLabel": "Le logo original",
     "printsOnPaper": "Encre noire et couleur sur papier",
-    "printsWhiteInk": "Encre blanche sur noir",
-    "inspiration": {
-      "desert": "Désert vu du ciel",
-      "forest": "Forêt vue du ciel",
-      "islands": "Îles vues du ciel",
-      "ocean": "Océan vu du ciel",
-      "snow": "Neige vue du ciel",
-      "volcano": "Volcan vu du ciel"
-    }
+    "printsWhiteInk": "Encre blanche sur noir"
   },
   "contact": {
     "eyebrow": "Contact",
