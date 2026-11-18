@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, MapPin, Clock, ArrowUpRight } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, ArrowUpRight } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { absoluteUrl, breadcrumbJsonLd, buildMetadata, localizedUrl } from "@/lib/seo";
@@ -60,6 +60,19 @@ export default async function ContactPage({ params }: Props) {
                     <dd>
                       <a href={`mailto:${site.email}`} className="break-all text-lg font-semibold text-white transition hover:text-red-bright">
                         {site.email}
+                      </a>
+                    </dd>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <span className={ICON_WRAP} aria-hidden>
+                    <Phone className="h-5 w-5" strokeWidth={1.6} />
+                  </span>
+                  <div className="min-w-0">
+                    <dt className="label mb-1">{t("aside.phoneTitle")}</dt>
+                    <dd>
+                      <a href={`tel:${site.phone}`} className="text-lg font-semibold text-white transition hover:text-red-bright">
+                        {site.phoneDisplay}
                       </a>
                     </dd>
                   </div>

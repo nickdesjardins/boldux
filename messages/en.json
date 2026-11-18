@@ -15,7 +15,7 @@
     },
     "art": {
       "title": "Boldux Art & Clothes — The Art Behind the Brand",
-      "description": "Art by Stéphane Bolduc (Boldux): The Skulls, Timeless Harmony, The Warrior and Aerial collections, turned into limited-edition clothing and 26×40 prints."
+      "description": "BOLDUX ART grew from a passion for drawing and clothing into a creative vision for businesses, teams and private labels that want to stand out."
     },
     "contact": {
       "title": "Contact Boldux Art — Start a Custom Clothing Project",
@@ -213,7 +213,7 @@
   "artTeaser": {
     "eyebrow": "Boldux Art",
     "title": "Born from the drawing board",
-    "text": "Boldux started as the art of Stéphane Bolduc: abstract black-and-white drawings turned into limited-edition clothing and prints. That same creative engine now works for your brand.",
+    "text": "BOLDUX ART grew from a passion for drawing and clothing. That creativity now serves businesses, teams and private labels that want to stand out.",
     "cta1": "Explore the art",
     "cta2": "Visit the shop",
     "alt": {
@@ -269,9 +269,9 @@
       },
       "long-sleeves": {
         "name": "Long sleeves",
-        "short": "Performance & cotton",
+        "short": "Performance & comfort",
         "blurb": "Sleeve-length typography and back prints for cooler days.",
-        "description": "Custom long-sleeve shirts with full sleeve prints, back artwork and chest marks, ideal for crews working outside and for autumn merchandise.",
+        "description": "Custom long-sleeve shirts with full sleeve prints, back artwork and chest logos, ideal for teams working outdoors.",
         "options": "Sleeve prints · Back art · Chest logo · Custom colourways"
       },
       "caps": {
@@ -340,17 +340,9 @@
     }
   },
   "art": {
-    "eyebrow": "Boldux Art & Clothes",
-    "title": "The art behind the brand",
-    "intro": "Before Boldux dressed companies, Boldux was an artist. Stéphane Bolduc, self-taught, draws abstract black-and-white worlds where circles and lines coexist, and turns them into limited-edition clothing and prints.",
-    "storyTitle": "Stéphane Bolduc, known as Boldux",
-    "story": {
-      "0": "Established in July 2023, Boldux Art brings together graphic art, musical composition and design. Stéphane charted his path through theatre, copper work, music, then abstract drawing, and each step shaped a distinct visual identity.",
-      "1": "His inspiration springs from solitude and emptiness. Circles are his favoured form; they appear on paper guided by intuition, and the surrounding emptiness shapes the work until lines and forms coexist in harmony.",
-      "2": "Music, a passion since childhood, runs through everything. It is why the first collection is called Timeless Harmony, and why every garment is meant to be felt as much as seen."
-    },
-    "quote": "Boldux Art is not just a creation; it's a symphony of lines and notes, an exploration of the soul's canvas.",
-    "quoteBy": "Stéphane Bolduc",
+    "eyebrow": "BOLDUX ART",
+    "intro": "BOLDUX ART grew out of my passion for drawing and clothing. I combined the two to create my own clothing designs.",
+    "vision": "That passion evolved into a clear vision: putting my creativity to work for businesses, teams and private labels that want to stand out.",
     "collectionsEyebrow": "The collections",
     "collectionsTitle": "Five worlds, one hand",
     "collections": {
@@ -390,7 +382,6 @@
     "bridgeTitle": "From art to apparel",
     "bridgeText": "Every collection above started as a drawing and ended as a garment people wear. That is exactly what we do for your brand: your identity, our creativity, a collection that stands out.",
     "bridgeCta": "Start a project",
-    "jobTitle": "Artist and designer",
     "logoLabel": "The original logo",
     "printsOnPaper": "Black & colour ink on paper",
     "printsWhiteInk": "White ink on black",
@@ -406,7 +397,7 @@
   "contact": {
     "eyebrow": "Contact",
     "title": "Let's create something that stands out",
-    "intro": "Tell us about your brand, your team and the pieces you have in mind. We answer every request personally, in English or in French.",
+    "intro": "Tell us about your brand, your team and the ideas you have in mind. Let us create a bold, distinctive design for you. We’ll suggest fabric options and colours that stand out.",
     "form": {
       "name": "Your name",
       "email": "Email",
@@ -449,7 +440,8 @@
       "hours": "Usually within one business day",
       "shopTitle": "Looking for the shop?",
       "shopText": "Boldux Art clothing and prints are sold on our online shop.",
-      "shopCta": "Go to the shop"
+      "shopCta": "Go to the shop",
+      "phoneTitle": "Phone"
     }
   },
   "notFound": {

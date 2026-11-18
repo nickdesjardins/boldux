@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Quote } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { absoluteUrl, breadcrumbJsonLd, buildMetadata, localizedUrl } from "@/lib/seo";
@@ -11,14 +10,11 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
-import { Parallax } from "@/components/motion/Parallax";
 import { CtaBand } from "@/components/home/CtaBand";
 import { JsonLd } from "@/components/seo/JsonLd";
 
 type Props = { params: Promise<{ locale: string }> };
 
-const PORTRAIT = "/img/art/artist.webp";
-const PORTRAIT_ARTWORK = "/img/collections/warrior/art-warrior-red.webp";
 const LEGACY_LOGO = "/img/brand/logo-legacy-red.png";
 const OG_IMAGE = "/img/collections/skulls/hoodie-black-red-duo.webp";
 
@@ -60,26 +56,6 @@ export default async function ArtPage({ params }: Props) {
   const t = await getTranslations("art");
   const nav = await getTranslations("nav");
   const l = locale as Locale;
-  const pageUrl = localizedUrl(l, "/art");
-  const [qOpen, qClose] = locale === "fr" ? ["« ", " »"] : ["“", "”"];
-
-  const person = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": absoluteUrl("/art#person"),
-    name: site.founder,
-    alternateName: "Boldux",
-    jobTitle: t.has("jobTitle") ? t("jobTitle") : locale === "fr" ? "Artiste et designer" : "Artist and designer",
-    description: t("intro"),
-    image: absoluteUrl(PORTRAIT),
-    url: pageUrl,
-    mainEntityOfPage: pageUrl,
-    worksFor: { "@id": absoluteUrl("/#organization") },
-    brand: { "@id": absoluteUrl("/#organization") },
-    address: { "@type": "PostalAddress", addressRegion: "QC", addressCountry: "CA" },
-    knowsLanguage: ["fr", "en"],
-    sameAs: Object.values(site.social),
-  };
 
   const collections: Row[] = [
     ...ARTWORKS.map((a) => ({ key: a, garments: garmentImages(a), art: COLLECTIONS[a].art, inspiration: [] })),
@@ -89,56 +65,12 @@ export default async function ArtPage({ params }: Props) {
 
   return (
     <>
-      <JsonLd data={[breadcrumbJsonLd([{ name: nav("home"), url: localizedUrl(l, "/") }, { name: nav("art"), url: pageUrl }]), person]} />
-      <PageHeader eyebrow={t("eyebrow")} title={t("title")} intro={t("intro")} crumbs={[{ label: nav("home"), href: "/" }, { label: nav("art") }]} />
-
-      {/* Artist story */}
-      <section className="container-x grid items-start gap-14 py-20 lg:grid-cols-12 lg:gap-12 lg:py-28">
-        <div className="min-w-0 lg:col-span-5">
-          <Reveal>
-            {/*
-              The overlapping artwork sits inside this wrapper's bottom/right padding, so it
-              never leaves the column (and never causes horizontal overflow on phones).
-            */}
-            <div className="relative mx-auto max-w-md pb-8 pr-4 sm:pb-10 sm:pr-8 lg:max-w-none">
-              <div className="card overflow-hidden rounded-[2rem]">
-                <Img src={PORTRAIT} alt={t("storyTitle")} sizes="(min-width: 1024px) 40vw, (min-width: 640px) 28rem, 100vw" className="h-auto w-full object-cover" />
-              </div>
-              <Parallax speed={-20} className="absolute bottom-0 right-0 w-32 sm:w-44 lg:w-52">
-                <div className={`card rounded-2xl ${PAPER} p-3`}>
-                  <Img src={PORTRAIT_ARTWORK} alt={`${t("collections.warrior.name")} – ${t("artworkLabel")}`} sizes="208px" className="h-auto w-full" />
-                </div>
-              </Parallax>
-            </div>
-          </Reveal>
-        </div>
-        <div className="min-w-0 lg:col-span-7 lg:pl-8">
-          <Reveal>
-            <h2 className="display-md text-chrome">{t("storyTitle")}</h2>
-          </Reveal>
-          <div className="mt-6 max-w-2xl space-y-5 text-base leading-relaxed text-muted lg:text-lg">
-            {[0, 1, 2].map((i) => (
-              <Reveal key={i} delay={0.05 * i}>
-                <p>{t(`story.${i}`)}</p>
-              </Reveal>
-            ))}
-          </div>
-          <Reveal delay={0.2}>
-            <blockquote className="relative mt-10 max-w-2xl rounded-2xl border border-red/30 bg-red/5 p-7 pt-8">
-              <Quote aria-hidden className="absolute -top-4 left-6 h-8 w-8 text-red-bright" />
-              <p className="font-display text-lg font-semibold leading-snug text-white">
-                {qOpen}
-                {t("quote")}
-                {qClose}
-              </p>
-              <footer className="mt-3 font-display text-[0.62rem] uppercase tracking-[0.3em] text-muted">— {t("quoteBy")}</footer>
-            </blockquote>
-          </Reveal>
-          <Reveal delay={0.25} className="mt-8">
-            <Button href={site.shopUrl} external variant="ghost" icon="external">{t("shopCta")}</Button>
-          </Reveal>
-        </div>
-      </section>
+      <JsonLd data={breadcrumbJsonLd([{ name: nav("home"), url: localizedUrl(l, "/") }, { name: nav("art"), url: localizedUrl(l, "/art") }])} />
+      <PageHeader eyebrow={t("eyebrow")} title={nav("art")} intro={t("intro")} crumbs={[{ label: nav("home"), href: "/" }, { label: nav("art") }]}>
+        <Reveal delay={0.18}>
+          <p className="lead mt-5 max-w-2xl">{t("vision")}</p>
+        </Reveal>
+      </PageHeader>
 
       {/* Collections */}
       <section className="border-t border-line bg-ink-2 py-24 lg:py-32">

@@ -103,6 +103,8 @@
    "/img/models/tracksuits/tracksuit-4.webp"
   ],
   "accessories": [
+   "/img/models/accessories/chartwell-travel-mug.webp",
+   "/img/models/accessories/chartwell-mug.webp",
    "/img/models/accessories/mug.webp",
    "/img/models/accessories/mug-photo.webp"
   ]
@@ -1250,6 +1252,14 @@
   "/img/portfolio/machinery/long-sleeve-duo.webp": {
    "w": 1540,
    "h": 983
+  },
+  "/img/models/accessories/chartwell-travel-mug.webp": {
+   "w": 800,
+   "h": 800
+  },
+  "/img/models/accessories/chartwell-mug.webp": {
+   "w": 1080,
+   "h": 1080
   }
  }
 }
