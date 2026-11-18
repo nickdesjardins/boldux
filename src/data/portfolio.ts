@@ -1,7 +1,7 @@
 import assets from "./assets.json";
 
 /** Order matters: it is the filter-chip order on the home page. */
-export const PROJECT_IDS = ["industrial", "northern", "residence", "farm", "team"] as const;
+export const PROJECT_IDS = ["industrial", "northern", "residence", "farm", "team", "machinery"] as const;
 export type ProjectId = (typeof PROJECT_IDS)[number];
 
 const galleries = assets.portfolio as Record<ProjectId, string[]>;
@@ -21,6 +21,7 @@ export const PROJECTS: Project[] = [
   { id: "residence", cover: "/img/portfolio/residence/hoodie-burgundy.webp", images: galleries.residence, tags: ["hoodie", "tee", "jersey"], models: ["hoodies", "tshirts"] },
   { id: "farm", cover: "/img/portfolio/farm/hoodie-grey.webp", images: galleries.farm, tags: ["hoodie"], models: ["hoodies"] },
   { id: "team", cover: "/img/portfolio/team/hoodie-blue.webp", images: galleries.team, tags: ["hoodie"], models: ["hoodies"] },
+  { id: "machinery", cover: "/img/portfolio/machinery/long-sleeve-duo.webp", images: galleries.machinery, tags: ["long-sleeve"], models: ["long-sleeves"] },
 ];
 
 export type WallTile = { src: string; project: ProjectId; big?: boolean };
@@ -49,5 +50,5 @@ export const WALL: WallTile[] = [
   { src: "/img/models/accessories/mug.webp", project: "northern" },
   { src: "/img/portfolio/northern/hoodie-red-stripes.webp", project: "northern" },
   { src: "/img/portfolio/northern/cap-blue.webp", project: "northern" },
-  { src: "/img/models/long-sleeves/long-sleeve-white.webp", project: "industrial" },
+  { src: "/img/portfolio/machinery/long-sleeve-duo.webp", project: "machinery" },
 ];

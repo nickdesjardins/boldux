@@ -349,6 +349,9 @@
   ],
   "team": [
    "/img/portfolio/team/hoodie-blue.webp"
+  ],
+  "machinery": [
+   "/img/portfolio/machinery/long-sleeve-duo.webp"
   ]
  },
  "sizes": {
@@ -1001,8 +1004,8 @@
    "h": 1282
   },
   "/img/models/long-sleeves/long-sleeve-white.webp": {
-   "w": 997,
-   "h": 661
+   "w": 1540,
+   "h": 983
   },
   "/img/models/long-sleeves/long-sleeve-grey.webp": {
    "w": 655,
@@ -1129,8 +1132,8 @@
    "h": 680
   },
   "/img/portfolio/residence/tee-sport.webp": {
-   "w": 1041,
-   "h": 686
+   "w": 1540,
+   "h": 972
   },
   "/img/portfolio/farm/hoodie-grey.webp": {
    "w": 842,
@@ -1243,6 +1246,10 @@
   "/img/art/skull-pun.png": {
    "w": 1600,
    "h": 348
+  },
+  "/img/portfolio/machinery/long-sleeve-duo.webp": {
+   "w": 1540,
+   "h": 983
   }
  }
 }

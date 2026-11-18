@@ -80,8 +80,8 @@
   },
   "work": {
     "eyebrow": "Made for other brands",
-    "title": "What we've made for other companies",
-    "intro": "Every piece below was designed, mocked up and produced by Boldux for another business: trucking crews, northern logistics, senior residences, a family farm, a marine services crew. Client names kept private, on purpose. Tap a piece to see it up close.",
+    "titleLead": "What we've made",
+    "titleAccent": "for other companies",
     "viewProject": "View project",
     "pieces": "Pieces",
     "sector": "Sector",
@@ -115,11 +115,17 @@
         "sector": "Marine & port services",
         "pieces": "Hoodie",
         "story": "A two-tone blue pullover with chevron sleeve accents and a full back crest for a marine services crew, built for long days on the docks."
+      },
+      "machinery": {
+        "title": "Tone-on-tone long sleeve",
+        "sector": "Agricultural & industrial machinery",
+        "pieces": "Long sleeve",
+        "story": "A clean white long sleeve with the company name printed vertically down the sleeve, tone on tone: understated for everyday wear, unmistakable up close."
       }
     },
     "ctaTitle": "Your project, next.",
     "filterAll": "All projects",
-    "pieces_count": "{count} pieces"
+    "pieces_count": "<n>{count}</n> pieces"
   },
   "customize": {
     "eyebrow": "From our own collections",

@@ -375,7 +375,8 @@ for i in range(3):
 for i, pg in enumerate([20, 21, 22, 23]):
     models["tracksuits"].append(deck(V1, pg, 0, f"models/tracksuits/tracksuit-{i + 1}.webp", 1400))
 # long sleeves
-models["long-sleeves"].append(deck(CLIENT, 11, 0, "models/long-sleeves/long-sleeve-white.webp"))
+# Owner-supplied transparent render (same file as portfolio/machinery/long-sleeve-duo.webp): kept as-is.
+models["long-sleeves"].append(record("models/long-sleeves/long-sleeve-white.webp"))
 models["long-sleeves"].append(deck(CLIENT, 1, 0, "models/long-sleeves/long-sleeve-grey.webp"))
 models["long-sleeves"].append(product(P("A.R.S", "longsleve-front.png"), "models/long-sleeves/long-sleeve-grey-front.webp", 1200))
 models["long-sleeves"].append(product(P("A.R.S", "longsleve-back.png"), "models/long-sleeves/long-sleeve-grey-back.webp", 1200))
@@ -424,10 +425,12 @@ portfolio["northern"] = [
 portfolio["residence"] = [
     deck(CLIENT, 6, 0, "portfolio/residence/hoodie-burgundy.webp", 1200),
     deck(CLIENT, 7, 0, "portfolio/residence/tee-black.webp", 1200),
-    deck(CLIENT, 8, 0, "portfolio/residence/tee-sport.webp", 1200),
+    record("portfolio/residence/tee-sport.webp"),  # owner-supplied transparent render: kept as-is
 ]
 portfolio["farm"] = [deck(CLIENT, 9, 0, "portfolio/farm/hoodie-grey.webp", 1200)]
 portfolio["team"] = [deck(CLIENT, 10, 0, "portfolio/team/hoodie-blue.webp", 1200)]
+# Supplied directly by the owner as a finished transparent render (not in the decks): kept as-is.
+portfolio["machinery"] = [record("portfolio/machinery/long-sleeve-duo.webp")]
 REPLACE_LIST.append(
     {
         "file": "/img/portfolio/residence/*",
@@ -436,6 +439,8 @@ REPLACE_LIST.append(
 )
 REPLACE_LIST.append({"file": "/img/portfolio/industrial/*", "note": "Client initials appear on the garments; the website text never names the client."})
 REPLACE_LIST.append({"file": "/img/portfolio/farm/*", "note": "Client name appears on the hoodie; the website text never names the client."})
+REPLACE_LIST.append({"file": "/img/portfolio/machinery/*", "note": "Client name appears on the sleeve; the website text never names the client."})
+REPLACE_LIST.append({"file": "/img/models/long-sleeves/long-sleeve-white.webp", "note": "Client name appears on the sleeve; the website text never names the client."})
 
 # ---------- 6. Aerial collection (wave designs + inspiration photos) ----------
 print("== aerial")

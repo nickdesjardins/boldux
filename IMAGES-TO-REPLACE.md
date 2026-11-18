@@ -26,6 +26,11 @@ Everything below works as-is. This is the list of images that were produced auto
 
 - `/img/portfolio/farm/*`
 
+## Client name appears on the sleeve; the website text never names the client.
+
+- `/img/portfolio/machinery/*`
+- `/img/models/long-sleeves/long-sleeve-white.webp`
+
 ## Background removed automatically (AI cut-out). Replace with an original PNG with transparency if you have one.
 
 - `/img/models/hoodies/zip-signature-1.webp`
@@ -85,7 +90,6 @@ Everything below works as-is. This is the list of images that were produced auto
 - `/img/models/tracksuits/tracksuit-2.webp`
 - `/img/models/tracksuits/tracksuit-3.webp`
 - `/img/models/tracksuits/tracksuit-4.webp`
-- `/img/models/long-sleeves/long-sleeve-white.webp`
 - `/img/models/long-sleeves/long-sleeve-grey.webp`
 - `/img/models/long-sleeves/long-sleeve-grey-front.webp`
 - `/img/models/long-sleeves/long-sleeve-grey-back.webp`
@@ -114,7 +118,6 @@ Everything below works as-is. This is the list of images that were produced auto
 - `/img/portfolio/northern/cap-blue.webp`
 - `/img/portfolio/residence/hoodie-burgundy.webp`
 - `/img/portfolio/residence/tee-black.webp`
-- `/img/portfolio/residence/tee-sport.webp`
 - `/img/portfolio/farm/hoodie-grey.webp`
 - `/img/portfolio/team/hoodie-blue.webp`
 
@@ -123,5 +126,5 @@ Everything below works as-is. This is the list of images that were produced auto
 - `public/img/brand/logo.png`, `logo-emblem.png` and `logo-wordmark.png` were cut from `images/logo.png` (black background). A vector export (SVG) of the new logo would give perfectly crisp edges at every size; the favicon (`src/app/icon.png`, `src/app/apple-icon.png`) is built from the emblem.
 - `public/img/hero/studio.webp` is the right-hand part of `images/hero.png`; the headline text is now real HTML text (searchable, translatable). If you generate a new studio image without baked-in text, a 2400px-wide version would look even sharper on large screens.
 - The Open Graph preview images (`/og/en.png`, `/og/fr.png`) are generated at build time from the logo and the studio image.
-- Client decks: the photos in `public/img/portfolio/residence`, `portfolio/industrial` and `portfolio/farm` show the client names printed on the garments. The site text never names any client; swap these shots if you prefer not to show the names at all.
+- Client decks: the photos in `public/img/portfolio/residence`, `portfolio/industrial`, `portfolio/farm` and `portfolio/machinery` show the client names printed on the garments. The site text never names any client; swap these shots if you prefer not to show the names at all.
 - Social links and the public email address live in `src/config/site.ts` (currently Instagram/Facebook `bolduxart` and `info@boldux.ca`); update them if they differ.

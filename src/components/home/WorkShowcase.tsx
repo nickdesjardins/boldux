@@ -1,13 +1,13 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, type CSSProperties } from "react";
 import { useTranslations } from "next-intl";
 import { ArrowUpRight, Maximize2 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { PROJECT_IDS, WALL, type ProjectId } from "@/data/portfolio";
 import { Img, imgSize } from "@/components/ui/Img";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { RevealGroup, RevealItem } from "@/components/motion/Reveal";
+import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
+import { fitFontSize, fitLines } from "@/lib/fit";
 import { Lightbox, type LightboxImage } from "@/components/gallery/Lightbox";
 
 type Filter = ProjectId | "all";
@@ -30,6 +30,15 @@ export function WorkShowcase() {
 
   const tiles = useMemo(() => (filter === "all" ? WALL : WALL.filter((w) => w.project === filter)), [filter]);
 
+  // Two-line title (chrome lead + red accent). Below lg it wraps, sized to the longest word;
+  // from lg each half sits on its own line, sized so the longer half fits (long French runs).
+  const titleLead = t("titleLead");
+  const titleAccent = t("titleAccent");
+  const titleStyle = {
+    "--fs-sm": fitFontSize(`${titleLead} ${titleAccent}`, 5.2, 1.9),
+    "--fs-lg": fitLines([titleLead, titleAccent], 5.2, 1.9),
+  } as CSSProperties;
+
   const lightboxImages: LightboxImage[] = tiles.map((w, i) => ({
     src: w.src,
     alt: `${t(`projects.${w.project}.title`)} ${i + 1}`,
@@ -46,10 +55,30 @@ export function WorkShowcase() {
     <section id="work" className="container-x relative scroll-mt-24 py-24 lg:py-32">
       {/* ambient glow: flat radial gradient instead of a blurred disc (no per-tile re-raster on scroll) */}
       <div aria-hidden className="pointer-events-none absolute -left-56 top-1/4 h-[44rem] w-[44rem] rounded-full bg-[radial-gradient(closest-side,rgba(227,16,31,0.09),rgba(227,16,31,0.035)_45%,transparent)]" />
-      <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-        <SectionHeading eyebrow={t("eyebrow")} title={t("title")} intro={t("intro")} />
-        <p className="font-display shrink-0 text-[0.62rem] uppercase tracking-[0.3em] text-dim">{t("pieces_count", { count: WALL.length })}</p>
-      </div>
+      <header className="@container relative">
+        {/* index bar: eyebrow, rule, piece count */}
+        <Reveal y={14}>
+          <div className="flex items-center gap-4 sm:gap-6">
+            <p className="eyebrow min-w-0">
+              <span aria-hidden className="h-1.5 w-1.5 shrink-0 rounded-full bg-red-bright shadow-[0_0_10px_2px_rgba(255,47,63,0.55)]" />
+              {t("eyebrow")}
+            </p>
+            <span aria-hidden className="hidden h-px min-w-12 flex-1 bg-gradient-to-r from-red/70 via-line-2 to-line sm:block" />
+            <p className="font-display ml-auto shrink-0 text-[0.62rem] font-bold uppercase tracking-[0.3em] text-dim">
+              {t.rich("pieces_count", { count: WALL.length, n: (c) => <span className="text-fg">{c}</span> })}
+            </p>
+          </div>
+        </Reveal>
+        {/* py on each line keeps accents (CRÉÉ) inside the gradient-clipped box */}
+        <h2 className="display-lg fit-heading mt-8 leading-[0.9] lg:mt-10" style={titleStyle}>
+          <Reveal as="span" delay={0.05} className="block py-[0.05em] text-chrome lg:whitespace-nowrap">
+            {titleLead}
+          </Reveal>{" "}
+          <Reveal as="span" delay={0.15} className="block py-[0.05em] text-red-glow lg:whitespace-nowrap">
+            {titleAccent}
+          </Reveal>
+        </h2>
+      </header>
 
       {/* Project filter */}
       {/* one scrollable row on phones (long French labels), wrapping chips from md up */}

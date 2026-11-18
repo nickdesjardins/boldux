@@ -22,5 +22,13 @@
  {
   "file": "/img/portfolio/farm/*",
   "note": "Client name appears on the hoodie; the website text never names the client."
+ },
+ {
+  "file": "/img/portfolio/machinery/*",
+  "note": "Client name appears on the sleeve; the website text never names the client."
+ },
+ {
+  "file": "/img/models/long-sleeves/long-sleeve-white.webp",
+  "note": "Client name appears on the sleeve; the website text never names the client."
  }
 ]
